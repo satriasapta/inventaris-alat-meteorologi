@@ -1,63 +1,64 @@
-<?php $index = 1 ?>
 <?= $this->extend('templates'); ?>
 
 <?= $this->section('content'); ?>
 <div class="container-fluid">
 
-    <!-- DataTales Example -->
-    <div class="card shadow mb-4">
-        <?php if (session()->getFlashdata('pesan')) : ?>
-            <div class="alert alert-success m-3" role="alert">
-                <?= session()->getFlashdata('pesan'); ?>
-            </div>
-        <?php endif; ?>
-    
-        <div class="card-header py-3">
-            <h6 class="m-0 font-weight-bold text-primary">Alat</h6>
-        </div>
+    <div class="card">
+        <h5 class="card-header">Detail Alat</h5>
         <div class="card-body">
-            <div class="table-responsive">
-                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                    <thead>
-                        <tr class="text-center">
-                            <th>No</th>
-                            <th>Gambar</th>
-                            <th>Nama Alat</th>
-                            <th>Kelompok alat</th>
-                            <th>Kondisi</th>
-                            <th>Tahun Pembelian</th>
-                            <th>Kalibrasi Terakhir</th>
-                            <th>lokasi alat</th>
-                            <th>detail alat</th>
-                            <th>Aksi</th>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="<?= base_url('img/termometer.jpeg'); ?>" class="card-img-top">
+                </div>
+                <div class="col-md-8">
+                    <table class="table">
+                        <tr>
+                            <td class="col-md-4">Nama Alat</td>
+                            <td><strong>: termometer</strong></td>
                         </tr>
-                    </thead>
-                    <tbody>
 
-                            <tr class="text-center">
-                                <td><?= $index ?></td>
-                                <td>gambar.jpg</td>
-                                <td>Termometer</td>
-                                <td>Digital</td>
-                                <td>Layak</td>
-                                <td>28 mei 2022</td>
-                                <td>28 juni 2022</td>
-                                <td>lokasi.jpg</td>
-                                <td><a href="detail.html">Detail Alat-></a></td>
-                                <td>
-                                    <form action="#" method="post">
-                                        <input type="hidden" name="_method" value="DELETE">
-                                        <button data-bs-toggle="tooltip" data-bs-placement="top" title="Delete" type="submit" class="btn btn-danger btn-delete" onclick="return confirm('Apakah anda yakin ingin menghapus data ini?');">Hapus</button>
-                                    </form>
-                                </td>
-                            </tr>
-                            <?php $index++; ?>
+                        <tr>
+                            <td>Kelompok Alat</td>
+                            <td><strong>: Digital</strong></td>
+                        </tr>
 
-                    </tbody>
-                </table>
-                <a href="#" class="btn btn-primary">Tambah</a>
+                        <tr>
+                            <td>Kondisi</td>
+                            <td><strong>: Layak</strong></td>
+                        </tr>
+
+                        <tr>
+                            <td>Tahun Pembelian</td>
+                            <td><strong>:28 Mei 2022</strong></td>
+                        </tr>
+                        <tr>
+                            <td>Kalibrasi terakhir</td>
+                            <td><strong>:28 Juni 2022</strong></td>
+                        </tr>
+                        <tr>
+                            <td>Lokasi Alat</td>
+                            <td><strong><button class="btn btn-dark mb-3" data-toggle="collapse" data-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample">3</button>
+                                    <div class="collapse" id="collapseExample1">
+
+                                        <div class="card card-body">
+                                            <img src="<?= base_url('img/tmnalat.jpeg'); ?>" class="card-img-top">
+
+                                        </div>
+                                    </div>
+                                </strong></td>
+                        </tr>
+                        <tr>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <button class="btn btn-info mt-3" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Detail</button>
+            <div class="collapse" id="collapseExample">
+                <div class="card card-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                </div>
             </div>
         </div>
     </div>
-</div>
-<?= $this->endSection(); ?>
+    <?= $this->endSection(); ?>
