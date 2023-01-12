@@ -59,7 +59,7 @@
             </li>
             <!-- Nav Item - Dashboard -->
             <li class="nav-item active">
-                <a class="nav-link" href="/">
+                <a class="nav-link" href="/view/dashboard">
                     <i class="fas fa-fw fa-home"></i>
                     <span>Dashboard</span></a>
             </li>
@@ -84,34 +84,27 @@
             <li class="nav-item active">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseData" aria-expanded="true" aria-controls="collapseData">
                     <i class="fas fa-fw fa-folder"></i>
-                    <span>Data Master</span>
+                    <span>Data Alat</span>
                 </a>
                 <div id="collapseData" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Menu:</h6>
-                        <a class="collapse-item" href="/barang">Data Barang</a>
-                        <a class="collapse-item" href="/jenisbarang">Jenis Barang</a>
-                        <a class="collapse-item" href="/data_supplier">Data Supplier</a>
+                        <h6 class="collapse-header">Meteorologi:</h6>
+                        <a class="collapse-item" href="/barang">Digital</a>
+                        <a class="collapse-item" href="/jenisbarang">Mekanik</a>
+                        <a class="collapse-item" href="/data_supplier">Semua Alat</a>
 
                     </div>
-                </div>
-            </li>
-
-
-
-            <li class="nav-item active">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true" aria-controls="collapsePages">
-                    <i class="fas fa-fw fa-folder"></i>
-                    <span>Transaksi</span>
-                </a>
-                <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Menu:</h6>
-                        <a class="collapse-item" href="/barang_masuk">Barang Masuk</a>
-                        <a class="collapse-item" href="/barang_keluar">Barang Keluar</a>
+                        <h6 class="collapse-header">Klimatologi:</h6>
+                        <a class="collapse-item" href="/barang">Digital</a>
+                        <a class="collapse-item" href="/jenisbarang">Mekanik</a>
+                        <a class="collapse-item" href="/data_supplier">Semua Alat</a>
+
                     </div>
                 </div>
             </li>
+
+
 
             <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">
