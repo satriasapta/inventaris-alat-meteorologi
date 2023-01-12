@@ -10,4 +10,8 @@ class Home extends BaseController
 
         return view('home');
     }
+    public function dashboard()
+    {
+        return view('dashboard');
+    }
 }
