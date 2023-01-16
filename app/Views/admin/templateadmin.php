@@ -45,6 +45,9 @@
     <!-- wave CSS
 		============================================ -->
     <link rel="stylesheet" href="/templates2/css/wave/waves.min.css">
+    <!-- Data Table JS
+		============================================ -->
+    <link rel="stylesheet" href="/templates2/css/jquery.dataTables.min.css">
     <!-- main CSS
 		============================================ -->
     <link rel="stylesheet" href="/templates2/css/main.css">
@@ -69,7 +72,7 @@
             <div class="row">
                 <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                     <div class="logo-area">
-                        <a href="#"><img src="img/logo/logo.png" alt="" /></a>
+                        <a href="#"><img src="/templates2/img/logo/logo.png" alt="" /></a>
                     </div>
                 </div>
                 <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
@@ -94,7 +97,7 @@
                                         <a href="#">
                                             <div class="hd-message-sn">
                                                 <div class="hd-message-img">
-                                                    <img src="img/post/1.jpg" alt="" />
+                                                    <img src="/templates2/img/post/1.jpg" alt="" />
                                                 </div>
                                                 <div class="hd-mg-ctn">
                                                     <h3>David Belle</h3>
@@ -105,7 +108,7 @@
                                         <a href="#">
                                             <div class="hd-message-sn">
                                                 <div class="hd-message-img">
-                                                    <img src="img/post/2.jpg" alt="" />
+                                                    <img src="/templates2/img/post/2.jpg" alt="" />
                                                 </div>
                                                 <div class="hd-mg-ctn">
                                                     <h3>Jonathan Morris</h3>
@@ -116,7 +119,7 @@
                                         <a href="#">
                                             <div class="hd-message-sn">
                                                 <div class="hd-message-img">
-                                                    <img src="img/post/4.jpg" alt="" />
+                                                    <img src="/templates2/img/post/4.jpg" alt="" />
                                                 </div>
                                                 <div class="hd-mg-ctn">
                                                     <h3>Fredric Mitchell</h3>
@@ -127,7 +130,7 @@
                                         <a href="#">
                                             <div class="hd-message-sn">
                                                 <div class="hd-message-img">
-                                                    <img src="img/post/1.jpg" alt="" />
+                                                    <img src="/templates2/img/post/1.jpg" alt="" />
                                                 </div>
                                                 <div class="hd-mg-ctn">
                                                     <h3>David Belle</h3>
@@ -138,7 +141,7 @@
                                         <a href="#">
                                             <div class="hd-message-sn">
                                                 <div class="hd-message-img">
-                                                    <img src="img/post/2.jpg" alt="" />
+                                                    <img src="/templates2/img/post/2.jpg" alt="" />
                                                 </div>
                                                 <div class="hd-mg-ctn">
                                                     <h3>Glenn Jecobs</h3>
@@ -164,7 +167,7 @@
                                         <a href="#">
                                             <div class="hd-message-sn">
                                                 <div class="hd-message-img">
-                                                    <img src="img/post/1.jpg" alt="" />
+                                                    <img src="/templates2/img/post/1.jpg" alt="" />
                                                 </div>
                                                 <div class="hd-mg-ctn">
                                                     <h3>David Belle</h3>
@@ -175,7 +178,7 @@
                                         <a href="#">
                                             <div class="hd-message-sn">
                                                 <div class="hd-message-img">
-                                                    <img src="img/post/2.jpg" alt="" />
+                                                    <img src="/templates2/img/post/2.jpg" alt="" />
                                                 </div>
                                                 <div class="hd-mg-ctn">
                                                     <h3>Jonathan Morris</h3>
@@ -186,7 +189,7 @@
                                         <a href="#">
                                             <div class="hd-message-sn">
                                                 <div class="hd-message-img">
-                                                    <img src="img/post/4.jpg" alt="" />
+                                                    <img src="/templates2/img/post/4.jpg" alt="" />
                                                 </div>
                                                 <div class="hd-mg-ctn">
                                                     <h3>Fredric Mitchell</h3>
@@ -197,7 +200,7 @@
                                         <a href="#">
                                             <div class="hd-message-sn">
                                                 <div class="hd-message-img">
-                                                    <img src="img/post/1.jpg" alt="" />
+                                                    <img src="/templates2/img/post/1.jpg" alt="" />
                                                 </div>
                                                 <div class="hd-mg-ctn">
                                                     <h3>David Belle</h3>
@@ -208,7 +211,7 @@
                                         <a href="#">
                                             <div class="hd-message-sn">
                                                 <div class="hd-message-img">
-                                                    <img src="img/post/2.jpg" alt="" />
+                                                    <img src="/templates2/img/post/2.jpg" alt="" />
                                                 </div>
                                                 <div class="hd-mg-ctn">
                                                     <h3>Glenn Jecobs</h3>
@@ -361,12 +364,14 @@
                             <ul class="mobile-menu-nav">
                                 <li><a data-toggle="collapse" data-target="#Charts" href="#">Home</a>
                                     <ul class="collapse dropdown-header-top">
-                                        <li><a href="">Semua Alat</a></li>
-                                        <li><a href="">Alat Dinamis</a></li>
-                                        <li><a href="">Alat Mekanis</a></li>
-                                        <li><a href="index-4.html">Dashboard Four</a></li>
-                                        <li><a href="analytics.html">Analytics</a></li>
-                                        <li><a href="widgets.html">Widgets</a></li>
+                                        <li><a href="index.html">Semua Alat</a>
+                                        </li>
+                                        <li><a href="index-2.html">Konvensional</a>
+                                        </li>
+                                        <li><a href="index-3.html">Otomatis</a>
+                                        </li>
+                                        <li><a href="index-4.html">Modern</a>
+                                        </li>
                                     </ul>
                                 </li>
                                 <li><a data-toggle="collapse" data-target="#demoevent" href="#">Email</a>
@@ -481,17 +486,13 @@
                     <div class="tab-content custom-menu-content">
                         <div id="Home" class="tab-pane in active notika-tab-menu-bg animated flipInX">
                             <ul class="notika-main-menu-dropdown">
-                                <li><a href="index.html">Dashboard One</a>
+                                <li><a href="index.html">Semua Alat</a>
                                 </li>
-                                <li><a href="index-2.html">Dashboard Two</a>
+                                <li><a href="index-2.html">Konvensional</a>
                                 </li>
-                                <li><a href="index-3.html">Dashboard Three</a>
+                                <li><a href="index-3.html">Otomatis</a>
                                 </li>
-                                <li><a href="index-4.html">Dashboard Four</a>
-                                </li>
-                                <li><a href="analytics.html">Analytics</a>
-                                </li>
-                                <li><a href="widgets.html">Widgets</a>
+                                <li><a href="index-4.html">Modern</a>
                                 </li>
                             </ul>
                         </div>
@@ -646,6 +647,10 @@
     <!-- mCustomScrollbar JS
 		============================================ -->
     <script src="/templates2/js/scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+     <!-- Data Table JS
+		============================================ -->
+    <script src="/templates2/js/data-table/jquery.dataTables.min.js"></script>
+    <script src="/templates2/js/data-table/data-table-act.js"></script>
     <!-- jvectormap JS
 		============================================ -->
     <script src="/templates2/js/jvectormap/jquery-jvectormap-2.0.2.min.js"></script>
