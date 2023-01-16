@@ -8,6 +8,11 @@ class Admin extends BaseController
 {
     public function index()
     {
-        return view('admin/templateadmin');
+        return view('admin/dashboard');
+    }
+
+    public function tambahalat()
+    {
+        return view('admin/tambahalat');
     }
 }

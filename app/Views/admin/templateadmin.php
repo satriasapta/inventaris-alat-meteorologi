@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Dashboard One | Notika - Notika Admin Template</title>
+    <title>Dashboard ALMET | ALAT METEOROLOGI</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- favicon
@@ -361,9 +361,9 @@
                             <ul class="mobile-menu-nav">
                                 <li><a data-toggle="collapse" data-target="#Charts" href="#">Home</a>
                                     <ul class="collapse dropdown-header-top">
-                                        <li><a href="index.html">Dashboard One</a></li>
-                                        <li><a href="index-2.html">Dashboard Two</a></li>
-                                        <li><a href="index-3.html">Dashboard Three</a></li>
+                                        <li><a href="">Semua Alat</a></li>
+                                        <li><a href="">Alat Dinamis</a></li>
+                                        <li><a href="">Alat Mekanis</a></li>
                                         <li><a href="index-4.html">Dashboard Four</a></li>
                                         <li><a href="analytics.html">Analytics</a></li>
                                         <li><a href="widgets.html">Widgets</a></li>
