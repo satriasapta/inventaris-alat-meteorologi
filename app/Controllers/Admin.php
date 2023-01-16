@@ -15,4 +15,9 @@ class Admin extends BaseController
     {
         return view('admin/tambahalat');
     }
+
+    public function daftaralat()
+    {
+        return view('admin/daftaralat');
+    }
 }

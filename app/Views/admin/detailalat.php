@@ -4,7 +4,8 @@
 <div class="container-fluid">
 
     <div class="card">
-        <h5 class="card-header">Detail Alat</h5>
+        <div class="ms-5" >
+        <h3 class="card-header">Detail Alat</h3>
         <div class="card-body">
 
             <div class="row">
@@ -30,11 +31,11 @@
 
                         <tr>
                             <td>Tahun Pembelian</td>
-                            <td><strong>:28 Mei 2022</strong></td>
+                            <td><strong>: 28 Mei 2022</strong></td>
                         </tr>
                         <tr>
                             <td>Kalibrasi terakhir</td>
-                            <td><strong>:28 Juni 2022</strong></td>
+                            <td><strong>: 28 Juni 2022</strong></td>
                         </tr>
                         <tr>
                             <td>Lokasi Alat</td>
