@@ -1,4 +1,4 @@
-<?= $this->extend('admin/templateadmin'); ?>
+<?= $this->extend('templates'); ?>
 
 <?= $this->section('content'); ?>
 <div class="container-fluid">
