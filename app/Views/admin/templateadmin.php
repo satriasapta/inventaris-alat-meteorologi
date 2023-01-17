@@ -36,12 +36,21 @@
     <!-- mCustomScrollbar CSS
 		============================================ -->
     <link rel="stylesheet" href="/templates2/css/scrollbar/jquery.mCustomScrollbar.min.css">
+    <!-- summernote CSS
+		============================================ -->
+    <link rel="stylesheet" href="/templates2/css/summernote/summernote.css">
+    <!-- datapicker CSS
+		============================================ -->
+    <link rel="stylesheet" href="/templates2/css/datapicker/datepicker3.css">
     <!-- jvectormap CSS
 		============================================ -->
     <link rel="stylesheet" href="/templates2/css/jvectormap/jquery-jvectormap-2.0.3.css">
     <!-- notika icon CSS
 		============================================ -->
     <link rel="stylesheet" href="/templates2/css/notika-custom-icon.css">
+    <!-- dropzone CSS
+		============================================ -->
+    <link rel="stylesheet" href="css/dropzone/dropzone.css">
     <!-- wave CSS
 		============================================ -->
     <link rel="stylesheet" href="/templates2/css/wave/waves.min.css">
@@ -636,9 +645,21 @@
     <!-- scrollUp JS
 		============================================ -->
     <script src="/templates2/js/jquery.scrollUp.min.js"></script>
+    <!-- rangle-slider JS
+		============================================ -->
+    <script src="/templates2/js/rangle-slider/jquery-ui-1.10.4.custom.min.js"></script>
+    <script src="/templates2/js/rangle-slider/jquery-ui-touch-punch.min.js"></script>
+    <script src="/templates2/js/rangle-slider/rangle-active.js"></script>
     <!-- meanmenu JS
 		============================================ -->
     <script src="/templates2/js/meanmenu/jquery.meanmenu.js"></script>
+    <!-- datapicker JS
+		============================================ -->
+    <script src="/templates2/js/datapicker/bootstrap-datepicker.js"></script>
+    <script src="/templates2/js/datapicker/datepicker-active.js"></script>
+    <!-- bootstrap select JS
+		============================================ -->
+    <script src="/templates2/js/bootstrap-select/bootstrap-select.js"></script>
     <!-- counterup JS
 		============================================ -->
     <script src="/templates2/js/counterup/jquery.counterup.min.js"></script>
@@ -647,15 +668,22 @@
     <!-- mCustomScrollbar JS
 		============================================ -->
     <script src="/templates2/js/scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
-     <!-- Data Table JS
+    <!-- Data Table JS
 		============================================ -->
     <script src="/templates2/js/data-table/jquery.dataTables.min.js"></script>
     <script src="/templates2/js/data-table/data-table-act.js"></script>
+    <!-- Input Mask JS
+		============================================ -->
+    <script src="/templates2/js/jasny-bootstrap.min.js"></script>
     <!-- jvectormap JS
 		============================================ -->
     <script src="/templates2/js/jvectormap/jquery-jvectormap-2.0.2.min.js"></script>
     <script src="/templates2/js/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
     <script src="/templates2/js/jvectormap/jvectormap-active.js"></script>
+    <!--  summernote JS
+		============================================ -->
+    <script src="/templates2/js/summernote/summernote-updated.min.js"></script>
+    <script src="/templates2/js/summernote/summernote-active.js"></script>
     <!-- sparkline JS
 		============================================ -->
     <script src="/templates2/js/sparkline/jquery.sparkline.min.js"></script>
@@ -666,11 +694,23 @@
     <script src="/templates2/js/flot/jquery.flot.resize.js"></script>
     <script src="/templates2/js/flot/curvedLines.js"></script>
     <script src="/templates2/js/flot/flot-active.js"></script>
+    <!-- flot JS
+		============================================ -->
+    <script src="/templates2/js/flot/jquery.flot.js"></script>
+    <script src="/templates2/js/flot/jquery.flot.resize.js"></script>
+    <script src="/templates2/js/flot/flot-active.js"></script>
     <!-- knob JS
 		============================================ -->
     <script src="/templates2/js/knob/jquery.knob.js"></script>
     <script src="/templates2/js/knob/jquery.appear.js"></script>
     <script src="/templates2/js/knob/knob-active.js"></script>
+    <!--  chosen JS
+		============================================ -->
+    <script src="/templates2/js/chosen/chosen.jquery.js"></script>
+    <!-- icheck JS
+		============================================ -->
+    <script src="/templates2/js/icheck/icheck.min.js"></script>
+    <script src="/templates2/js/icheck/icheck-active.js"></script>
     <!--  wave JS
 		============================================ -->
     <script src="/templates2/js/wave/waves.min.js"></script>
