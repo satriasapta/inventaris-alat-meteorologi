@@ -8,32 +8,32 @@
 
       <div class="row">
         <div class="col-md-4">
-          <img src="<?= base_url('img/'.$alat->gambar_alat); ?>" class="card-img-top">
+          <img src="<?= base_url('img/termometer.jpeg'); ?>" class="card-img-top">
         </div>
         <div class="col-md-8">
           <table class="table">
             <tr>
               <td class="col-md-4">Nama Alat</td>
-              <td><strong>: <?= $alat->nama_alat; ?></strong></td>
+              <td><strong>: termometer</strong></td>
             </tr>
 
             <tr>
               <td>Kelompok Alat</td>
-              <td><strong>: <?= $alat->kelompok_alat; ?></strong></td>
+              <td><strong>: Digital</strong></td>
             </tr>
 
             <tr>
               <td>Kondisi</td>
-              <td><strong>: <?= $alat->kondisi_alat; ?></strong></td>
+              <td><strong>: Layak</strong></td>
             </tr>
 
             <tr>
               <td>Tahun Pembelian</td>
-              <td><strong>: <?= $alat->tahun_pembelian; ?></strong></td>
+              <td><strong>: 28 Mei 2022</strong></td>
             </tr>
             <tr>
               <td>Kalibrasi terakhir</td>
-              <td><strong>: <?= $alat->kalibrasi; ?></strong></td>
+              <td><strong>: 28 Juni 2022</strong></td>
             </tr>
             <tr>
               <td>Lokasi Alat</td>
@@ -41,7 +41,7 @@
                   <div class="collapse" id="collapseExample1">
 
                     <div class="card card-body">
-                      <img src="<?= base_url('img/'.$alat->lokasi_alat); ?>" class="card-img-top">
+                      <img src="<?= base_url('img/tmnalat.jpeg'); ?>" class="card-img-top">
 
                     </div>
                   </div>
@@ -83,7 +83,7 @@
                                   </div>
                                   <div id="accordionGreen-one" class="collapse" role="tabpanel">
                                     <div class="panel-body">
-                                      <p><?= $alat->komponen_alat; ?></p>
+                                      <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry cry then richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf msr noontemporem, sunt aliqua put a bird on it squid single-origin coffee nullassumendan shoreditch et.</p>
                                     </div>
                                   </div>
                                 </div>
@@ -97,7 +97,7 @@
                                   </div>
                                   <div id="accordionGreen-two" class="collapse" role="tabpanel">
                                     <div class="panel-body">
-                                      <p><?= $alat->penggantian_komponen; ?></p>
+                                      <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry cry then richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf msr noontemporem, sunt aliqua put a bird on it squid single-origin coffee nullassumendan shoreditch et.</p>
                                     </div>
                                   </div>
                                 </div>
@@ -111,7 +111,7 @@
                                   </div>
                                   <div id="accordionGreen-three" class="collapse" role="tabpanel">
                                     <div class="panel-body">
-                                      <p><?= $alat->pemeliharaan_alat; ?></p>
+                                      <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry cry then richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf msr noontemporem, sunt aliqua put a bird on it squid single-origin coffee nullassumendan shoreditch et.</p>
                                     </div>
                                   </div>
                                 </div>
@@ -124,7 +124,7 @@
                                   </div>
                                   <div id="accordionGreen-4" class="collapse" role="tabpanel">
                                     <div class="panel-body">
-                                      <p><?= $alat->perbaikan_alat; ?></p>
+                                      <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry cry then richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf msr noontemporem, sunt aliqua put a bird on it squid single-origin coffee nullassumendan shoreditch et.</p>
                                     </div>
                                   </div>
                                 </div>
@@ -137,7 +137,7 @@
                                   </div>
                                   <div id="accordionGreen-5" class="collapse" role="tabpanel">
                                     <div class="panel-body">
-                                      <p><?= $alat->persiapan_pemeliharaan; ?></p>
+                                      <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry cry then richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf msr noontemporem, sunt aliqua put a bird on it squid single-origin coffee nullassumendan shoreditch et.</p>
                                     </div>
                                   </div>
                                 </div>
@@ -150,7 +150,7 @@
                                   </div>
                                   <div id="accordionGreen-6" class="collapse" role="tabpanel">
                                     <div class="panel-body">
-                                      <p><?= $alat->cara_pemeliharaan; ?></p>
+                                      <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry cry then richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf msr noontemporem, sunt aliqua put a bird on it squid single-origin coffee nullassumendan shoreditch et.</p>
                                     </div>
                                   </div>
                                 </div>
@@ -163,7 +163,7 @@
                                   </div>
                                   <div id="accordionGreen-7" class="collapse" role="tabpanel">
                                     <div class="panel-body">
-                                      <p><?= $alat->modifikasi_alat; ?></p>
+                                      <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry cry then richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf msr noontemporem, sunt aliqua put a bird on it squid single-origin coffee nullassumendan shoreditch et.</p>
                                     </div>
                                   </div>
                                 </div>
@@ -176,7 +176,7 @@
                                   </div>
                                   <div id="accordionGreen-8" class="collapse" role="tabpanel">
                                     <div class="panel-body">
-                                      <p><?= $alat->penyediaan_alat; ?></p>
+                                      <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry cry then richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf msr noontemporem, sunt aliqua put a bird on it squid single-origin coffee nullassumendan shoreditch et.</p>
                                     </div>
                                   </div>
                                 </div>
@@ -189,7 +189,7 @@
                                   </div>
                                   <div id="accordionGreen-9" class="collapse" role="tabpanel">
                                     <div class="panel-body">
-                                      <p><?= $alat->penyediaan_sukucadang; ?></p>
+                                      <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry cry then richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf msr noontemporem, sunt aliqua put a bird on it squid single-origin coffee nullassumendan shoreditch et.</p>
                                     </div>
                                   </div>
                                 </div>
@@ -202,7 +202,7 @@
                                   </div>
                                   <div id="accordionGreen-10" class="collapse" role="tabpanel">
                                     <div class="panel-body">
-                                      <p><?= $alat->keamanan_alat; ?></p>
+                                      <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry cry then richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf msr noontemporem, sunt aliqua put a bird on it squid single-origin coffee nullassumendan shoreditch et.</p>
                                     </div>
                                   </div>
                                 </div>
