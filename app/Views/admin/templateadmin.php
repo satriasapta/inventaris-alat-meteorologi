@@ -50,7 +50,7 @@
     <link rel="stylesheet" href="/templates2/css/notika-custom-icon.css">
     <!-- dropzone CSS
 		============================================ -->
-    <link rel="stylesheet" href="css/dropzone/dropzone.css">
+    <link rel="stylesheet" href="/templates2/css/dropzone/dropzone.css">
     <!-- wave CSS
 		============================================ -->
     <link rel="stylesheet" href="/templates2/css/wave/waves.min.css">
@@ -680,6 +680,14 @@
     <script src="/templates2/js/jvectormap/jquery-jvectormap-2.0.2.min.js"></script>
     <script src="/templates2/js/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
     <script src="/templates2/js/jvectormap/jvectormap-active.js"></script>
+    <!--  color-picker JS
+		============================================ -->
+    <script src="/templates2/js/color-picker/farbtastic.min.js"></script>
+    <script src="/templates2/js/color-picker/color-picker.js"></script>
+    <!--  notification JS
+		============================================ -->
+    <script src="/templates2/js/notification/bootstrap-growl.min.js"></script>
+    <script src="/templates2/js/notification/notification-active.js"></script>
     <!--  summernote JS
 		============================================ -->
     <script src="/templates2/js/summernote/summernote-updated.min.js"></script>
@@ -711,6 +719,9 @@
 		============================================ -->
     <script src="/templates2/js/icheck/icheck.min.js"></script>
     <script src="/templates2/js/icheck/icheck-active.js"></script>
+    <!-- dropzone JS
+		============================================ -->
+    <script src="/templates2/js/dropzone/dropzone.js"></script>
     <!--  wave JS
 		============================================ -->
     <script src="/templates2/js/wave/waves.min.js"></script>
