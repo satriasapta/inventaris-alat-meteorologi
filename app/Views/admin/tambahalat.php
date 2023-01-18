@@ -118,7 +118,142 @@
                                     <div class="col-lg-8 col-md-7 col-sm-7 col-xs-12">
                                         <div class="form-example-int">
                                             <div class="form-group">
-                                                <label>no 1</label>
+                                                <label>1. Komponen alat</label>
+                                                <div class="nk-int-st">
+                                                    <input type="text" class="html-editor" placeholder="masukin penjelasan panjang">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-3 col-sm-3 col-xs-12">
+                                    <label class="hrzn-fm"></label>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-8 col-md-7 col-sm-7 col-xs-12">
+                                        <div class="form-example-int">
+                                            <div class="form-group">
+                                                <label>2. Penggantian komponen secara berkala</label>
+                                                <div class="nk-int-st">
+                                                    <input type="text" class="html-editor" placeholder="masukin penjelasan panjang">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-3 col-sm-3 col-xs-12">
+                                    <label class="hrzn-fm"></label>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-8 col-md-7 col-sm-7 col-xs-12">
+                                        <div class="form-example-int">
+                                            <div class="form-group">
+                                                <label>3. Pemeliharaan berkala</label>
+                                                <div class="nk-int-st">
+                                                    <input type="text" class="html-editor" placeholder="masukin penjelasan panjang">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-3 col-sm-3 col-xs-12">
+                                    <label class="hrzn-fm"></label>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-8 col-md-7 col-sm-7 col-xs-12">
+                                        <div class="form-example-int">
+                                            <div class="form-group">
+                                                <label>4. Perbaikan peralatan pada saat terjadi kerusakan</label>
+                                                <div class="nk-int-st">
+                                                    <input type="text" class="html-editor" placeholder="masukin penjelasan panjang">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-3 col-sm-3 col-xs-12">
+                                    <label class="hrzn-fm"></label>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-8 col-md-7 col-sm-7 col-xs-12">
+                                        <div class="form-example-int">
+                                            <div class="form-group">
+                                                <label>5. Persiapan pemeliharaan</label>
+                                                <div class="nk-int-st">
+                                                    <input type="text" class="html-editor" placeholder="masukin penjelasan panjang">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-3 col-sm-3 col-xs-12">
+                                    <label class="hrzn-fm"></label>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-8 col-md-7 col-sm-7 col-xs-12">
+                                        <div class="form-example-int">
+                                            <div class="form-group">
+                                                <label>6. Cara pemeliharaan</label>
+                                                <div class="nk-int-st">
+                                                    <input type="text" class="html-editor" placeholder="masukin penjelasan panjang">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-3 col-sm-3 col-xs-12">
+                                    <label class="hrzn-fm"></label>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-8 col-md-7 col-sm-7 col-xs-12">
+                                        <div class="form-example-int">
+                                            <div class="form-group">
+                                                <label>7. Modifikasi, rekondisi, dan rehabilitasi peralatan</label>
+                                                <div class="nk-int-st">
+                                                    <input type="text" class="html-editor" placeholder="masukin penjelasan panjang">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-3 col-sm-3 col-xs-12">
+                                    <label class="hrzn-fm"></label>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-8 col-md-7 col-sm-7 col-xs-12">
+                                        <div class="form-example-int">
+                                            <div class="form-group">
+                                                <label>8. Penyediaan peralatan cadangan</label>
+                                                <div class="nk-int-st">
+                                                    <input type="text" class="html-editor" placeholder="masukin penjelasan panjang">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-3 col-sm-3 col-xs-12">
+                                    <label class="hrzn-fm"></label>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-8 col-md-7 col-sm-7 col-xs-12">
+                                        <div class="form-example-int">
+                                            <div class="form-group">
+                                                <label>9. Penyediaan dan pengelolaan suku cadang</label>
+                                                <div class="nk-int-st">
+                                                    <input type="text" class="html-editor" placeholder="masukin penjelasan panjang">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-3 col-sm-3 col-xs-12">
+                                    <label class="hrzn-fm"></label>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-8 col-md-7 col-sm-7 col-xs-12">
+                                        <div class="form-example-int">
+                                            <div class="form-group">
+                                                <label>10. Keamanan dan Persyaratan Lingkungan</label>
                                                 <div class="nk-int-st">
                                                     <input type="text" class="html-editor" placeholder="masukin penjelasan panjang">
                                                 </div>
