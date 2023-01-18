@@ -32,7 +32,7 @@
                                     <tr>
                                         <td><?= $index; ?></td>
                                         <td><?= $a['nama_alat']; ?></td>
-                                        <td><?= $a['kelompok_alat']; ?></td>
+                                        <td><?= $a['kategori_alat']; ?></td>
                                         <td><?= $a['kondisi_alat']; ?></td>
                                         <td><?= $a['tahun_pembelian']; ?></td>
                                         <td><?= $a['kalibrasi']; ?></td>                                      
