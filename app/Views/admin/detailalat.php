@@ -19,7 +19,7 @@
 
             <tr>
               <td>Cara Kerja Alat</td>
-              <td><strong>: <?= $alat->kelompok_alat; ?></strong></td>
+              <td><strong>: <?= $alat->kategori_alat; ?></strong></td>
             </tr>
 
             <tr>
