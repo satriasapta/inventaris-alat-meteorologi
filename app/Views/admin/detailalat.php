@@ -37,9 +37,8 @@
             </tr>
             <tr>
               <td>Lokasi Alat</td>
-              <td><strong><button class="btn btn-dark mb-3" data-toggle="collapse" data-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample">3</button>
-                  <div class="collapse" id="collapseExample1">
-
+              <td><strong><button class="notika-icon notika-search" data-toggle="collapse" data-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample"></button>              
+              <div class="collapse" id="collapseExample1">
                     <div class="card card-body">
                       <img src="<?= base_url('img/'.$alat->lokasi_alat); ?>" class="card-img-top">
 
