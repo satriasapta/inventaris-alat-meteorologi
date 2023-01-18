@@ -21,7 +21,8 @@ class Admin extends BaseController
 
     public function tambahalat()
     {
-        return view('admin/tambahalat');
+        $data['kategori'] = $this->kategoriModel->findAll();
+        return view('admin/tambahalat',$data);
     }
 
     public function daftaralat()
