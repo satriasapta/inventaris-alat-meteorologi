@@ -18,7 +18,7 @@
             </tr>
 
             <tr>
-              <td>Kelompok Alat</td>
+              <td>Cara Kerja Alat</td>
               <td><strong>: <?= $alat->kelompok_alat; ?></strong></td>
             </tr>
 

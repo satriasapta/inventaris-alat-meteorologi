@@ -48,6 +48,9 @@
     <!-- notika icon CSS
 		============================================ -->
     <link rel="stylesheet" href="/templates2/css/notika-custom-icon.css">
+    <!-- bootstrap select CSS
+		============================================ -->
+    <link rel="stylesheet" href="/templates2/css/bootstrap-select/bootstrap-select.css">
     <!-- dropzone CSS
 		============================================ -->
     <link rel="stylesheet" href="/templates2/css/dropzone/dropzone.css">
