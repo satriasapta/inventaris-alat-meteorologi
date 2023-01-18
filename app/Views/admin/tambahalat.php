@@ -102,7 +102,7 @@
                                 </div>
                                 <div class="col-lg-8 col-md-7 col-sm-7 col-xs-12">
                                     <div class="nk-int-st">
-                                        <input type="text" class="form-control input-sm" placeholder="Masukan Lokasi Alat 1-20"> #ini dibikin integer aja sat
+                                        <input type="text" class="form-control" data-mask="99" placeholder="Posisi Alat">
                                     </div>
                                 </div>
                             </div>
@@ -127,6 +127,32 @@
                                             <div class="nk-int-st">
                                                 <textarea class="form-control auto-size" rows="2" placeholder="Start pressing Enter to see growing..."></textarea>
                                             </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- #UNTUK UPLOAD GAMBAR -->
+                    <div class="dropzone-area">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <div class="dropdone-nk mg-t-30">
+                                        <div class="cmp-tb-hd">
+                                            <h2>Drag and Drop File Uploader</h2>
+                                            <p>DropzoneJS is an open source library that provides Drag and Drop file uploads with image previews. It’s lightweight, doesn't depend on any other library (like jQuery) and is highly customizable.</p>
+                                        </div>
+                                        <div id="dropzone1" class="multi-uploader-cs">
+                                            <form action="/upload" class="dropzone dropzone-nk needsclick" id="demo1-upload">
+                                                <div class="dz-message needsclick download-custom">
+                                                    <i class="notika-icon notika-cloud"></i>
+                                                    <h2>Drop files here or click to upload.</h2>
+                                                    <p><span class="note needsclick">(This is just a demo dropzone. Selected files are <strong>not</strong> actually uploaded.)</span>
+                                                    </p>
+                                                </div>
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
