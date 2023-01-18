@@ -16,9 +16,9 @@
     <!-- Bootstrap CSS
 		============================================ -->
     <link rel="stylesheet" href="/templates2/css/bootstrap.min.css">
-    <!-- Bootstrap CSS
+    <!-- font awesome CSS
 		============================================ -->
-    <link rel="stylesheet" href="/templates2/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/templates2/css/font-awesome.min.css">
     <!-- owl.carousel CSS
 		============================================ -->
     <link rel="stylesheet" href="/templates2/css/owl.carousel.css">

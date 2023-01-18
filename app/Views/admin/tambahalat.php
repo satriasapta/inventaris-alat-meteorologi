@@ -102,7 +102,7 @@
                                 </div>
                                 <div class="col-lg-8 col-md-7 col-sm-7 col-xs-12">
                                     <div class="nk-int-st">
-                                        <input type="text" class="form-control" data-mask="99" placeholder="Posisi Alat">
+                                        <input type="file" name="gambar" class="form-control">
                                     </div>
                                 </div>
                             </div>
@@ -116,16 +116,12 @@
                                 </div>
                                 <div class="row">
                                     <div class="col-lg-8 col-md-7 col-sm-7 col-xs-12">
-                                        <div class="floating-numner">
-                                            <p>1. Komponen Alat</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-lg-8 col-md-7 col-sm-7 col-xs-12">
-                                        <div class="form-group">
-                                            <div class="nk-int-st">
-                                                <textarea class="form-control auto-size" rows="2" placeholder="Start pressing Enter to see growing..."></textarea>
+                                        <div class="form-example-int">
+                                            <div class="form-group">
+                                                <label>no 1</label>
+                                                <div class="nk-int-st">
+                                                    <input type="text" class="html-editor" placeholder="masukin penjelasan panjang">
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
