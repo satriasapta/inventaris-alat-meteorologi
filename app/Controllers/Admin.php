@@ -24,7 +24,10 @@ class Admin extends BaseController
 
     public function daftaralat()
     {
-        return view('admin/daftaralat');
+        $data = [
+            'alat' => $this->alatModel->findAll()
+        ];
+        return view('admin/daftaralat',$data);
     }
     public function detailalat($id = null)
     {

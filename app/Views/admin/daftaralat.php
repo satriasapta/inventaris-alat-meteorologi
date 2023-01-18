@@ -1,7 +1,7 @@
 <?= $this->extend('admin/templateadmin'); ?>
 
 <?= $this->section('content'); ?>
-
+<?php $index = 1 ?>
 <div class="data-table-area">
         <div class="container">
             <div class="row">
@@ -15,8 +15,8 @@
                             <table id="data-table-basic" class="table table-striped">
                                 <thead>
                                     <tr>
+                                        <th>No</th>
                                         <th>Nama Alat</th>
-                                        <th>Jenis Alat</th>
                                         <th>Kelompok Cara Kerja Alat</th>
                                         <th>Kondisi</th>
                                         <th>Tahun Pembelian</th>
@@ -28,20 +28,22 @@
                                     </tr>
                                 </thead>
                                 <tbody>
+                                    <?php foreach ($alat as $a) :?>
                                     <tr>
-                                        <td>Campble Stokes</td>
-                                        <td>Alat Pengukur Radiasi Matahari</td>
-                                        <td>Konvensional</td>
-                                        <td>Layak</td>
-                                        <td>2005</td>
-                                        <td>2023/01/15</td>                                      
+                                        <td><?= $index; ?></td>
+                                        <td><?= $a['nama_alat']; ?></td>
+                                        <td><?= $a['kelompok_alat']; ?></td>
+                                        <td><?= $a['kondisi_alat']; ?></td>
+                                        <td><?= $a['tahun_pembelian']; ?></td>
+                                        <td><?= $a['kalibrasi']; ?></td>                                      
                                         <td>
-                                            <button class="btn btn-sm btn-info">Detail</button>
+                                            <a href="<?= base_url('/admin/detailalat/'.$a['id_alat']); ?>" class="btn btn-sm btn-info">Detail</a>
                                         </td>
                                     </tr>                                                                    
-                                
+                                <?php endforeach ?>
                                 <tfoot>
                                     <tr>
+                                        <th>No</th>
                                         <th>Nama Alat</th>
                                         <th>Jenis Alat</th>
                                         <th>Kelompok Cara Kerja Alat</th>
