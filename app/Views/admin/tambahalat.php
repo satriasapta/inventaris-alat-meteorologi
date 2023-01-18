@@ -70,7 +70,7 @@
                                     <div class="form-group nk-datapk-ctm form-elet-mg" id="data_3">
                                         <div class="input-group date nk-int-st">
                                             <span class="input-group-addon"></span>
-                                            <input type="text" class="form-control" value="03/19/2018">
+                                            <input type="text" class="form-control" placeholder="Masukan Tahun/Bulan/Tanggal Pembelian Alat">
                                         </div>
                                     </div>
                                 </div>
@@ -87,7 +87,7 @@
                                     <div class="form-group nk-datapk-ctm form-elet-mg" id="data_2">
                                         <div class="input-group date nk-int-st">
                                             <span class="input-group-addon"></span>
-                                            <input type="text" class="form-control" value="03/19/2018">
+                                            <input type="text" class="form-control" placeholder="Masukan Tahun/Bulan/Tanggal Kalibrasi Terakhir Alat">
                                         </div>
                                     </div>
                                 </div>
@@ -272,8 +272,8 @@
                                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                     <div class="dropdone-nk mg-t-30">
                                         <div class="cmp-tb-hd">
-                                            <h2>Drag and Drop File Uploader</h2>
-                                            <p>DropzoneJS is an open source library that provides Drag and Drop file uploads with image previews. It’s lightweight, doesn't depend on any other library (like jQuery) and is highly customizable.</p>
+                                            <h2>Drag and Drop File Foto Alat</h2>
+                                            <p>Foto yang diupload harus foto terbaru dan sesuai penempatan alat.</p>
                                         </div>
                                         <div id="dropzone1" class="multi-uploader-cs">
                                             <form action="/upload" class="dropzone dropzone-nk needsclick" id="demo1-upload">
