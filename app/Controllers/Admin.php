@@ -22,7 +22,7 @@ class Admin extends BaseController
     public function tambahalat()
     {
         $data['kategori'] = $this->kategoriModel->findAll();
-        return view('admin/tambahalat',$data);
+        return view('admin/tambahalat', $data);
     }
 
     public function daftaralat()
@@ -31,6 +31,105 @@ class Admin extends BaseController
             'alat' => $this->alatModel->getAlat()
         ];
         return view('admin/daftaralat', $data);
+    }
+
+    public function save()
+    {
+        if ($this->request->getMethod() === 'post') {
+            $rules = [
+                'nama_alat' => [
+                    'label' => 'Nama Alat',
+                    'rules' => 'required'
+                ],
+                'gambar_alat' => [
+                    'label' => 'Gambar Alat',
+                    'rules' => 'uploaded[gambar_alat]|mime_in[gambar_alat,image/jpg,image/jpeg,image/png]'
+                ],
+                'kondisi_alat' => [
+                    'label' => 'Kondisi Alat',
+                    'rules' => 'required'
+                ],
+                'tahun_pembelian' => [
+                    'label' => 'Tahun Pembelian',
+                    'rules' => 'required'
+                ],
+                'kalibrasi' => [
+                    'label' => 'Kalibrasi',
+                    'rules' => 'required'
+                ],
+                'lokasi_alat' => [
+                    'label' => 'lokasi Alat',
+                    'rules' => 'uploaded[lokasi_alat]|mime_in[lokasi_alat,image/jpg,image/jpeg,image/png]'
+                ],
+                'komponen_alat' => [
+                    'label' => 'Komponen Alat'
+                ],
+                'penggantian_komponen' => [
+                    'label' => 'Penggantian Komponen'
+                ],
+                'pemeliharaan_alat' => [
+                    'label' => 'Pemeliharaan Alat'
+                ],
+                'perbaikan_alat' => [
+                    'label' => 'Perbaikan Alat'
+                ],
+                'persiapan_pemeliharaan' => [
+                    'label' => 'Persiapan Pemeliharaan'
+                ],
+                'cara_pemeliharaan' => [
+                    'label' => 'Cara Pemeliharaan'
+                ],
+                'modifikasi_alat' => [
+                    'label' => 'Modifikasi Alat'
+                ],
+                'penyediaan_alat' => [
+                    'label' => 'Penyediaan Alat'
+                ],
+                'penyediaan_sukucadang' => [
+                    'label' => 'Penyediaan Sukucadang'
+                ],
+                'keamanan_alat' => [
+                    'label' => 'Keamanan Alat'
+                ],
+                'id_kategori' => [
+                    'label' => 'Kategori',
+                    'rules' => 'required'
+                ]
+            ];
+            if ($this->validate($rules)) {
+                $gambar_alat = $this->request->getFile('gambar_alat');
+                $filename = time() . $gambar_alat->getClientName();
+                $gambar_alat->move('uploads', $filename);
+                $lokasi_alat = $this->request->getFile('lokasi_alat');
+                $filename2 = time() . $lokasi_alat->getClientName();
+                $lokasi_alat->move('uploads', $filename2);
+
+                $data = [
+                    'nama_alat' => $this->request->getPost('nama_alat'),
+                    'gambar_alat' => $filename,
+                    'kondisi_alat' => $this->request->getPost('kondisi_alat'),
+                    'tahun_pembelian' => $this->request->getPost('tahun_pembelian'),
+                    'kalibrasi' => $this->request->getPost('kalibrasi'),
+                    'lokasi_alat' => $filename2,
+                    'komponen_alat' => $this->request->getPost('komponen_alat'),
+                    'penggantian_komponen' => $this->request->getPost('penggantian_komponen'),
+                    'pemeliharaan_alat' => $this->request->getPost('pemeliharaan_alat'),
+                    'perbaikan_alat' => $this->request->getPost('perbaikan_alat'),
+                    'persiapan_pemeliharaan' => $this->request->getPost('persiapan_pemeliharaan'),
+                    'cara_pemeliharaan' => $this->request->getPost('cara_pemeliharaan'),
+                    'modifikasi_alat' => $this->request->getPost('modifikasi_alat'),
+                    'penyediaan_alat' => $this->request->getPost('penyediaan_alat'),
+                    'penyediaan_sukucadang' => $this->request->getPost('penyediaan_sukucadang'),
+                    'keamanan_alat' => $this->request->getPost('keamanan_alat'),
+                    'id_kategori' => $this->request->getPost('id_kategori')
+                ];
+
+                $this->alatModel->insert($data);
+                session()->setFlashdata('pesan', 'Data berhasil ditambahkan');
+                return redirect()->to('/admin/daftaralat');
+            }
+            return redirect()->back()->withInput()->with('validation', $this->validator->getErrors());
+        }
     }
     public function detailalat($id = null)
     {

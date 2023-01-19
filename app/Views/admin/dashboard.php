@@ -1,7 +1,11 @@
 <?= $this->extend('admin/templateadmin'); ?>
 
 <?= $this->section('content'); ?>
+<div class="container">
+    <div class="row">
+        <a href="<?= base_url('admin/tambahalat'); ?>" class="btn btn-sm btn-info">Tambah Alat</a>
 
-<button class="btn notika-btn-lightblue">Tambah Alat</button>
+    </div>
+</div>
 
 <?= $this->endsection(); ?>
