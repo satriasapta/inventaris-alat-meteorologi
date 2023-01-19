@@ -305,7 +305,7 @@
                                 </div>
                             </div>
                             <div class="col-lg-8 col-md-7 col-sm-7 col-xs-12">
-                                <button type="submit" class="btn btn-primary">Simpan</button>
+                                <button type="submit" class="btn btn-primary mt-3">Simpan</button>
                             </div>
                         </div>
 
