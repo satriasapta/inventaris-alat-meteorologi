@@ -62,34 +62,44 @@ class Admin extends BaseController
                     'rules' => 'uploaded[lokasi_alat]|mime_in[lokasi_alat,image/jpg,image/jpeg,image/png]'
                 ],
                 'komponen_alat' => [
-                    'label' => 'Komponen Alat'
+                    'label' => 'Komponen Alat',
+                    'rules' => 'required'
                 ],
                 'penggantian_komponen' => [
-                    'label' => 'Penggantian Komponen'
+                    'label' => 'Penggantian Komponen',
+                    'rules' => 'required'
                 ],
                 'pemeliharaan_alat' => [
-                    'label' => 'Pemeliharaan Alat'
+                    'label' => 'Pemeliharaan Alat',
+                    'rules' => 'required'
                 ],
                 'perbaikan_alat' => [
-                    'label' => 'Perbaikan Alat'
+                    'label' => 'Perbaikan Alat',
+                    'rules' => 'required'
                 ],
                 'persiapan_pemeliharaan' => [
-                    'label' => 'Persiapan Pemeliharaan'
+                    'label' => 'Persiapan Pemeliharaan',
+                    'rules' => 'required'
                 ],
                 'cara_pemeliharaan' => [
-                    'label' => 'Cara Pemeliharaan'
+                    'label' => 'Cara Pemeliharaan',
+                    'rules' => 'required'
                 ],
                 'modifikasi_alat' => [
-                    'label' => 'Modifikasi Alat'
+                    'label' => 'Modifikasi Alat',
+                    'rules' => 'required'
                 ],
                 'penyediaan_alat' => [
-                    'label' => 'Penyediaan Alat'
+                    'label' => 'Penyediaan Alat',
+                    'rules' => 'required'
                 ],
                 'penyediaan_sukucadang' => [
-                    'label' => 'Penyediaan Sukucadang'
+                    'label' => 'Penyediaan Sukucadang',
+                    'rules' => 'required'
                 ],
                 'keamanan_alat' => [
-                    'label' => 'Keamanan Alat'
+                    'label' => 'Keamanan Alat',
+                    'rules' => 'required'
                 ],
                 'id_kategori' => [
                     'label' => 'Kategori',
@@ -104,6 +114,25 @@ class Admin extends BaseController
                 $filename2 = time() . $lokasi_alat->getClientName();
                 $lokasi_alat->move('uploads', $filename2);
 
+                $this->db->table('tb_alat')->insert([
+                    'nama_alat' => $this->request->getPost('nama_alat'),
+                    'gambar_alat' => $filename,
+                    'kondisi_alat' => $this->request->getPost('kondisi_alat'),
+                    'tahun_pembelian' => $this->request->getPost('tahun_pembelian'),
+                    'kalibrasi' => $this->request->getPost('kalibrasi'),
+                    'lokasi_alat' => $filename2,
+                    'komponen_alat' => $this->request->getPost('komponen_alat'),
+                    'penggantian_komponen' => $this->request->getPost('penggantian_komponen'),
+                    'pemeliharaan_alat' => $this->request->getPost('pemeliharaan_alat'),
+                    'perbaikan_alat' => $this->request->getPost('perbaikan_alat'),
+                    'persiapan_pemeliharaan' => $this->request->getPost('persiapan_pemeliharaan'),
+                    'cara_pemeliharaan' => $this->request->getPost('cara_pemeliharaan'),
+                    'modifikasi_alat' => $this->request->getPost('modifikasi_alat'),
+                    'penyediaan_alat' => $this->request->getPost('penyediaan_alat'),
+                    'penyediaan_sukucadang' => $this->request->getPost('penyediaan_sukucadang'),
+                    'keamanan_alat' => $this->request->getPost('keamanan_alat'),
+                    'id_kategori' => $this->request->getPost('id_kategori')
+                ]);
                 $data = [
                     'nama_alat' => $this->request->getPost('nama_alat'),
                     'gambar_alat' => $filename,
@@ -125,10 +154,9 @@ class Admin extends BaseController
                 ];
 
                 $this->alatModel->insert($data);
-                session()->setFlashdata('pesan', 'Data berhasil ditambahkan');
-                return redirect()->to('/admin/daftaralat');
+                session()->setFlashdata('msg', 'Data berhasil ditambahkan');
             }
-            return redirect()->back()->withInput()->with('validation', $this->validator->getErrors());
+            return redirect()->to('/admin/daftaralat');
         }
     }
     public function detailalat($id = null)
