@@ -289,11 +289,8 @@
                                                                         <div class="form-group">
                                                                             <label>10. Keamanan dan Persyaratan Lingkungan</label>
                                                                             <div class="nk-int-st">
-<<<<<<< Updated upstream
                                                                                 <input type="text" name="keamanan_alat" placeholder="masukin penjelasan panjang">
-=======
                                                                                 <textarea class="form-control" rows="5" placeholder="Ayo lengkapi data"></textarea>
->>>>>>> Stashed changes
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -307,22 +304,15 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="col-lg-8 col-md-7 col-sm-7 col-xs-12">
+                                <button type="submit" class="btn btn-primary">Simpan</button>
+                            </div>
                         </div>
 
                     </div>
                 </div>
-                <div class="col-lg-8 col-md-7 col-sm-7 col-xs-12">
-                    <button type="submit" class="btn btn-primary">Simpan</button>
-                </div>
             </form>
         </div>
-<<<<<<< Updated upstream
-=======
-        <div class="col-lg-8 col-md-7 col-sm-7 col-xs-12">
-            <button type="submit" class="btn btn-success notika-btn-success">Submit</button>
-        </div>
-        </form>
->>>>>>> Stashed changes
     </div>
 </div>
 
