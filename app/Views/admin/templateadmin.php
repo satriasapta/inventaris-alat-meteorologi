@@ -478,9 +478,9 @@
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <ul class="nav nav-tabs notika-menu-wrap menu-it-icon-pro">
-                        <li class="active"><a data-toggle="tab" href="#Home"><i class="notika-icon notika-house"></i> Home</a>
+                        <li class="active"><a data-toggle="tab" href="#dashboard"><i class="notika-icon notika-house"></i> Dashboard</a>
                         </li>
-                        <li><a data-toggle="tab" href="#mailbox"><i class="notika-icon notika-mail"></i> Email</a>
+                        <li><a data-toggle="tab" href="#logbook"><i class="notika-icon notika-mail"></i> Log Book</a>
                         </li>
                         <li><a data-toggle="tab" href="#Interface"><i class="notika-icon notika-edit"></i> Interface</a>
                         </li>
@@ -496,9 +496,9 @@
                         </li>
                     </ul>
                     <div class="tab-content custom-menu-content">
-                        <div id="Home" class="tab-pane in active notika-tab-menu-bg animated flipInX">
+                        <div id="dashboard" class="tab-pane in active notika-tab-menu-bg animated flipInX">
                             <ul class="notika-main-menu-dropdown">
-                                <li><a href="index.html">Semua Alat</a>
+                                <li><a href="daftaralat">Semua Alat</a>
                                 </li>
                                 <li><a href="index-2.html">Konvensional</a>
                                 </li>
@@ -508,13 +508,13 @@
                                 </li>
                             </ul>
                         </div>
-                        <div id="mailbox" class="tab-pane notika-tab-menu-bg animated flipInX">
+                        <div id="logbook" class="tab-pane notika-tab-menu-bg animated flipInX">
                             <ul class="notika-main-menu-dropdown">
-                                <li><a href="inbox.html">Inbox</a>
+                                <li><a href="inbox.html">Harian</a>
                                 </li>
-                                <li><a href="view-email.html">View Email</a>
+                                <li><a href="view-email.html">Bulanan</a>
                                 </li>
-                                <li><a href="compose-email.html">Compose Email</a>
+                                <li><a href="compose-email.html">Tahunan</a>
                                 </li>
                             </ul>
                         </div>
@@ -622,8 +622,8 @@
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="footer-copy-right">
-                        <p>Copyright © 2018
-                            . All rights reserved. Template by <a href="https://colorlib.com">Colorlib</a>.</p>
+                        <p>Copyright © 2023
+                            . All rights reserved. Developed by <a href="https://colorlib.com">SYZ</a>.</p>
                     </div>
                 </div>
             </div>
