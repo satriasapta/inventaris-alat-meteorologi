@@ -2,6 +2,12 @@
 
 <?= $this->section('content'); ?>
 <?php $index = 1 ?>
+<div class="container">
+    <div class="row">
+        <a href="<?= base_url('admin/tambahalat'); ?>" class="btn btn-sm btn-info">Tambah Alat</a>
+
+    </div>
+</div>
 <div class="data-table-area">
     <div class="container">
         <div class="row">
