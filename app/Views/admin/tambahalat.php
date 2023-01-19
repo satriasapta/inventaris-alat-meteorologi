@@ -5,14 +5,10 @@
 <div class="form-example-area">
     <div class="container">
         <div class="row">
-            <form method="POST" action="<?= base_url('/admin/save'); ?>" enctype="multipart/form-data">
+            <form method="POST" action="/admin/save" enctype="multipart/form-data">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="form-example-wrap mg-t-30">
                         <div class="cmp-tb-hd cmp-int-hd">
-                            <?php if (session()->has('success')) : ?>
-                                <p class="text-success"><?= session()->getFlashdata('success'); ?></p>
-                            <?php endif; ?>
-                            <?php $validation = session()->getFlashdata('validation'); ?>
                             <h2>Tambah Alat Meteorologi</h2>
                         </div>
                         <div class="form-example-int form-horizental">
@@ -23,7 +19,7 @@
                                     </div>
                                     <div class="col-lg-8 col-md-7 col-sm-7 col-xs-12">
                                         <div class="nk-int-st">
-                                            <input type="text" name="nama_alat" class="form-control input-sm" placeholder="Masukan Nama Alat" <?= $validation && isset($validation['nama_alat']) ? 'is-invalid' : '' ?>>
+                                            <input type="text" name="nama_alat" class="form-control input-sm" placeholder="Masukan Nama Alat">
                                         </div>
                                     </div>
                                 </div>
@@ -304,9 +300,9 @@
                                 </div>
                             </div>
                         </div>
+
                     </div>
                 </div>
-                <button class="btn btn-success" type="submit">SIMPAN DATA</button>
             </form>
         </div>
         <div class="form-example-int mg-t-15">
@@ -317,7 +313,7 @@
 
                 </div>
             </div>
-        </div>
+        </form>
     </div>
 </div>
 
