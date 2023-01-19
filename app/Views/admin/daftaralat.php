@@ -34,7 +34,7 @@
                             <tbody>
                                 <?php foreach ($alat as $a) : ?>
                                     <tr>
-                                        <td><?= $index; ?></td>
+                                        <td><?= $index++; ?></td>
                                         <td><?= $a['nama_alat']; ?></td>
                                         <td><?= $a['kategori_alat']; ?></td>
                                         <td><?= $a['kondisi_alat']; ?></td>

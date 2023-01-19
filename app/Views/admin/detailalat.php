@@ -8,7 +8,7 @@
 
       <div class="row">
         <div class="col-md-4">
-          <img src="<?= base_url('img/'.$alat->gambar_alat); ?>" class="card-img-top">
+          <img src="<?= base_url('uploads/'.$alat->gambar_alat); ?>" class="card-img-top">
         </div>
         <div class="col-md-8">
           <table class="table">
@@ -40,8 +40,7 @@
               <td><strong><button class="notika-icon notika-search" data-toggle="collapse" data-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample"></button>              
               <div class="collapse" id="collapseExample1">
                     <div class="card card-body">
-                      <img src="<?= base_url('img/'.$alat->lokasi_alat); ?>" class="card-img-top">
-
+                      <img src="<?= base_url('uploads/'.$alat->lokasi_alat); ?>" class="card-img-top">
                     </div>
                   </div>
                 </strong></td>
