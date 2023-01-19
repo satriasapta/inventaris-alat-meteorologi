@@ -5,7 +5,7 @@
 		keyboardNavigation: false,
 		forceParse: false,
 		calendarWeeks: true,
-		autoclose: true
+		autoclose: true,		
 	});
 
 	$('#data_2 .input-group.date').datepicker({
@@ -14,7 +14,7 @@
 		keyboardNavigation: false,
 		forceParse: false,
 		autoclose: true,
-		format: "dd/mm/yyyy"
+		format: "yyyy/mm/dd"
 	});
 
 	$('#data_3 .input-group.date').datepicker({
@@ -22,7 +22,8 @@
 		todayBtn: "linked",
 		keyboardNavigation: false,
 		forceParse: false,
-		autoclose: true
+		autoclose: true,
+		format: "yyyy/mm/dd"
 	});
 
 	$('#data_4 .input-group.date').datepicker({

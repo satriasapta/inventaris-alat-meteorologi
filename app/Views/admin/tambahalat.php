@@ -75,7 +75,7 @@
                                         <div class="form-group nk-datapk-ctm form-elet-mg" id="data_3">
                                             <div class="input-group date nk-int-st">
                                                 <span class="input-group-addon"></span>
-                                                <input type="date" name="tahun_pembelian" class="form-control" placeholder="Masukan Tahun/Bulan/Tanggal Pembelian Alat">
+                                                <input type="text" name="tahun_pembelian" class="form-control" value="" placeholder="yyyy-mm-dd">
                                             </div>
                                         </div>
                                     </div>
@@ -92,7 +92,7 @@
                                         <div class="form-group nk-datapk-ctm form-elet-mg" id="data_2">
                                             <div class="input-group date nk-int-st">
                                                 <span class="input-group-addon"></span>
-                                                <input type="date" name="kalibrasi" class="form-control" placeholder="Masukan Tahun/Bulan/Tanggal Kalibrasi Terakhir Alat">
+                                                <input type="text" name="kalibrasi" class="form-control" value="" placeholder="yyyy-mm-dd">
                                             </div>
                                         </div>
                                     </div>
