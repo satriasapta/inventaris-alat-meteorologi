@@ -46,52 +46,9 @@ class Admin extends BaseController
                 'lokasi_alat' => [
                     'label' => 'lokasi Alat',
                     'rules' => 'uploaded[lokasi_alat]|mime_in[lokasi_alat,image/jpg,image/jpeg,image/png]'
-                ],
-                'komponen_alat' => [
-                    'label' => 'Komponen Alat',
-                    'rules' => 'required'
-                ],
-                'penggantian_komponen' => [
-                    'label' => 'Penggantian Komponen',
-                    'rules' => 'required'
-                ],
-                'pemeliharaan_alat' => [
-                    'label' => 'Pemeliharaan Alat',
-                    'rules' => 'required'
-                ],
-                'perbaikan_alat' => [
-                    'label' => 'Perbaikan Alat',
-                    'rules' => 'required'
-                ],
-                'persiapan_pemeliharaan' => [
-                    'label' => 'Persiapan Pemeliharaan',
-                    'rules' => 'required'
-                ],
-                'cara_pemeliharaan' => [
-                    'label' => 'Cara Pemeliharaan',
-                    'rules' => 'required'
-                ],
-                'modifikasi_alat' => [
-                    'label' => 'Modifikasi Alat',
-                    'rules' => 'required'
-                ],
-                'penyediaan_alat' => [
-                    'label' => 'Penyediaan Alat',
-                    'rules' => 'required'
-                ],
-                'penyediaan_sukucadang' => [
-                    'label' => 'Penyediaan Sukucadang',
-                    'rules' => 'required'
-                ],
-                'keamanan_alat' => [
-                    'label' => 'Keamanan Alat',
-                    'rules' => 'required'
-                ],
-                'id_kategori' => [
-                    'label' => 'Kategori',
-                    'rules' => 'required'
                 ]
             ];
+            if($this->validate($rules)){
                 $gambar_alat = $this->request->getFile('gambar_alat');
                 $filename = time() . $gambar_alat->getClientName();
                 $gambar_alat->move('uploads', $filename);
@@ -119,6 +76,8 @@ class Admin extends BaseController
                 ];
                 $this->alatModel->insert($data);
                 return redirect()->back()->with('success', ' Data Berhasil Disimpan');
+            }
+            return redirect()->back()->with('error', ' Data Gagal Disimpan, Silahkan Cek Format Gambar!');
         }
         $data['kategori'] = $this->kategoriModel->findAll();
         return view('admin/tambahalat', $data);

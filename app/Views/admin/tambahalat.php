@@ -6,7 +6,10 @@
     <div class="container">
         <div class="row">
             <?php if (session()->has('success')) : ?>
-                <p class="text-success"><?= session()->getFlashdata('success'); ?></p>
+                <div class="alert alert-success" role="alert"><?= session()->getFlashdata('success'); ?></div>
+            <?php endif; ?>
+            <?php if (session()->has('error')) : ?>
+                <div class="alert alert-danger" role="alert"><?= session()->getFlashdata('error'); ?></div>
             <?php endif; ?>
             <?php $validation = session()->getFlashdata('validation'); ?>
             <form method="POST" action="<?= current_url(); ?>" enctype="multipart/form-data">
@@ -23,7 +26,7 @@
                                     </div>
                                     <div class="col-lg-8 col-md-7 col-sm-7 col-xs-12">
                                         <div class="nk-int-st">
-                                            <input type="text" name="nama_alat" class="form-control input-sm" placeholder="Masukan Nama Alat">
+                                            <input type="text" name="nama_alat" class="form-control input-sm" placeholder="Masukan Nama Alat" required>
                                         </div>
                                     </div>
                                 </div>
@@ -75,7 +78,7 @@
                                         <div class="form-group nk-datapk-ctm form-elet-mg" id="data_3">
                                             <div class="input-group date nk-int-st">
                                                 <span class="input-group-addon"></span>
-                                                <input type="text" name="tahun_pembelian" class="form-control" value="" placeholder="yyyy-mm-dd">
+                                                <input type="text" name="tahun_pembelian" class="form-control" value="" placeholder="yyyy-mm-dd" required>
                                             </div>
                                         </div>
                                     </div>
@@ -92,7 +95,7 @@
                                         <div class="form-group nk-datapk-ctm form-elet-mg" id="data_2">
                                             <div class="input-group date nk-int-st">
                                                 <span class="input-group-addon"></span>
-                                                <input type="text" name="kalibrasi" class="form-control" value="" placeholder="yyyy-mm-dd">
+                                                <input type="text" name="kalibrasi" class="form-control" value="" placeholder="yyyy-mm-dd" required>
                                             </div>
                                         </div>
                                     </div>
@@ -107,7 +110,7 @@
                                     </div>
                                     <div class="col-lg-8 col-md-7 col-sm-7 col-xs-12">
                                         <div class="nk-int-st">
-                                            <input type="file" name="lokasi_alat" class="form-control">
+                                            <input type="file" name="lokasi_alat" class="form-control" required>
                                         </div>
                                     </div>
                                 </div>
@@ -122,7 +125,7 @@
                                     </div>
                                     <div class="col-lg-8 col-md-7 col-sm-7 col-xs-12">
                                         <div class="nk-int-st">
-                                            <input type="file" name="gambar_alat" class="form-control">
+                                            <input type="file" name="gambar_alat" class="form-control" required>
                                         </div>
                                     </div>
                                 </div>
