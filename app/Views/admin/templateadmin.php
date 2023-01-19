@@ -116,7 +116,7 @@
                             <ul class="mobile-menu-nav">
                                 <li><a data-toggle="collapse" data-target="#Charts" href="#">Dashboard</a>
                                     <ul class="collapse dropdown-header-top">
-                                        <li><a href="daftaralat">Semua Alat</a>
+                                        <li><a href="<?= base_url('admin/daftaralat'); ?>">Semua Alat</a>
                                         </li>
                                         <li><a href="index-2.html">Konvensional</a>
                                         </li>
@@ -175,7 +175,7 @@
                     <div class="tab-content custom-menu-content">
                         <div id="dashboard" class="tab-pane in active notika-tab-menu-bg animated flipInX">
                             <ul class="notika-main-menu-dropdown">
-                                <li><a href="daftaralat">Semua Alat</a>
+                                <li><a href="<?= base_url('admin/daftaralat'); ?>">Semua Alat</a>
                                 </li>
                                 <li><a href="index-2.html">Konvensional</a>
                                 </li>

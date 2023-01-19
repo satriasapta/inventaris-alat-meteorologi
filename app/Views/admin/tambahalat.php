@@ -75,7 +75,7 @@
                                         <div class="form-group nk-datapk-ctm form-elet-mg" id="data_3">
                                             <div class="input-group date nk-int-st">
                                                 <span class="input-group-addon"></span>
-                                                <input type="text" name="tahun_pembelian" class="form-control" placeholder="Masukan Tahun/Bulan/Tanggal Pembelian Alat">
+                                                <input type="date" name="tahun_pembelian" class="form-control" placeholder="Masukan Tahun/Bulan/Tanggal Pembelian Alat">
                                             </div>
                                         </div>
                                     </div>
@@ -92,7 +92,7 @@
                                         <div class="form-group nk-datapk-ctm form-elet-mg" id="data_2">
                                             <div class="input-group date nk-int-st">
                                                 <span class="input-group-addon"></span>
-                                                <input type="text" name="kalibrasi" class="form-control" placeholder="Masukan Tahun/Bulan/Tanggal Kalibrasi Terakhir Alat">
+                                                <input type="date" name="kalibrasi" class="form-control" placeholder="Masukan Tahun/Bulan/Tanggal Kalibrasi Terakhir Alat">
                                             </div>
                                         </div>
                                     </div>
@@ -154,7 +154,7 @@
                                                                         <div class="form-group">
                                                                             <label>1. Komponen alat</label>
                                                                             <div class="nk-int-st">
-                                                                                <input type="text" name="komponen_alat" placeholder="masukin penjelasan panjang">
+                                                                                <textarea class="form-control" rows="5" placeholder="Ayo lengkapi data" name="komponen_alat"></textarea>
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -169,7 +169,7 @@
                                                                         <div class="form-group">
                                                                             <label>2. Penggantian komponen secara berkala</label>
                                                                             <div class="nk-int-st">
-                                                                                <input type="text" name="penggantian_komponen" placeholder="masukin penjelasan panjang">
+                                                                                <textarea class="form-control" rows="5" placeholder="Ayo lengkapi data" name="penggantian_komponen"></textarea>
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -184,7 +184,7 @@
                                                                         <div class="form-group">
                                                                             <label>3. Pemeliharaan berkala</label>
                                                                             <div class="nk-int-st">
-                                                                                <input type="text" name="pemeliharaan_alat"  placeholder="masukin penjelasan panjang">
+                                                                                <textarea class="form-control" rows="5" placeholder="Ayo lengkapi data" name="pemeliharaan_alat"></textarea>
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -199,7 +199,7 @@
                                                                         <div class="form-group">
                                                                             <label>4. Perbaikan peralatan pada saat terjadi kerusakan</label>
                                                                             <div class="nk-int-st">
-                                                                                <input type="text" name="perbaikan_alat"  placeholder="masukin penjelasan panjang">
+                                                                                <textarea class="form-control" rows="5" placeholder="Ayo lengkapi data" name="perbaikan_alat"></textarea>
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -214,7 +214,7 @@
                                                                         <div class="form-group">
                                                                             <label>5. Persiapan pemeliharaan</label>
                                                                             <div class="nk-int-st">
-                                                                                <input type="text" name="persiapan_pemeliharaan" placeholder="masukin penjelasan panjang">
+                                                                                <textarea class="form-control" rows="5" placeholder="Ayo lengkapi data" name="persiapan_pemeliharaan"></textarea>
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -229,7 +229,7 @@
                                                                         <div class="form-group">
                                                                             <label>6. Cara pemeliharaan</label>
                                                                             <div class="nk-int-st">
-                                                                                <input type="text" name="cara_pemeliharaan" placeholder="masukin penjelasan panjang">
+                                                                                <textarea class="form-control" rows="5" placeholder="Ayo lengkapi data" name="cara_pemeliharaan"></textarea>
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -244,7 +244,7 @@
                                                                         <div class="form-group">
                                                                             <label>7. Modifikasi, rekondisi, dan rehabilitasi peralatan</label>
                                                                             <div class="nk-int-st">
-                                                                                <input type="text" name="modifikasi_alat" placeholder="masukin penjelasan panjang">
+                                                                                <textarea class="form-control" rows="5" placeholder="Ayo lengkapi data" name="modifikasi_alat"></textarea>
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -259,7 +259,7 @@
                                                                         <div class="form-group">
                                                                             <label>8. Penyediaan peralatan cadangan</label>
                                                                             <div class="nk-int-st">
-                                                                                <input type="text" name="penyediaan_alat"  placeholder="masukin penjelasan panjang">
+                                                                                <textarea class="form-control" rows="5" placeholder="Ayo lengkapi data" name="penyediaan_alat"></textarea>
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -274,7 +274,7 @@
                                                                         <div class="form-group">
                                                                             <label>9. Penyediaan dan pengelolaan suku cadang</label>
                                                                             <div class="nk-int-st">
-                                                                                <input type="text" name="penyediaan_sukucadang" placeholder="masukin penjelasan panjang">
+                                                                                <textarea class="form-control" rows="5" placeholder="Ayo lengkapi data" name="penyediaan_sukucadang"></textarea>
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -289,8 +289,8 @@
                                                                         <div class="form-group">
                                                                             <label>10. Keamanan dan Persyaratan Lingkungan</label>
                                                                             <div class="nk-int-st">
-                                                                                <input type="text" name="keamanan_alat" placeholder="masukin penjelasan panjang">
-                                                                                <textarea class="form-control" rows="5" placeholder="Ayo lengkapi data"></textarea>
+                                                                                <textarea class="form-control" rows="5" placeholder="Ayo lengkapi data" name="keamanan_alat"></textarea>
+
                                                                             </div>
                                                                         </div>
                                                                     </div>
