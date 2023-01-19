@@ -12,7 +12,7 @@ class AlatModel extends Model
     protected $useAutoIncrement = true;
     protected $insertID         = 0;
     protected $returnType       = 'array';
-    protected $allowedFields    = ['nama_alat', 'gambar_alat', 'kondisi_alat', 'tahun_pembelian','kalibrasi','lokasi_alat','detail_alat','id_kategori'];
+    protected $allowedFields    = ['nama_alat', 'gambar_alat', 'kondisi_alat', 'tahun_pembelian','kalibrasi','lokasi_alat','detail_alat','komponen_alat','penggantian_komponen','pemeliharaan_alat','perbaikan_alat','persiapan_pemeliharaan','cara_pemeliharaan','modifikasi_alat','penyediaan_alat','penyediaan_sukucadang','keamanan_alat','id_kategori'];
 
     public function getAlat()
     {
