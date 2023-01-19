@@ -9,7 +9,7 @@
                 <div class="data-table-list">
                     <div class="basic-tb-hd">
                         <h2>Daftar Alat</h2>
-                        <p>It's just that simple. Turn your simple table into a sophisticated data table and offer your users a nice experience and great features without any effort.</p>
+                        <p>Daftar alat yang ada di BMKG Klas I Bandara Radin Inten II Bandar Lampung</p>
                     </div>
                     <div class="table-responsive">
                         <table id="data-table-basic" class="table table-striped">
