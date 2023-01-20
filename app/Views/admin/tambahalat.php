@@ -308,10 +308,6 @@
                                     </div>
                                 </div>
                             </div>
-<<<<<<< HEAD
-=======
-
-                            
                         </div>
                     </div>
                     <div class="row">
@@ -319,13 +315,8 @@
                         <div class="col-xs-6 col-md-2">
                             <button type="submit" class="btn btn-primary mt-3">Simpan</button>
                             <a href="<?= base_url('admin/daftaralat'); ?>" class="btn btn-danger">Kembali</a>
->>>>>>> 1d649308ed6f337450bdc5c2f5ab4f0dbf7b2854
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <a href="<?= base_url('admin/daftaralat'); ?>" class="btn btn-danger">Kembali</a>
-                    <button type="submit" class="btn btn-primary">Simpan</button>
                 </div>
             </form>
         </div>
