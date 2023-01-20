@@ -46,9 +46,9 @@
                                         <td><?= $a['kalibrasi']; ?></td>
                                         <td>
                                             <div class="material-design-btn">
-                                                <a href="<?= base_url('/admin/detailalat/' . $a['id_alat']); ?>" class="btn notika-btn-cyan waves-effect btn-xs">Detail</a>
-                                                <a href="<?= base_url('/admin/detailalat/' . $a['id_alat']); ?>" class="btn notika-btn-teal waves-effect">Edit</a>
-                                                <a href="<?= base_url('/admin/detailalat/' . $a['id_alat']); ?>" class="btn notika-btn-red waves-effect">Hapus</a>
+                                                <a href="<?= base_url('/admin/detailalat/' . $a['id_alat']); ?>" class="btn notika-btn-cyan waves-effect">Detail</a>
+                                                <a href="<?= base_url('/admin/editalat/' . $a['id_alat']); ?>" class="btn notika-btn-teal waves-effect">Edit</a>
+                                                <a href="<?= base_url('/admin/hapusalat/' . $a['id_alat']); ?>" class="btn notika-btn-red waves-effect">Hapus</a>
                                             </div>
                                         </td>
                                     </tr>
