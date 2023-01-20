@@ -131,7 +131,7 @@
                                 </div>
                             </div>
                         </div>
-                        
+
 
                         <!-- INI INPUT DETAIL LANJUTAN -->
                         <div class="row">
@@ -308,11 +308,16 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-8 col-md-7 col-sm-7 col-xs-12">
-                                <button type="submit" class="btn btn-primary mt-3">Simpan</button>
-                            </div>
-                        </div>
 
+                            
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 col-md-10"></div>
+                        <div class="col-xs-6 col-md-2">
+                            <button type="submit" class="btn btn-primary mt-3">Simpan</button>
+                            <a href="<?= base_url('admin/daftaralat'); ?>" class="btn btn-danger">Kembali</a>
+                        </div>
                     </div>
                 </div>
             </form>
