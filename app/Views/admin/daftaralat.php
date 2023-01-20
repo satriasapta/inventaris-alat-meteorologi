@@ -32,9 +32,7 @@
                                     <th>Kondisi</th>
                                     <th>Tahun Pembelian</th>
                                     <th>Kalibrasi Terakhir</th>
-                                    <th>
-
-                                    </th>
+                                    <th>Aksi</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -47,7 +45,11 @@
                                         <td><?= $a['tahun_pembelian']; ?></td>
                                         <td><?= $a['kalibrasi']; ?></td>
                                         <td>
-                                            <a href="<?= base_url('/admin/detailalat/' . $a['id_alat']); ?>" class="btn btn-sm btn-info">Detail</a>
+                                            <div class="material-design-btn">
+                                                <a href="<?= base_url('/admin/detailalat/' . $a['id_alat']); ?>" class="btn notika-btn-cyan waves-effect">Detail</a>
+                                                <a href="<?= base_url('/admin/editalat/' . $a['id_alat']); ?>" class="btn notika-btn-teal waves-effect">Edit</a>
+                                                <a href="<?= base_url('/admin/hapusalat/' . $a['id_alat']); ?>" class="btn notika-btn-red waves-effect">Hapus</a>
+                                            </div>
                                         </td>
                                     </tr>
                                 <?php endforeach ?>
@@ -55,14 +57,11 @@
                                 <tr>
                                     <th>No</th>
                                     <th>Nama Alat</th>
-                                    <th>Jenis Alat</th>
                                     <th>Kelompok Cara Kerja Alat</th>
                                     <th>Kondisi</th>
                                     <th>Tahun Pembelian</th>
                                     <th>Kalibrasi Terakhir</th>
-                                    <th>
-
-                                    </th>
+                                    <th>Aksi</th>
                                 </tr>
                             </tfoot>
                         </table>

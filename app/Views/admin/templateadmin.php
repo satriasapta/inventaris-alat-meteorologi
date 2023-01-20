@@ -57,6 +57,7 @@
     <!-- wave CSS
 		============================================ -->
     <link rel="stylesheet" href="/templates2/css/wave/waves.min.css">
+    <link rel="stylesheet" href="/templates2/css/wave/button.css">
     <!-- Data Table JS
 		============================================ -->
     <link rel="stylesheet" href="/templates2/css/jquery.dataTables.min.css">
