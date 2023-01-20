@@ -19,6 +19,36 @@ class Admin extends BaseController
         return view('admin/dashboard');
     }
 
+
+
+    public function daftaralat()
+    {
+        $data = [
+            'alat' => $this->alatModel->getAlat()
+        ];
+        return view('admin/daftaralat', $data);
+    }
+
+
+    public function detailalat($id = null)
+    {
+
+        if ($id != null) {
+            $query = $this->db->table('tb_alat')->join('tb_kategori', 'tb_kategori.id_kategori = tb_alat.id_kategori')->getWhere(['id_alat' => $id]);
+            if ($query->resultID->num_rows > 0) {
+                $data = [
+                    'alat' => $query->getRow(),
+                    'kategori' => $this->alatModel->getAlat()
+                ];
+                return view('admin/detailalat', $data);
+            } else {
+                throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound();
+            }
+        } else {
+            throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound();
+        }
+    }
+
     public function tambahalat()
     {
         if ($this->request->getMethod() === 'post') {
@@ -48,7 +78,7 @@ class Admin extends BaseController
                     'rules' => 'uploaded[lokasi_alat]|mime_in[lokasi_alat,image/jpeg,image/jpg,image/png]'
                 ]
             ];
-            if($this->validate($rules)){
+            if ($this->validate($rules)) {
                 $gambar_alat = $this->request->getFile('gambar_alat');
                 $filename = time() . $gambar_alat->getClientName();
                 $gambar_alat->move('uploads', $filename);
@@ -83,31 +113,26 @@ class Admin extends BaseController
         return view('admin/tambahalat', $data);
     }
 
-    public function daftaralat()
+    public function hapusAlat($id)
     {
-        $data = [
-            'alat' => $this->alatModel->getAlat()
-        ];
-        return view('admin/daftaralat', $data);
+        $this->alatModel->delete($id);
+        session()->setFlashdata('success', 'Data berhasil dihapus');
+        return redirect()->to('/admin/daftaralat');
     }
 
-    
-    public function detailalat($id = null)
+    public function editAlat($id = null)
     {
-
-        if ($id != null) {
-            $query = $this->db->table('tb_alat')->join('tb_kategori', 'tb_kategori.id_kategori = tb_alat.id_kategori')->getWhere(['id_alat' => $id]);
-            if ($query->resultID->num_rows > 0) {
-                $data = [
-                    'alat' => $query->getRow(),
-                    'kategori' => $this->alatModel->getAlat()
-                ];
-                return view('admin/detailalat', $data);
-            } else {
-                throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound();
-            }
-        } else {
+       if($id != null){
+        $query = $this->db->table('tb_alat')->join('tb_kategori', 'tb_kategori.id_kategori = tb_alat.id_kategori')->getWhere(['id_alat' => $id]);
+        if($query->resultID->num_rows > 0){
+            $data = [
+                'alat' => $query->getRow(),
+                'kategori' => $this->alatModel->getAlat()
+            ];
+            return view('admin/editalat', $data);
+        }else{
             throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound();
         }
+       }
     }
 }
