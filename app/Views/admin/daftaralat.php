@@ -14,9 +14,9 @@
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div class="data-table-list">
                     <div class="basic-tb-hd">
-                        <?php if (session()->getFlashdata('msg')) : ?>
+                        <?php if (session()->getFlashdata('success')) : ?>
                             <div class="alert alert-success m-3" role="alert">
-                                <?= session()->getFlashdata('msg'); ?>
+                                <?= session()->getFlashdata('success'); ?>
                             </div>
                         <?php endif; ?>
                         <h2>Daftar Alat</h2>
@@ -48,7 +48,10 @@
                                             <div class="material-design-btn">
                                                 <a href="<?= base_url('/admin/detailalat/' . $a['id_alat']); ?>" class="btn notika-btn-cyan waves-effect">Detail</a>
                                                 <a href="<?= base_url('/admin/editalat/' . $a['id_alat']); ?>" class="btn notika-btn-teal waves-effect">Edit</a>
-                                                <a href="<?= base_url('/admin/hapusalat/' . $a['id_alat']); ?>" class="btn notika-btn-red waves-effect">Hapus</a>
+                                                <form action="<?= base_url('/admin/hapusalat/' . $a['id_alat']); ?>" method="POST" onsubmit="return confirm('Yakin ingin hapus data?')">
+                                                    <input type="hidden" name="_method" value="delete">
+                                                    <button class="btn notika-btn-red waves-effect">Hapus</button>
+                                                </form>
                                             </div>
                                         </td>
                                     </tr>
