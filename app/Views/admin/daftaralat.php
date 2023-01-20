@@ -2,18 +2,12 @@
 
 <?= $this->section('content'); ?>
 <?php $index = 1 ?>
-<div class="container">
-    <div class="row">
-        <a href="<?= base_url('admin/tambahalat'); ?>" class="btn btn-sm btn-info">Tambah Alat</a>
-
-    </div>
-</div>
 <div class="data-table-area">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div class="data-table-list">
-                    <div class="basic-tb-hd">
+                    <div class="basic-tb-hd">                        
                         <?php if (session()->getFlashdata('success')) : ?>
                             <div class="alert alert-success m-3" role="alert">
                                 <?= session()->getFlashdata('success'); ?>
@@ -46,9 +40,9 @@
                                         <td><?= $a['kalibrasi']; ?></td>
                                         <td>
                                             <div class="material-design-btn">
-                                                <a href="<?= base_url('/admin/detailalat/' . $a['id_alat']); ?>" class="btn notika-btn-cyan waves-effect">Detail</a>
-                                                <a href="<?= base_url('/admin/editalat/' . $a['id_alat']); ?>" class="btn notika-btn-teal waves-effect">Edit</a>
                                                 <form action="<?= base_url('/admin/hapusalat/' . $a['id_alat']); ?>" method="POST" onsubmit="return confirm('Yakin ingin hapus data?')">
+                                                    <a href="<?= base_url('/admin/detailalat/' . $a['id_alat']); ?>" class="btn notika-btn-cyan waves-effect">Detail</a>
+                                                    <a href="<?= base_url('/admin/editalat/' . $a['id_alat']); ?>" class="btn notika-btn-teal waves-effect">Edit</a>
                                                     <input type="hidden" name="_method" value="delete">
                                                     <button class="btn notika-btn-red waves-effect">Hapus</button>
                                                 </form>

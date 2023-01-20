@@ -116,7 +116,9 @@
             <nav id="dropdown">
               <ul class="mobile-menu-nav">
                 <li><a data-toggle="collapse" data-target="#dashboard" href="<?= base_url('admin/dashboard'); ?>">Dashboard</a>
-
+                  <ul class="collapse dropdown-header-top">
+                    <li><a href="<?= base_url('admin/tambahalat'); ?>">Tambah Alat</a></li>
+                  </ul>
                 </li>
                 <li><a data-toggle="collapse" data-target="#alat" href="#">Alat</a>
                   <ul class="collapse dropdown-header-top">
@@ -194,6 +196,8 @@
                 <li><a href="compose-email.html">Otomatis</a>
                 </li>
                 <li><a href="compose-email.html">Elektronik</a>
+                </li>
+                <li><a href="<?= base_url('admin/tambahalat'); ?>">Tambah Alat</a>
                 </li>
               </ul>
             </div>

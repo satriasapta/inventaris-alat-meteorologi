@@ -84,10 +84,10 @@
 .material-design-btn .btn{
 	border:none;
 	outline:none !important;
-	border-radius:1px;
+	border-radius:2px;
 	color:#fff;
-	padding: 5px 10px;
-	font: size 15px;
+	padding: 5px 8px;
+	font: size 12px;
 }
 .notika-btn-cyan, .btn-cyan.cyan-icon-notika{
 	background:#00BCD4;
