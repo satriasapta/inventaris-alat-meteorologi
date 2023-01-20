@@ -18,7 +18,11 @@ class Admin extends BaseController
     {
         return view('admin/dashboard');
     }
-
+    
+    public function dashboard()
+    {
+        return view('admin/dashboard');
+    }
 
 
     public function daftaralat()
