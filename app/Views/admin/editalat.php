@@ -41,7 +41,7 @@
                                     </div>
                                     <div class="col-lg-8 col-md-7 col-sm-7 col-xs-12">
                                         <div class="nk-int-st">
-                                            <input type="text" name="nama_alat" class="form-control input-sm" placeholder="Masukan Nama Alat" required>
+                                            <input type="text" name="nama_alat" class="form-control input-sm" value="<?= $alat->nama_alat; ?>" required>
                                         </div>
                                     </div>
                                 </div>
@@ -93,7 +93,7 @@
                                         <div class="form-group nk-datapk-ctm form-elet-mg" id="data_3">
                                             <div class="input-group date nk-int-st">
                                                 <span class="input-group-addon"></span>
-                                                <input type="text" name="tahun_pembelian" class="form-control" value="" placeholder="yyyy-mm-dd" required>
+                                                <input type="text" name="tahun_pembelian" class="form-control" value="<?= $alat->tahun_pembelian; ?>" placeholder="yyyy-mm-dd" required>
                                             </div>
                                         </div>
                                     </div>
@@ -110,7 +110,7 @@
                                         <div class="form-group nk-datapk-ctm form-elet-mg" id="data_2">
                                             <div class="input-group date nk-int-st">
                                                 <span class="input-group-addon"></span>
-                                                <input type="text" name="kalibrasi" class="form-control" value="" placeholder="yyyy-mm-dd" required>
+                                                <input type="text" name="kalibrasi" class="form-control" value="<?= $alat->kalibrasi ?>"placeholder="yyyy-mm-dd" required>
                                             </div>
                                         </div>
                                     </div>
@@ -125,7 +125,7 @@
                                     </div>
                                     <div class="col-lg-8 col-md-7 col-sm-7 col-xs-12">
                                         <div class="nk-int-st">
-                                            <input type="file" name="lokasi_alat" class="form-control" required>
+                                            <input type="file" name="lokasi_alat" class="form-control" value="<?= $alat->lokasi_alat; ?>" required>
                                         </div>
                                     </div>
                                 </div>
@@ -158,7 +158,7 @@
                                                                         <div class="form-group">
                                                                             <label>1. Komponen alat</label>
                                                                             <div class="nk-int-st">
-                                                                                <textarea class="form-control" rows="5" placeholder="Ayo lengkapi data" name="komponen_alat"></textarea>
+                                                                                <textarea class="form-control" rows="5" placeholder="Ayo lengkapi data" name="komponen_alat"><?= $alat->komponen_alat; ?></textarea>
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -173,7 +173,7 @@
                                                                         <div class="form-group">
                                                                             <label>2. Penggantian komponen secara berkala</label>
                                                                             <div class="nk-int-st">
-                                                                                <textarea class="form-control" rows="5" placeholder="Ayo lengkapi data" name="penggantian_komponen"></textarea>
+                                                                                <textarea class="form-control" rows="5" placeholder="Ayo lengkapi data" value="" name="penggantian_komponen"><?= $alat->penggantian_komponen; ?></textarea>
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -188,7 +188,7 @@
                                                                         <div class="form-group">
                                                                             <label>3. Pemeliharaan berkala</label>
                                                                             <div class="nk-int-st">
-                                                                                <textarea class="form-control" rows="5" placeholder="Ayo lengkapi data" name="pemeliharaan_alat"></textarea>
+                                                                                <textarea class="form-control" rows="5" placeholder="Ayo lengkapi data" value="" name="pemeliharaan_alat"><?= $alat->pemeliharaan_alat; ?></textarea>
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -203,7 +203,7 @@
                                                                         <div class="form-group">
                                                                             <label>4. Perbaikan peralatan pada saat terjadi kerusakan</label>
                                                                             <div class="nk-int-st">
-                                                                                <textarea class="form-control" rows="5" placeholder="Ayo lengkapi data" name="perbaikan_alat"></textarea>
+                                                                                <textarea class="form-control" rows="5" placeholder="Ayo lengkapi data" value="" name="perbaikan_alat"><?= $alat->perbaikan_alat; ?></textarea>
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -218,7 +218,7 @@
                                                                         <div class="form-group">
                                                                             <label>5. Persiapan pemeliharaan</label>
                                                                             <div class="nk-int-st">
-                                                                                <textarea class="form-control" rows="5" placeholder="Ayo lengkapi data" name="persiapan_pemeliharaan"></textarea>
+                                                                                <textarea class="form-control" rows="5" placeholder="Ayo lengkapi data" value=""name="persiapan_pemeliharaan"><?= $alat->persiapan_pemeliharaan; ?></textarea>
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -233,7 +233,7 @@
                                                                         <div class="form-group">
                                                                             <label>6. Cara pemeliharaan</label>
                                                                             <div class="nk-int-st">
-                                                                                <textarea class="form-control" rows="5" placeholder="Ayo lengkapi data" name="cara_pemeliharaan"></textarea>
+                                                                                <textarea class="form-control" rows="5" placeholder="Ayo lengkapi data" name="cara_pemeliharaan" value=""><?= $alat->cara_pemeliharaan; ?></textarea>
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -248,7 +248,7 @@
                                                                         <div class="form-group">
                                                                             <label>7. Modifikasi, rekondisi, dan rehabilitasi peralatan</label>
                                                                             <div class="nk-int-st">
-                                                                                <textarea class="form-control" rows="5" placeholder="Ayo lengkapi data" name="modifikasi_alat"></textarea>
+                                                                                <textarea class="form-control" rows="5" placeholder="Ayo lengkapi data" name="modifikasi_alat" value=""><?= $alat->modifikasi_alat; ?></textarea>
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -263,7 +263,7 @@
                                                                         <div class="form-group">
                                                                             <label>8. Penyediaan peralatan cadangan</label>
                                                                             <div class="nk-int-st">
-                                                                                <textarea class="form-control" rows="5" placeholder="Ayo lengkapi data" name="penyediaan_alat"></textarea>
+                                                                                <textarea class="form-control" rows="5" placeholder="Ayo lengkapi data" name="penyediaan_alat" value=""><?= $alat->penyediaan_alat; ?></textarea>
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -278,7 +278,7 @@
                                                                         <div class="form-group">
                                                                             <label>9. Penyediaan dan pengelolaan suku cadang</label>
                                                                             <div class="nk-int-st">
-                                                                                <textarea class="form-control" rows="5" placeholder="Ayo lengkapi data" name="penyediaan_sukucadang"></textarea>
+                                                                                <textarea class="form-control" rows="5" placeholder="Ayo lengkapi data" name="penyediaan_sukucadang" value=""><?= $alat->penyediaan_sukucadang; ?></textarea>
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -293,7 +293,7 @@
                                                                         <div class="form-group">
                                                                             <label>10. Keamanan dan Persyaratan Lingkungan</label>
                                                                             <div class="nk-int-st">
-                                                                                <textarea class="form-control" rows="5" placeholder="Ayo lengkapi data" name="keamanan_alat"></textarea>
+                                                                                <textarea class="form-control" rows="5" placeholder="Ayo lengkapi data" name="keamanan_alat" value=""><?= $alat->keamanan_alat; ?></textarea>
 
                                                                             </div>
                                                                         </div>
