@@ -29,7 +29,7 @@ class Admin extends BaseController
                 ],
                 'gambar_alat' => [
                     'label' => 'Gambar Alat',
-                    'rules' => 'uploaded[gambar_alat]|mime_in[gambar_alat,image/jpg,image/jpeg,image/png]'
+                    'rules' => 'uploaded[gambar_alat]|mime_in[gambar_alat,image/jpeg,image/jpg,image/png]'
                 ],
                 'kondisi_alat' => [
                     'label' => 'Kondisi Alat',
@@ -45,7 +45,7 @@ class Admin extends BaseController
                 ],
                 'lokasi_alat' => [
                     'label' => 'lokasi Alat',
-                    'rules' => 'uploaded[lokasi_alat]|mime_in[lokasi_alat,image/jpg,image/jpeg,image/png]'
+                    'rules' => 'uploaded[lokasi_alat]|mime_in[lokasi_alat,image/jpeg,image/jpg,image/png]'
                 ]
             ];
             if($this->validate($rules)){
