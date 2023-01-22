@@ -18,7 +18,7 @@ class Admin extends BaseController
     {
         return view('admin/dashboard');
     }
-    
+
     public function dashboard()
     {
         return view('admin/dashboard');
@@ -109,7 +109,7 @@ class Admin extends BaseController
                     'id_kategori' => $this->request->getPost('id_kategori')
                 ];
                 $this->alatModel->insert($data);
-                return redirect()->back()->with('success', ' Data Berhasil Disimpan');
+                return redirect()->to('admin/daftaralat')->with('success', ' Data Berhasil Disimpan');
             }
             return redirect()->back()->with('error', ' Data Gagal Disimpan, Silahkan Cek Format Gambar!');
         }
@@ -126,17 +126,82 @@ class Admin extends BaseController
 
     public function editAlat($id = null)
     {
-       if($id != null){
-        $query = $this->db->table('tb_alat')->join('tb_kategori', 'tb_kategori.id_kategori = tb_alat.id_kategori')->getWhere(['id_alat' => $id]);
-        if($query->resultID->num_rows > 0){
-            $data = [
-                'alat' => $query->getRow(),
-                'kategori' => $this->alatModel->getAlat()
-            ];
-            return view('admin/editalat', $data);
-        }else{
-            throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound();
+        if ($id != null) {
+            $query = $this->db->table('tb_alat')->join('tb_kategori', 'tb_kategori.id_kategori = tb_alat.id_kategori')->getWhere(['id_alat' => $id]);
+            if ($query->resultID->num_rows > 0) {
+                $data = [
+                    'alat' => $query->getRow(),
+                    'kategori' => $this->alatModel->getAlat()
+                ];
+                return view('admin/editalat', $data);
+            } else {
+                throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound();
+            }
         }
-       }
+    }
+    public function updateAlat($id)
+    {
+
+        if ($this->request->getMethod() === 'post') {
+            $rules = [
+                'nama_alat' => [
+                    'label' => 'Nama Alat',
+                    'rules' => 'required'
+                ],
+                'kondisi_alat' => [
+                    'label' => 'Kondisi Alat',
+                    'rules' => 'required'
+                ],
+                'tahun_pembelian' => [
+                    'label' => 'Tahun Pembelian',
+                    'rules' => 'required'
+                ],
+                'kalibrasi' => [
+                    'label' => 'Kalibrasi',
+                    'rules' => 'required'
+                ]
+            ];
+            if ($this->validate($rules)) {
+                $prod_item = $this->alatModel->find($id);
+                $gambar_alat = $this->request->getFile('gambar_alat');
+                if ($gambar_alat->isValid() && !$gambar_alat->hasMoved()) {
+                    $old_img_name = $prod_item['gambar_alat'];
+                    if (file_exists("uploads/$old_img_name")) {
+                        unlink("uploads/$old_img_name");
+                    }
+                    $filename = time() . $gambar_alat->getClientName();
+                    $gambar_alat->move('uploads', $filename);
+                }
+                $lokasi_alat = $this->request->getFile('lokasi_alat');
+                if ($lokasi_alat->isValid() && !$lokasi_alat->hasMoved()) {
+                    $old_img_name = $prod_item['lokasi_alat'];
+                    if (file_exists("uploads/$old_img_name")) {
+                        unlink("uploads/$old_img_name");
+                    }
+                    $filename2 = time() . $lokasi_alat->getClientName();
+                    $lokasi_alat->move('uploads', $filename2);
+                }
+                $data = [
+                    'nama_alat' => $this->request->getPost('nama_alat'),
+                    'kondisi_alat' => $this->request->getPost('kondisi_alat'),
+                    'tahun_pembelian' => $this->request->getPost('tahun_pembelian'),
+                    'kalibrasi' => $this->request->getPost('kalibrasi'),
+                    'komponen_alat' => $this->request->getPost('komponen_alat'),
+                    'penggantian_komponen' => $this->request->getPost('penggantian_komponen'),
+                    'pemeliharaan_alat' => $this->request->getPost('pemeliharaan_alat'),
+                    'perbaikan_alat' => $this->request->getPost('perbaikan_alat'),
+                    'persiapan_pemeliharaan' => $this->request->getPost('persiapan_pemeliharaan'),
+                    'cara_pemeliharaan' => $this->request->getPost('cara_pemeliharaan'),
+                    'modifikasi_alat' => $this->request->getPost('modifikasi_alat'),
+                    'penyediaan_alat' => $this->request->getPost('penyediaan_alat'),
+                    'penyediaan_sukucadang' => $this->request->getPost('penyediaan_sukucadang'),
+                    'keamanan_alat' => $this->request->getPost('keamanan_alat'),
+                    'id_kategori' => $this->request->getPost('id_kategori')
+                ];
+                $this->alatModel->update($id, $data);
+                return redirect()->to('admin/daftaralat')->with('success', ' Data Berhasil Disimpan');
+            }
+            return redirect()->back()->with('error', ' Data Gagal Disimpan, Silahkan Cek Format Gambar!');
+        }
     }
 }

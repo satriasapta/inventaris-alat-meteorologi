@@ -12,7 +12,7 @@
                 <div class="alert alert-danger" role="alert"><?= session()->getFlashdata('error'); ?></div>
             <?php endif; ?>
             <?php $validation = session()->getFlashdata('validation'); ?>
-            <form method="POST" action="<?= current_url(); ?>" enctype="multipart/form-data">
+            <form method="POST" action="<?= base_url('admin/updateAlat/'.$alat->id_alat); ?>" enctype="multipart/form-data">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="form-example-wrap mg-t-30">
                         <div class="cmp-tb-hd cmp-int-hd">
@@ -27,7 +27,7 @@
                                     </div>
                                     <div class="col-lg-8 col-md-7 col-sm-7 col-xs-12">
                                         <div class="nk-int-st">
-                                            <input type="file" name="gambar_alat" class="form-control" required>
+                                            <input type="file" name="gambar_alat" class="form-control">
                                         </div>
                                     </div>
                                 </div>
@@ -125,7 +125,7 @@
                                     </div>
                                     <div class="col-lg-8 col-md-7 col-sm-7 col-xs-12">
                                         <div class="nk-int-st">
-                                            <input type="file" name="lokasi_alat" class="form-control" value="<?= $alat->lokasi_alat; ?>" required>
+                                            <input type="file" name="lokasi_alat" class="form-control" value="<?= $alat->lokasi_alat; ?>">
                                         </div>
                                     </div>
                                 </div>
