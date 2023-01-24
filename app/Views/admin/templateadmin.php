@@ -179,6 +179,8 @@
 
             <li><a data-toggle="tab" href="#developer"><i class="notika-icon notika-support"></i>Developer</a>
             </li>
+            <li><a data-toggle="tab" href="#developer"><i class="notika-icon notika-edit"></i>Log Book</a>
+            </li>
           </ul>
           <div class="tab-content custom-menu-content">
             <div id="dashboard" class="tab-pane in active notika-tab-menu-bg animated flipInX">
