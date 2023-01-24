@@ -7,7 +7,7 @@
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div class="data-table-list">
-                    <div class="basic-tb-hd">                        
+                    <div class="basic-tb-hd">
                         <?php if (session()->getFlashdata('success')) : ?>
                             <div class="alert alert-success m-3" role="alert">
                                 <?= session()->getFlashdata('success'); ?>
@@ -50,6 +50,7 @@
                                         </td>
                                     </tr>
                                 <?php endforeach ?>
+                            </tbody>
                             <tfoot>
                                 <tr>
                                     <th>No</th>

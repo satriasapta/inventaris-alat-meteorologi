@@ -5,6 +5,7 @@ namespace App\Controllers;
 use App\Controllers\BaseController;
 use App\Models\AlatModel;
 use App\Models\KategoriModel;
+use App\Models\LogBookModel;
 
 class Admin extends BaseController
 {
@@ -12,6 +13,7 @@ class Admin extends BaseController
     {
         $this->alatModel = new AlatModel();
         $this->kategoriModel = new KategoriModel();
+        $this->logBookModel = new LogBookModel();
     }
 
     public function index()
@@ -203,5 +205,42 @@ class Admin extends BaseController
             }
             return redirect()->back()->with('error', ' Data Gagal Disimpan, Silahkan Cek Format Gambar!');
         }
+    }
+
+    public function inputlogbook()
+    {
+        if ($this->request->getMethod() === 'post') {
+            $rules = [
+                'kondisi' => [
+                    'label' => 'Kondisi',
+                    'rules' => 'required'
+                ],
+                'tanggal' => [
+                    'label' => 'Tanggal',
+                    'rules' => 'required'
+                ],
+                'nama_petugas' => [
+                    'label' => 'Nama Petugas',
+                    'rules' => 'required'
+                ]
+            ];
+            if ($this->validate($rules)) {
+                $data = [
+                    'kondisi' => $this->request->getPost('kondisi'),
+                    'tanggal' => $this->request->getPost('tanggal'),
+                    'nama_petugas' => $this->request->getPost('nama_petugas'),
+                    'id_alat' => $this->request->getPost('id_alat')
+                ];
+                dd($data);
+                $this->logBookModel->insertBatch($data);
+                return redirect()->back()->with('success', ' Data Berhasil Disimpan');
+            }
+            return redirect()->back()->with('error', ' Data Gagal Disimpan, Silahkan Cek Kembali');
+        }
+        $data = [
+            'logbook' => $this->logBookModel->getLogbook(),
+            'alat' => $this->alatModel->getAlat()
+        ];
+        return view('admin/logbook', $data);
     }
 }
