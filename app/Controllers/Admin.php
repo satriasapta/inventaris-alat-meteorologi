@@ -235,7 +235,7 @@ class Admin extends BaseController
                     'id_alat' => $this->request->getPost('id_alat'),
                     'keterangan' => $this->request->getPost('keterangan')
                 ];
-                dd($data);
+                // dd($data);
                 $this->logBookModel->insert($data);
                 return redirect()->back()->with('success', ' Data Berhasil Disimpan');
             }
