@@ -214,6 +214,8 @@
                 </li>
                 <li><a href="">Tahunan</a>
                 </li>
+                <li><a href="<?= base_url('admin/inputlogbook'); ?>">Isi Log Book</a>
+                </li>
               </ul>
             </div>
 
