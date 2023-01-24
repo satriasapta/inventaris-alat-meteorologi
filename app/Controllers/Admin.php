@@ -232,10 +232,11 @@ class Admin extends BaseController
                     'kondisi' => $this->request->getPost('kondisi'),
                     'tanggal' => $this->request->getPost('tanggal'),
                     'nama_petugas' => $this->request->getPost('nama_petugas'),
-                    'id_alat' => $this->request->getPost('id_alat')
+                    'id_alat' => $this->request->getPost('id_alat'),
+                    'keterangan' => $this->request->getPost('keterangan')
                 ];
                 dd($data);
-                $this->logBookModel->insertBatch($data);
+                $this->logBookModel->insert($data);
                 return redirect()->back()->with('success', ' Data Berhasil Disimpan');
             }
             return redirect()->back()->with('error', ' Data Gagal Disimpan, Silahkan Cek Kembali');
@@ -247,3 +248,8 @@ class Admin extends BaseController
         return view('admin/logbook', $data);
     }
 }
+// $main_arr = array();
+//                 for($i=0;$i<sizeof($data['id_alat']);$i++){
+//                     $arr=array('id_alat'=>$data['id_alat'][$i],'kondisi'=>$data['kondisi'][$i],'keterangan'=>$data['keterangan'][$i],);
+//                     $main_arr = $arr;
+//                 }

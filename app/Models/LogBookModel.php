@@ -12,7 +12,7 @@ class LogBookModel extends Model
     protected $useAutoIncrement = true;
     protected $insertID         = 0;
     protected $returnType       = 'array';
-    protected $allowedFields    = ['id_alat','kondisi','tanggal','nama_petugas'];
+    protected $allowedFields    = ['id_alat','kondisi','tanggal','nama_petugas','keterangan'];
 
     public function getLogBook()
     {
