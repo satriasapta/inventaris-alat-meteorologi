@@ -18,7 +18,10 @@ class Admin extends BaseController
 
     public function index()
     {
-        return view('admin/dashboard');
+        $data = [
+            'alat' => $this->alatModel->getAlat()
+        ];
+        return view('admin/dashboard',$data);
     }
 
     public function dashboard()
