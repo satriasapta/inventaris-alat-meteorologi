@@ -46,6 +46,7 @@
                                     </tr>
                                 </thead>
                                 <tbody>
+                                    <!-- HASIL MIKIR 3 JAM -->
                                     <?php foreach ($alat as $a) : ?>
                                         <tr>
                                             <td><?= $index++ ?></td>
