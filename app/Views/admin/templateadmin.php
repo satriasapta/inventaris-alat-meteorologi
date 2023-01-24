@@ -132,13 +132,14 @@
                     </li>
                   </ul>
                 </li>
-                <!-- <li><a data-toggle="collapse" data-target="#demoevent" href="#">Log Book</a>
-                                    <ul id="demoevent" class="collapse dropdown-header-top">
-                                        <li><a href="inbox.html">Harian</a></li>
-                                        <li><a href="view-email.html">Bulanan</a></li>
-                                        <li><a href="compose-email.html">Tahunan</a></li>
-                                    </ul>
-                                </li> -->
+                <li><a data-toggle="collapse" data-target="#logbook" href="#">Log Book</a>
+                  <ul id="logbook" class="collapse dropdown-header-top">
+                    <li><a href="<?= base_url('admin/dashboard'); ?>">Semua Log Book</a></li>
+                    <li><a href="inbox.html">Harian</a></li>
+                    <li><a href="view-email.html">Bulanan</a></li>
+                    <li><a href="compose-email.html">Tahunan</a></li>
+                  </ul>
+                </li>
 
                 <li><a data-toggle="collapse" data-target="#Pagemob" href="#">Developer</a>
                   <ul id="Pagemob" class="collapse dropdown-header-top">
@@ -170,26 +171,25 @@
       <div class="row">
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
           <ul class="nav nav-tabs notika-menu-wrap menu-it-icon-pro">
-            <li class="active"><a data-toggle="tab" href="#dashboard"><i class="notika-icon notika-house"></i> Dashboard</a>
+            <li><a data-toggle="tab" href="#Dashboard"><i class="notika-icon notika-house"></i> Dashboard</a>
             </li>
-            <li><a data-toggle="tab" href="#alat"><i class="notika-icon notika-menus"></i> Alat</a>
+            <li><a data-toggle="tab" href="#Alat"><i class="notika-icon notika-menus"></i> Alat</a>
             </li>
-            <!-- <li><a data-toggle="tab" href="#logbook"><i class="notika-icon notika-mail"></i> Log Book</a>
-                        </li> -->
-
-            <li><a data-toggle="tab" href="#developer"><i class="notika-icon notika-support"></i>Developer</a>
+            <li><a data-toggle="tab" href="#Logbook"><i class="notika-icon notika-edit"></i> Log Book</a>
             </li>
-            <li><a data-toggle="tab" href="#developer"><i class="notika-icon notika-edit"></i>Log Book</a>
+            <li><a data-toggle="tab" href="#Developer"><i class="notika-icon notika-support"></i>Developer</a>
             </li>
           </ul>
+
           <div class="tab-content custom-menu-content">
-            <div id="dashboard" class="tab-pane in active notika-tab-menu-bg animated flipInX">
+            <div id="Dashboard" class="tab-pane in notika-tab-menu-bg animated flipInX">
               <ul class="notika-main-menu-dropdown">
                 <li><a href="<?= base_url('admin/dashboard'); ?>">Dashboard</a>
                 </li>
               </ul>
             </div>
-            <div id="alat" class="tab-pane notika-tab-menu-bg animated flipInX">
+
+            <div id="Alat" class="tab-pane notika-tab-menu-bg animated flipInX">
               <ul class="notika-main-menu-dropdown">
                 <li><a href="<?= base_url('admin/daftaralat'); ?>">Daftar Alat</a>
                 </li>
@@ -203,18 +203,21 @@
                 </li>
               </ul>
             </div>
-            <!-- <div id="logbook" class="tab-pane notika-tab-menu-bg animated flipInX">
-                            <ul class="notika-main-menu-dropdown">
-                                <li><a href="inbox.html">Harian</a>
-                                </li>
-                                <li><a href="view-email.html">Bulanan</a>
-                                </li>
-                                <li><a href="compose-email.html">Tahunan</a>
-                                </li>
-                            </ul>
-                        </div> -->
 
-            <div id="developer" class="tab-pane notika-tab-menu-bg animated flipInX">
+            <div id="Logbook" class="tab-pane notika-tab-menu-bg animated flipInX">
+              <ul class="notika-main-menu-dropdown">
+                <li><a href="<?= base_url('admin/dashboard'); ?>">Semua Log Book</a>
+                </li>
+                <li><a href="">Harian</a>
+                </li>
+                <li><a href="">Bulanan</a>
+                </li>
+                <li><a href="">Tahunan</a>
+                </li>
+              </ul>
+            </div>
+
+            <div id="Developer" class="tab-pane notika-tab-menu-bg animated flipInX">
               <ul class="notika-main-menu-dropdown">
                 <li><a href="contact.html">Contact</a>
                 </li>
