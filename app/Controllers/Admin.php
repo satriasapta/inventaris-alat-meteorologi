@@ -6,6 +6,7 @@ use App\Controllers\BaseController;
 use App\Models\AlatModel;
 use App\Models\KategoriModel;
 use App\Models\LogBookModel;
+use App\Models\KondisiModel;
 
 class Admin extends BaseController
 {
@@ -14,6 +15,7 @@ class Admin extends BaseController
         $this->alatModel = new AlatModel();
         $this->kategoriModel = new KategoriModel();
         $this->logBookModel = new LogBookModel();
+        $this->kondisiModel = new KondisiModel();
     }
 
     public function index()
@@ -118,7 +120,10 @@ class Admin extends BaseController
             }
             return redirect()->back()->with('error', ' Data Gagal Disimpan, Silahkan Cek Format Gambar!');
         }
-        $data['kategori'] = $this->kategoriModel->findAll();
+        $data = [
+            'kategori' => $this->kategoriModel->findAll(),
+            'kondisi' => $this->kondisiModel->findAll() 
+        ];
         return view('admin/tambahalat', $data);
     }
 
