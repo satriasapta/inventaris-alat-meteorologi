@@ -17,7 +17,8 @@ class AlatModel extends Model
     public function getAlat()
     {
         $dataAlat = $this->db->table('tb_alat')
-            ->join('tb_kategori','kondisi', 'tb_kategori.id_kategori = tb_alat.id_kategori','kondisi.id_kondisi = tb_alat.id_kondisi')
+            ->join('tb_kategori', 'tb_kategori.id_kategori = tb_alat.id_kategori')
+            ->join('kondisi', 'kondisi.id_kondisi = tb_alat.id_kondisi')
             ->get()->getResultArray();
 
         return $dataAlat;

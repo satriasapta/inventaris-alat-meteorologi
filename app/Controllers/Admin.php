@@ -21,7 +21,8 @@ class Admin extends BaseController
     public function index()
     {
         $data = [
-            'alat' => $this->alatModel->getAlat()
+            'alat' => $this->alatModel->getAlat(),
+            'kondisi' => $this->kondisiModel->findAll()
         ];
         return view('admin/dashboard',$data);
     }
@@ -45,7 +46,7 @@ class Admin extends BaseController
     {
 
         if ($id != null) {
-            $query = $this->db->table('tb_alat')->join('tb_kategori', 'tb_kategori.id_kategori = tb_alat.id_kategori')->getWhere(['id_alat' => $id]);
+            $query = $this->db->table('tb_alat')->join('tb_kategori', 'tb_kategori.id_kategori = tb_alat.id_kategori')->join('kondisi', 'kondisi.id_kondisi = tb_alat.id_kondisi')->getWhere(['id_alat' => $id]);
             if ($query->resultID->num_rows > 0) {
                 $data = [
                     'alat' => $query->getRow(),
@@ -72,10 +73,6 @@ class Admin extends BaseController
                     'label' => 'Gambar Alat',
                     'rules' => 'uploaded[gambar_alat]|mime_in[gambar_alat,image/jpeg,image/jpg,image/png]'
                 ],
-                'kondisi_alat' => [
-                    'label' => 'Kondisi Alat',
-                    'rules' => 'required'
-                ],
                 'tahun_pembelian' => [
                     'label' => 'Tahun Pembelian',
                     'rules' => 'required'
@@ -99,7 +96,7 @@ class Admin extends BaseController
                 $data = [
                     'nama_alat' => $this->request->getPost('nama_alat'),
                     'gambar_alat' => $filename,
-                    'kondisi_alat' => $this->request->getPost('kondisi_alat'),
+
                     'tahun_pembelian' => $this->request->getPost('tahun_pembelian'),
                     'kalibrasi' => $this->request->getPost('kalibrasi'),
                     'lokasi_alat' => $filename2,
@@ -113,7 +110,8 @@ class Admin extends BaseController
                     'penyediaan_alat' => $this->request->getPost('penyediaan_alat'),
                     'penyediaan_sukucadang' => $this->request->getPost('penyediaan_sukucadang'),
                     'keamanan_alat' => $this->request->getPost('keamanan_alat'),
-                    'id_kategori' => $this->request->getPost('id_kategori')
+                    'id_kategori' => $this->request->getPost('id_kategori'),
+                    'id_kondisi' => $this->request->getPost('id_kondisi'),
                 ];
                 $this->alatModel->insert($data);
                 return redirect()->to('admin/daftaralat')->with('success', ' Data Berhasil Disimpan');
@@ -137,11 +135,12 @@ class Admin extends BaseController
     public function editAlat($id = null)
     {
         if ($id != null) {
-            $query = $this->db->table('tb_alat')->join('tb_kategori', 'tb_kategori.id_kategori = tb_alat.id_kategori')->getWhere(['id_alat' => $id]);
+            $query = $this->db->table('tb_alat')->join('tb_kategori', 'tb_kategori.id_kategori = tb_alat.id_kategori')->join('kondisi', 'kondisi.id_kondisi = tb_alat.id_kondisi')->getWhere(['id_alat' => $id]);
             if ($query->resultID->num_rows > 0) {
                 $data = [
                     'alat' => $query->getRow(),
-                    'kategori' => $this->alatModel->getAlat()
+                    'kategori' => $this->alatModel->getAlat(),
+                    'kondisi' => $this->kondisiModel->findAll()
                 ];
                 return view('admin/editalat', $data);
             } else {
@@ -156,10 +155,6 @@ class Admin extends BaseController
             $rules = [
                 'nama_alat' => [
                     'label' => 'Nama Alat',
-                    'rules' => 'required'
-                ],
-                'kondisi_alat' => [
-                    'label' => 'Kondisi Alat',
                     'rules' => 'required'
                 ],
                 'tahun_pembelian' => [
@@ -193,7 +188,6 @@ class Admin extends BaseController
                 }
                 $data = [
                     'nama_alat' => $this->request->getPost('nama_alat'),
-                    'kondisi_alat' => $this->request->getPost('kondisi_alat'),
                     'tahun_pembelian' => $this->request->getPost('tahun_pembelian'),
                     'kalibrasi' => $this->request->getPost('kalibrasi'),
                     'komponen_alat' => $this->request->getPost('komponen_alat'),
@@ -206,7 +200,8 @@ class Admin extends BaseController
                     'penyediaan_alat' => $this->request->getPost('penyediaan_alat'),
                     'penyediaan_sukucadang' => $this->request->getPost('penyediaan_sukucadang'),
                     'keamanan_alat' => $this->request->getPost('keamanan_alat'),
-                    'id_kategori' => $this->request->getPost('id_kategori')
+                    'id_kategori' => $this->request->getPost('id_kategori'),
+                    'id_kondisi' => $this->request->getPost('id_kondisi')
                 ];
                 $this->alatModel->update($id, $data);
                 return redirect()->to('admin/daftaralat')->with('success', ' Data Berhasil Disimpan');

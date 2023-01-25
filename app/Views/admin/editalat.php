@@ -73,10 +73,10 @@
                                     </div>
                                     <div class="col-lg-8 col-md-7 col-sm-7 col-xs-12">
                                         <div class="hrzn-fm bootstrap-select fm-cmp-mg">
-                                            <select name="kondisi_alat" class="hrzn-fm selectpicker">
-                                                <option>Layak</option>
-                                                <option>Butuh Perbaikan</option>
-                                                <option>Menunggu Perbaikan</option>
+                                            <select name="id_kondisi" class="hrzn-fm selectpicker">
+                                            <?php foreach ($kondisi as $k) : ?>
+                                                    <option value="<?= $k['id_kondisi']; ?>"><?= $k['kondisi_alat']; ?></option>
+                                                <?php endforeach; ?>
                                             </select>
                                         </div>
                                     </div>
