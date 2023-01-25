@@ -24,7 +24,7 @@ class Admin extends BaseController
             'alat' => $this->alatModel->getAlat(),
             'kondisi' => $this->kondisiModel->findAll()
         ];
-        return view('admin/dashboard',$data);
+        return view('admin/dashboard', $data);
     }
 
     public function dashboard()
@@ -120,7 +120,7 @@ class Admin extends BaseController
         }
         $data = [
             'kategori' => $this->kategoriModel->findAll(),
-            'kondisi' => $this->kondisiModel->findAll() 
+            'kondisi' => $this->kondisiModel->findAll()
         ];
         return view('admin/tambahalat', $data);
     }
@@ -201,7 +201,7 @@ class Admin extends BaseController
                     'penyediaan_sukucadang' => $this->request->getPost('penyediaan_sukucadang'),
                     'keamanan_alat' => $this->request->getPost('keamanan_alat'),
                     'id_kategori' => $this->request->getPost('id_kategori'),
-                    'id_kondisi' => $this->request->getPost('id_kondisi')
+                    'id_kondisi' => $this->request->getPost('id_kondisi'),
                 ];
                 $this->alatModel->update($id, $data);
                 return redirect()->to('admin/daftaralat')->with('success', ' Data Berhasil Disimpan');
@@ -212,41 +212,116 @@ class Admin extends BaseController
 
     public function inputlogbook()
     {
-        if ($this->request->getMethod() === 'post') {
-            $rules = [
-                'kondisi' => [
-                    'label' => 'Kondisi',
-                    'rules' => 'required'
-                ],
-                'tanggal' => [
-                    'label' => 'Tanggal',
-                    'rules' => 'required'
-                ],
-                'nama_petugas' => [
-                    'label' => 'Nama Petugas',
-                    'rules' => 'required'
-                ]
-            ];
-            if ($this->validate($rules)) {
-                $data = [
-                    'kondisi' => $this->request->getPost('kondisi'),
-                    'tanggal' => $this->request->getPost('tanggal'),
-                    'nama_petugas' => $this->request->getPost('nama_petugas'),
-                    'id_alat' => $this->request->getPost('id_alat'),
-                    'keterangan' => $this->request->getPost('keterangan')
-                ];
-                // dd($data);
-                $this->logBookModel->insert($data);
-                return redirect()->back()->with('success', ' Data Berhasil Disimpan');
-            }
-            return redirect()->back()->with('error', ' Data Gagal Disimpan, Silahkan Cek Kembali');
-        }
+
         $data = [
             'logbook' => $this->logBookModel->getLogbook(),
             'alat' => $this->alatModel->getAlat()
         ];
+
         return view('admin/logbook', $data);
     }
+    public function post()
+    {
+     
+        $logbook = model(LogBookModel::class);
+        $rules = [
+            'kondisi' => [
+                'label' => 'Kondisi',
+                'rules' => 'required'
+            ],
+            'tanggal' => [
+                'label' => 'Tanggal',
+                'rules' => 'required'
+            ],
+            'nama_petugas' => [
+                'label' => 'Nama Petugas',
+                'rules' => 'required'
+            ]
+        ];
+        if ($this->request->getMethod() === 'post' && $this->validate($rules)) {
+
+            $kondisi = $this->request->getPost('kondisi');
+            $id_alat = $this->request->getPost('id_alat');
+            $tanggal = $this->request->getPost('tanggal');
+            $keterangan = $this->request->getPost('keterangan');
+            $nama_petugas = $this->request->getPost('nama_petugas');
+            $i = 0;
+            if (!empty($kondisi)) {
+                foreach ($kondisi as $k) {
+                    $data = [
+                        'id_alat' => $id_alat[$i],
+                        'kondisi' => $k,
+                        'tanggal' => $tanggal,
+                        'keterangan' => $keterangan[$i],
+                        'nama_petugas' => $nama_petugas
+                    ];
+                    $logbook->save($data);
+                    $i++;
+                }
+            }
+            $message = [
+                'success' => true,
+                'notif' => 'Data Berhasil Disimpan'
+            ];
+
+        } else {
+            $message = [
+                'success' => false,
+                'notif' => 'Data Gagal Disimpan'
+            ];
+        }
+        return redirect()->back()->with('success', ' Data Berhasil Disimpan');
+    }
+    // {
+    //     $i = 0; // untuk loopingnya
+    //     $a = $this->input->post('first_name');
+    //     $b = $this->input->post('last_name');
+    //     if ($a[0] !== null) {
+    //         foreach ($a as $row) {
+    //             $data = [
+    //                 'first_name' => $row,
+    //                 'last_name' => $b[$i],
+    //             ];
+
+    //             $insert = $this->db->insert('biodata', $data);
+    //             if ($insert) {
+    //                 $i++;
+    //             }
+    //         }
+    //     }
+
+    //     $arr['success'] = true;
+    //     $arr['notif']  = '<div class="alert alert-success">
+    //       <i class="fa fa-check"></i> Data Berhasil Disimpan
+    //     </div>';
+    //     return redirect()->back()->with('success', ' Data Berhasil Disimpan');
+    // }
+
+
+
+
+    // $dataalat = $this->alatModel->get()->resultID->num_rows;
+    // for($i = 0; $i < $dataalat; $i++){
+
+    //         $data = [
+    //             'kondisi' => $this->request->getVar('kondisi'.$i),
+    //             'id_alat' => $this->request->getVar('id_alat'.$i),
+    //             'tanggal' => $this->request->getVar('tanggal'),
+    //             'keterangan' => $this->request->getVar('keterangan'.$i),
+    //             'nama_petugas' => $this->request->getVar('nama_petugas'),
+    //         ];
+    //     }
+    //     dd($data);
+    //     $this->logBookModel->insert($data);
+    //     return redirect()->back()->with('success', ' Data Berhasil Disimpan');
+
+
+    // $data = [
+    //     'logbook' => $this->logBookModel->getLogbook(),
+    //     'alat' => $this->alatModel->getAlat()
+    // ];
+    // return view('admin/logbook', $data);
+
 }
 // $main_arr = array();
 //                 for($i=0;$i<sizeof($data['id_alat']);$i++){

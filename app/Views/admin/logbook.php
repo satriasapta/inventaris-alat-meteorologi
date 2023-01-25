@@ -12,7 +12,7 @@
                 <div class="alert alert-danger" role="alert"><?= session()->getFlashdata('error'); ?></div>
             <?php endif; ?>
             <?php $validation = session()->getFlashdata('validation'); ?>
-            <form method="POST" action="<?= current_url(); ?>" enctype="multipart/form-data">
+            <form method="POST" action="<?= base_url('admin/post'); ?>" enctype="multipart/form-data" id="SimpanData">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="normal-table-list">
                         <div class="col-lg-8 col-md-3 col-sm-3 col-xs-12">
@@ -46,16 +46,16 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <!-- HASIL MIKIR 3 JAM -->
+
                                     <?php foreach ($alat as $a) : ?>
                                         <tr>
                                             <td><?= $index++ ?></td>
                                             <td><?= $a['nama_alat']; ?>
-                                                <input type="hidden" name="id_alat" class="form-control input-sm" value="<?= $a['id_alat']; ?>">
+                                                <input type="hidden" name="id_alat[]" class="form-control input-sm" value="<?= $a['id_alat']; ?>">
                                             </td>
-                                            <td><label><input type="radio" value="Layak" name="kondisi" class="i-checks"> <i></i></label></td>
-                                            <td><label><input type="radio" value="Tidak Layak" name="kondisi" class="i-checks"> <i></i></label></td>
-                                            <td><input type="text" name="keterangan" class="form-control input-sm" placeholder="Keterangan"></td>
+                                            <td><label><input type="radio" value="Layak" name="kondisi[<?= $index; ?>]" class="i-checks"> <i></i></label></td>
+                                            <td><label><input type="radio" value="Tidak Layak" name="kondisi[<?= $index; ?>]" class="i-checks"> <i></i></label></td>
+                                            <td><input type="text" name="keterangan[]" class="form-control input-sm" placeholder="Keterangan"></td>
 
                                         </tr>
                                     <?php endforeach ?>
@@ -76,5 +76,38 @@
 
     </div>
 </div>
+<script>
+    $(document).ready(function() {
+        $('#SimpanData').submit(function(e) {
+            e.preventDefault();
+            biodata();
+        });
+    });
 
+    function biodata() {
+        $.ajax({
+            url: $("#SimpanData").attr('action'),
+            type: 'post',
+            cache: false,
+            dataType: "json",
+            data: $("#SimpanData").serialize(),
+            success: function(data) {
+                if (data.success == true) {
+                    $('#SimpanData').each(function() {
+                        this.reset();
+                    });
+                    // $('#notif').fadeIn(800, function() {
+                    //     $("#notif").html(data.notif).fadeOut(5000).delay(800);
+                    // });
+                } else {
+                    $('#notif').html('<div class="alert alert-danger">Data Gagal Disimpan</div>')
+                }
+            },
+
+            error: function(error) {
+                alert(error);
+            }
+        });
+    }
+</script>
 <?= $this->endSection(); ?>
