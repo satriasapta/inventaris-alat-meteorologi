@@ -8,7 +8,7 @@
             <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                 <div class="wb-traffic-inner notika-shadow">
                     <div class="website-traffic-ctn">
-                        <h2><span class="counter">50,000</span></h2>
+                        <h2><span class="counter">59,999</span></h2>
                         <p>Total Semua Alat</p>
                     </div>
                 </div>
@@ -16,16 +16,16 @@
             <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                 <div class="wb-traffic-inner notika-shadow sm-res-mg-t-30">
                     <div class="website-traffic-ctn">
-                        <h2><span class="counter">90,000</span>k</h2>
-                        <p>Total Alat Rusak</p>
+                        <h2><span class="counter">990,000</span>k</h2>
+                        <p>Total Alat Operasional</p>
                     </div>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                 <div class="wb-traffic-inner notika-shadow sm-res-mg-t-30 tb-res-mg-t-30 dk-res-mg-t-30">
                     <div class="website-traffic-ctn">
-                        <h2><span class="counter">40,000</span></h2>
-                        <p>Total Alat Menunggu Perbaikan</p>
+                        <h2><span class="counter">410,000</span></h2>
+                        <p>Total Alat Tidak Operasional</p>
                     </div>
                 </div>
             </div>
@@ -33,7 +33,7 @@
                 <div class="wb-traffic-inner notika-shadow sm-res-mg-t-30 tb-res-mg-t-30 dk-res-mg-t-30">
                     <div class="website-traffic-ctn">
                         <h2><span class="counter">1,000</span></h2>
-                        <p>Total Support Tickets</p>
+                        <p>Total Alat Menunggu Perbaikan</p>
                     </div>
                 </div>
             </div>

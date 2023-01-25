@@ -38,14 +38,15 @@
                             <table class="table table-sc-ex">
                                 <thead>
                                     <tr>
-                                        <th>#</th>
+                                        <th>NO</th>
                                         <th>Nama Alat</th>
-                                        <th>Layak</th>
-                                        <th>Tidak Layak</th>
+                                        <th>OPERASIONAL</th>
+                                        <th>TIDAK OPERASIONAL</th>
                                         <th>Keterangan</th>
                                     </tr>
                                 </thead>
                                 <tbody>
+                                    <!-- HASIL MIKIR 3 JAM -->
                                     <?php foreach ($alat as $a) : ?>
                                         <tr>
                                             <td><?= $index++ ?></td>

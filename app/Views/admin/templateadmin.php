@@ -184,7 +184,7 @@
           <div class="tab-content custom-menu-content">
             <div id="Dashboard" class="tab-pane in notika-tab-menu-bg animated flipInX">
               <ul class="notika-main-menu-dropdown">
-                <li><a href="<?= base_url('admin/dashboard'); ?>">Dashboard</a>
+                <li><a href="<?= base_url('admin/'); ?>">Dashboard</a>
                 </li>
               </ul>
             </div>
@@ -206,9 +206,7 @@
 
             <div id="Logbook" class="tab-pane notika-tab-menu-bg animated flipInX">
               <ul class="notika-main-menu-dropdown">
-                <li><a href="<?= base_url('admin/dashboard'); ?>">Semua Log Book</a>
-                </li>
-                <li><a href="">Harian</a>
+                <li><a href="<?= base_url('admin/lbharian'); ?>">Harian</a>
                 </li>
                 <li><a href="">Bulanan</a>
                 </li>
