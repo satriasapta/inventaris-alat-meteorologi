@@ -109,5 +109,6 @@
             }
         });
     }
+    
 </script>
 <?= $this->endSection(); ?>
