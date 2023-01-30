@@ -94,12 +94,12 @@
             <div class="topbar-divider d-none d-sm-block"></div>
             
               <li>
-                <div>Selamat Datang | Nama user panggil pake eko</div>
+                <div>Selamat Datang ||<?= userLogin()['username']; ?> </div>
               </li>
               <div class="topbar-divider d-none d-sm-block"></div>
-              <li><?php echo anchor('auth/logout', 'Logout') ?></li>
+              <li><?= anchor('auth/logout', 'Logout') ?></li>
             
-              <li><?php echo anchor('auth/login', 'Login') ?></li>
+              <li><?= anchor('auth/login', 'Login') ?></li>
             
           </ul>
           <ul class="na navbar-nav navbar-right">

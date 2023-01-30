@@ -7,6 +7,7 @@ use App\Models\AlatModel;
 use App\Models\KategoriModel;
 use App\Models\LogBookModel;
 use App\Models\KondisiModel;
+use App\Models\UserModel;
 
 class Admin extends BaseController
 {
@@ -16,6 +17,7 @@ class Admin extends BaseController
         $this->kategoriModel = new KategoriModel();
         $this->logBookModel = new LogBookModel();
         $this->kondisiModel = new KondisiModel();
+        $this->userModel = new UserModel();
     }
 
     public function index()
