@@ -9,6 +9,9 @@ class Auth extends BaseController
     }
     public function login()
     {
+        if(session('id')){
+            return redirect()->to(base_url('admin'));
+        }
         return view('admin/loginAdmin');
     }
 
@@ -28,5 +31,11 @@ class Auth extends BaseController
         } else {
             return redirect()->back()->with('error', 'Username Tidak Ditemukan');
         }
+    }
+
+    public function logout()
+    {
+        session()->remove('id');
+        return redirect()->to(base_url('auth/login'));
     }
 }
