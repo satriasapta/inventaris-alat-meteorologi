@@ -22,9 +22,22 @@ class Admin extends BaseController
 
     public function index()
     {
+        $dataAlat = $this->alatModel->get()->resultID->num_rows;
+        $dataKategori = $this->kategoriModel->get()->resultID->num_rows;
+        $dataLogBook = $this->logBookModel->get()->resultID->num_rows;
+        $dataKondisi = $this->alatModel->getWhere(['id_kondisi' => 1])->resultID->num_rows;
+        $dataKondisi2 = $this->alatModel->getWhere(['id_kondisi' => 2])->resultID->num_rows;
+        $dataKondisi3 = $this->alatModel->getWhere(['id_kondisi' => 3])->resultID->num_rows;
+
         $data = [
             'alat' => $this->alatModel->getAlat(),
-            'kondisi' => $this->kondisiModel->findAll()
+            'kondisi' => $this->kondisiModel->findAll(),
+            'dataAlat' => $dataAlat,
+            'dataKategori' => $dataKategori,
+            'dataLogBook' => $dataLogBook,
+            'dataKondisi' => $dataKondisi,
+            'dataKondisi2' => $dataKondisi2,
+            'dataKondisi3' => $dataKondisi3,
         ];
         return view('admin/dashboard', $data);
     }

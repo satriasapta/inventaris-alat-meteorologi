@@ -8,7 +8,7 @@
             <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                 <div class="wb-traffic-inner notika-shadow">
                     <div class="website-traffic-ctn">
-                        <h2><span class="counter">59,999</span></h2>
+                        <h2><span class="counter"><?= $dataAlat; ?></span></h2>
                         <p>Total Semua Alat</p>
                     </div>
                 </div>
@@ -16,7 +16,7 @@
             <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                 <div class="wb-traffic-inner notika-shadow sm-res-mg-t-30">
                     <div class="website-traffic-ctn">
-                        <h2><span class="counter">990,000</span>k</h2>
+                        <h2><span class="counter"><?= $dataKondisi; ?></span></h2>
                         <p>Total Alat Operasional</p>
                     </div>
                 </div>
@@ -24,16 +24,16 @@
             <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                 <div class="wb-traffic-inner notika-shadow sm-res-mg-t-30 tb-res-mg-t-30 dk-res-mg-t-30">
                     <div class="website-traffic-ctn">
-                        <h2><span class="counter">410,000</span></h2>
-                        <p>Total Alat Tidak Operasional</p>
+                        <h2><span class="counter"><?= $dataKondisi2; ?></span></h2>
+                        <p>Total Alat Rusak</p>
                     </div>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                 <div class="wb-traffic-inner notika-shadow sm-res-mg-t-30 tb-res-mg-t-30 dk-res-mg-t-30">
                     <div class="website-traffic-ctn">
-                        <h2><span class="counter">1,000</span></h2>
-                        <p>Total Alat Menunggu Perbaikan</p>
+                        <h2><span class="counter"><?= $dataKondisi3; ?></span></h2>
+                        <p>Total Alat Rusak Berat</p>
                     </div>
                 </div>
             </div>
