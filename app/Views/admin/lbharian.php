@@ -15,8 +15,12 @@
                         <table id="data-table-basic" class="table table-striped">
                             <thead>
                                 <tr>
-                                    <th>Nama Petugas</th>
-                                    <th>Tanggal Pengecekan</th>
+                                    <td>Nama Petugas </td>
+                                    <td>: <?= $alat->nama_alat; ?></td>
+                                </tr>
+                                <tr>
+                                    <td>Tanggal Pengecekan </td>
+                                    <td>: berapa tanggalnya</td>
                                 </tr>
                                 <tr>
                                     <th>No</th>

@@ -235,9 +235,20 @@ class Admin extends BaseController
 
         return view('admin/logbook', $data);
     }
+    
+    public function lbharian()
+    {
+        $data = [
+            'logbook' => $this->logBookModel->getLogbook(),
+            'alat' => $this->alatModel->getAlat()
+        ];
+    
+        return view('admin/lbharian', $data);
+    }
+
     public function post()
     {
-     
+
         $logbook = model(LogBookModel::class);
         $rules = [
             'kondisi' => [
@@ -278,7 +289,6 @@ class Admin extends BaseController
                 'success' => true,
                 'notif' => 'Data Berhasil Disimpan'
             ];
-
         } else {
             $message = [
                 'success' => false,
