@@ -287,59 +287,12 @@ class Admin extends BaseController
         }
         return redirect()->back()->with('success', ' Data Berhasil Disimpan');
     }
-    // {
-    //     $i = 0; // untuk loopingnya
-    //     $a = $this->input->post('first_name');
-    //     $b = $this->input->post('last_name');
-    //     if ($a[0] !== null) {
-    //         foreach ($a as $row) {
-    //             $data = [
-    //                 'first_name' => $row,
-    //                 'last_name' => $b[$i],
-    //             ];
 
-    //             $insert = $this->db->insert('biodata', $data);
-    //             if ($insert) {
-    //                 $i++;
-    //             }
-    //         }
-    //     }
-
-    //     $arr['success'] = true;
-    //     $arr['notif']  = '<div class="alert alert-success">
-    //       <i class="fa fa-check"></i> Data Berhasil Disimpan
-    //     </div>';
-    //     return redirect()->back()->with('success', ' Data Berhasil Disimpan');
-    // }
-
-
-
-
-    // $dataalat = $this->alatModel->get()->resultID->num_rows;
-    // for($i = 0; $i < $dataalat; $i++){
-
-    //         $data = [
-    //             'kondisi' => $this->request->getVar('kondisi'.$i),
-    //             'id_alat' => $this->request->getVar('id_alat'.$i),
-    //             'tanggal' => $this->request->getVar('tanggal'),
-    //             'keterangan' => $this->request->getVar('keterangan'.$i),
-    //             'nama_petugas' => $this->request->getVar('nama_petugas'),
-    //         ];
-    //     }
-    //     dd($data);
-    //     $this->logBookModel->insert($data);
-    //     return redirect()->back()->with('success', ' Data Berhasil Disimpan');
-
-
-    // $data = [
-    //     'logbook' => $this->logBookModel->getLogbook(),
-    //     'alat' => $this->alatModel->getAlat()
-    // ];
-    // return view('admin/logbook', $data);
-
+    public function exportlogbook()
+    {
+        $data = [
+            'logbook' => $this->logBookModel->getLogbook()
+        ];
+        return view('admin/exportlogbook', $data);
+    }
 }
-// $main_arr = array();
-//                 for($i=0;$i<sizeof($data['id_alat']);$i++){
-//                     $arr=array('id_alat'=>$data['id_alat'][$i],'kondisi'=>$data['kondisi'][$i],'keterangan'=>$data['keterangan'][$i],);
-//                     $main_arr = $arr;
-//                 }
