@@ -14,7 +14,16 @@
             <?php $validation = session()->getFlashdata('validation'); ?>
             <form method="POST" action="<?= base_url('admin/post'); ?>" enctype="multipart/form-data" id="SimpanData">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <a href="<?= base_url('admin/exportlogbook'); ?>" class="btn btn-primary">
+                    
+                    <?php
+                    $request = \Config\Services::request();
+                    $keyword = $request->getGet('keyword');
+                    if ($keyword != '') {
+                        $param = "?keyword=" . $keyword;
+                    } else {
+                        $param = '';
+                    } ?>
+                    <a href="<?= base_url('admin/exportlogbook' . $param); ?>" class="btn btn-primary">
                         <i class="fas fa-file-download"></i> Export data excel
                     </a>
                     <div class="normal-table-list">
@@ -112,6 +121,5 @@
             }
         });
     }
-    
 </script>
 <?= $this->endSection(); ?>

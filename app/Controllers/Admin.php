@@ -302,7 +302,20 @@ class Admin extends BaseController
 
     public function exportlogbook()
     {
-        $logbook = $this->logBookModel->getLogBook();
+        // $logbook = $this->logBookModel->getLogBook();
+        $keyword = $this->request->getGet('keyword');
+        $builder = $this->db->table('tb_logbook')
+        ->join('tb_alat', 'tb_alat.id_alat = tb_logbook.id_alat');
+        if($keyword != ''){
+            $builder->like('nama_alat', $keyword);
+            $builder->orLike('kondisi', $keyword);
+            $builder->orLike('tanggal', $keyword);
+            $builder->orLike('nama_petugas', $keyword);
+            $builder->orLike('keterangan', $keyword);
+        }
+        $query = $builder->get();
+        $logbook = $query->getResultArray();
+
         $spreadsheet = new Spreadsheet();
         $sheet = $spreadsheet->getActiveSheet();
         $sheet->setCellValue('A1', 'No');
