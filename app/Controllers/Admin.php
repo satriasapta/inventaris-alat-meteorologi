@@ -237,14 +237,14 @@ class Admin extends BaseController
 
         return view('admin/logbook', $data);
     }
-    
+
     public function lbharian()
     {
         $data = [
             'logbook' => $this->logBookModel->getLast(),
             'alat' => $this->alatModel->getAlat()
         ];
-    
+
         return view('admin/lbharian', $data);
     }
 
@@ -302,22 +302,61 @@ class Admin extends BaseController
 
     public function exportlogbook()
     {
-        $logbook = $this->logBookModel->findAll();
+        // $logbook = $this->logBookModel->getLogBook();
+        $keyword = $this->request->getGet('keyword');
+        $builder = $this->db->table('tb_logbook')
+        ->join('tb_alat', 'tb_alat.id_alat = tb_logbook.id_alat');
+        if($keyword != ''){
+            $builder->like('nama_alat', $keyword);
+            $builder->orLike('kondisi', $keyword);
+            $builder->orLike('tanggal', $keyword);
+            $builder->orLike('nama_petugas', $keyword);
+            $builder->orLike('keterangan', $keyword);
+        }
+        $query = $builder->get();
+        $logbook = $query->getResultArray();
+
         $spreadsheet = new Spreadsheet();
         $sheet = $spreadsheet->getActiveSheet();
         $sheet->setCellValue('A1', 'No');
-        $sheet->setCellValue('A1', 'Nama Petugas');
-        $sheet->setCellValue('A1', 'Tanggal');
-        $sheet->setCellValue('A1', 'Nama Alat');
-        $sheet->setCellValue('A1', 'Kondisi');
-        $sheet->setCellValue('A1', 'Keterangan');
+        $sheet->setCellValue('B1', 'Nama Petugas');
+        $sheet->setCellValue('C1', 'Tanggal');
+        $sheet->setCellValue('D1', 'Nama Alat');
+        $sheet->setCellValue('E1', 'Kondisi');
+        $sheet->setCellValue('F1', 'Keterangan');
 
-        $column2 = 2;
-        foreach($logbook as $key => $value){
-            $sheet->setCellValue('A'.$column2, $key+1);
+        $column = 2;
+        foreach ($logbook as $key => $value) {
+            $sheet->setCellValue('A' . $column, ($column - 1));
+            $sheet->setCellValue('B' . $column, $value['nama_petugas']);
+            $sheet->setCellValue('C' . $column, $value['tanggal']);
+            $sheet->setCellValue('D' . $column, $value['nama_alat']);
+            $sheet->setCellValue('E' . $column, $value['kondisi']);
+            $sheet->setCellValue('F' . $column, $value['keterangan']);
+            $column++;
         }
-
+        $sheet->getStyle('A1:F1')->getFont()->setBold(true);
+        $sheet->getStyle('A1:F1')->getFill()->setFillType(\PhpOffice\PhpSpreadsheet\Style\Fill::FILL_SOLID)->getStartColor()->setARGB('FFA0A0A0');
+        $styleArray = [
+            'borders' => [
+                'allBorders' => [
+                    'borderStyle' => \PhpOffice\PhpSpreadsheet\Style\Border::BORDER_THIN,
+                    'color' => ['argb' => 'FF000000'],
+                ],
+            ],
+        ];
+        $sheet->getStyle('A1:F' . ($column - 1))->applyFromArray($styleArray);
+        $sheet->getColumnDimension('A')->setAutoSize(true);
+        $sheet->getColumnDimension('B')->setAutoSize(true);
+        $sheet->getColumnDimension('C')->setAutoSize(true);
+        $sheet->getColumnDimension('D')->setAutoSize(true);
+        $sheet->getColumnDimension('E')->setAutoSize(true);
+        $sheet->getColumnDimension('F')->setAutoSize(true);
         $writer = new Xlsx($spreadsheet);
-        $writer->save('hello world.xlsx');
+        header("Content-type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet");
+        header("Content-Disposition: attachment; filename=Logbook.xls");
+        header("Cache-Control: max-age=0");
+        $writer->save('php://output');
+        exit();
     }
 }

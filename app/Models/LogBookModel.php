@@ -33,4 +33,21 @@ class LogBookModel extends Model
 
         return $dataLogBook;
     }
+
+    public function getPaginated($num,$keyword = null)
+    {
+        $dataLogBook = $this->db->table('tb_logbook')
+        ->join('tb_alat', 'tb_alat.id_alat = tb_logbook.id_alat');
+        if($keyword != ''){
+            $dataLogBook->like('nama_alat', $keyword);
+            $dataLogBook->orLike('kondisi', $keyword);
+            $dataLogBook->orLike('tanggal', $keyword);
+            $dataLogBook->orLike('nama_petugas', $keyword);
+            $dataLogBook->orLike('keterangan', $keyword);
+        }
+        return [
+            'dataLogBook' => $dataLogBook->paginate($num),
+            'pager' => $this->pager
+        ];
+    }
 }
