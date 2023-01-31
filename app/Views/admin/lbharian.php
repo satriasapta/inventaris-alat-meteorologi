@@ -16,12 +16,13 @@
                             <thead>
                                 <tr>
                                     <th>Nama Petugas</th>
+                                    <th>Tanggal Pengecekan</th>
                                 </tr>
                                 <tr>
                                     <th>No</th>
-                                    <th>Tanggal Pengecekan</th>
                                     <th>Nama Alat</th>
                                     <th>Kondisi</th>
+                                    <th>Keterangan</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -43,17 +44,6 @@
                                     </tr>
                                 <?php endforeach ?>
                             </tbody>
-                            <tfoot>
-                                <tr>
-                                    <th>Nama Petugas</th>
-                                </tr>
-                                <tr>
-                                    <th>No</th>
-                                    <th>Tanggal Pengecekan</th>
-                                    <th>Nama Alat</th>
-                                    <th>Kondisi</th>
-                                </tr>
-                            </tfoot>
                         </table>
                     </div>
                 </div>
