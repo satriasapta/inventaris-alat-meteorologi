@@ -8,6 +8,8 @@ use App\Models\KategoriModel;
 use App\Models\LogBookModel;
 use App\Models\KondisiModel;
 use App\Models\UserModel;
+use PhpOffice\PhpSpreadsheet\Spreadsheet;
+use PhpOffice\PhpSpreadsheet\Writer\Xlsx;
 
 class Admin extends BaseController
 {
@@ -237,7 +239,7 @@ class Admin extends BaseController
     }
     public function post()
     {
-     
+
         $logbook = model(LogBookModel::class);
         $rules = [
             'kondisi' => [
@@ -278,7 +280,6 @@ class Admin extends BaseController
                 'success' => true,
                 'notif' => 'Data Berhasil Disimpan'
             ];
-
         } else {
             $message = [
                 'success' => false,
@@ -290,9 +291,22 @@ class Admin extends BaseController
 
     public function exportlogbook()
     {
-        $data = [
-            'logbook' => $this->logBookModel->getLogbook()
-        ];
-        return view('admin/exportlogbook', $data);
+        $logbook = $this->logBookModel->findAll();
+        $spreadsheet = new Spreadsheet();
+        $sheet = $spreadsheet->getActiveSheet();
+        $sheet->setCellValue('A1', 'No');
+        $sheet->setCellValue('A1', 'Nama Petugas');
+        $sheet->setCellValue('A1', 'Tanggal');
+        $sheet->setCellValue('A1', 'Nama Alat');
+        $sheet->setCellValue('A1', 'Kondisi');
+        $sheet->setCellValue('A1', 'Keterangan');
+
+        $column2 = 2;
+        foreach($logbook as $key => $value){
+            $sheet->setCellValue('A'.$column2, $key+1);
+        }
+
+        $writer = new Xlsx($spreadsheet);
+        $writer->save('hello world.xlsx');
     }
 }
