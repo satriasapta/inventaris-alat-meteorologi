@@ -15,11 +15,13 @@
                         <table id="data-table-basic" class="table table-striped">
                             <thead>
                                 <tr>
+                                    <th>Nama Petugas</th>
+                                </tr>
+                                <tr>
                                     <th>No</th>
                                     <th>Tanggal Pengecekan</th>
-                                    <th>Jumlah Alat Operasional</th>
-                                    <th>Jumlah Alat Tidak Operasional</th>
-                                    <th>Aksi</th>
+                                    <th>Nama Alat</th>
+                                    <th>Kondisi</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -43,11 +45,13 @@
                             </tbody>
                             <tfoot>
                                 <tr>
+                                    <th>Nama Petugas</th>
+                                </tr>
+                                <tr>
                                     <th>No</th>
                                     <th>Tanggal Pengecekan</th>
-                                    <th>Jumlah Alat Operasional</th>
-                                    <th>Jumlah Alat Tidak Operasional</th>
-                                    <th>Aksi</th>
+                                    <th>Nama Alat</th>
+                                    <th>Kondisi</th>
                                 </tr>
                             </tfoot>
                         </table>
