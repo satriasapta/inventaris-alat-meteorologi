@@ -7,20 +7,32 @@
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div class="data-table-list">
+                    <div>
+                        <div class="breadcomb-report">
+                            <button data-toggle="tooltip" data-placement="left" title="Download Report" class="btn"><i class="notika-icon notika-sent"></i></button>
+                        </div>
+                    </div>
                     <div class="basic-tb-hd">
                         <h2>Data Log Book Harian</h2>
                         <p>Log Book Harian BMKG Klas I Bandara Radin Inten II Bandar Lampung</p>
                     </div>
+                    <form action="" method="get" autocomplete="off">
+                        <?php $request = \Config\Services::request(); ?>
+                        <input type="text" name="keyword" value="<?= $request->getGet('keyword'); ?>" class="form-control">
+                        <button type="submit" class="btn btn-primary">search</button>
+                    </form>
                     <div class="table-responsive">
                         <table id="data-table-basic" class="table table-striped">
                             <thead>
                                 <tr>
                                     <td>Nama Petugas </td>
-                                    <td>: <?= $logbook['nama_petugas'] ?></td>
+                                    <td>:</td>
+                                    <td><?= $logbook['nama_petugas'] ?></td>
                                 </tr>
                                 <tr>
                                     <td>Tanggal Pengecekan </td>
-                                    <td>: <?= $logbook['tanggal']; ?></td>
+                                    <td>:</td>
+                                    <td><?= $logbook['tanggal']; ?></td>
                                 </tr>
                                 <tr>
                                     <th>No</th>
@@ -36,8 +48,7 @@
                                         <td><?= $a['nama_alat']; ?></td>
                                         <td><?= $a['kategori_alat']; ?></td>
                                         <td><?= $a['kondisi_alat']; ?></td>
-                                        <td><?= $a['tahun_pembelian']; ?></td>
-                                        <td><?= $a['kalibrasi']; ?></td>
+
                                         <td>
                                             <div class="material-design-btn">
                                                 <form>

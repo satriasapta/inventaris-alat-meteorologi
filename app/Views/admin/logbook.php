@@ -14,9 +14,12 @@
             <?php $validation = session()->getFlashdata('validation'); ?>
             <form method="POST" action="<?= base_url('admin/post'); ?>" enctype="multipart/form-data" id="SimpanData">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <a href="<?= base_url('admin/exportlogbook'); ?>" class="btn btn-primary">
+                    <!-- <a href="" class="btn btn-primary">
                         <i class="fas fa-file-download"></i> Export data excel
-                    </a>
+                    </a> -->
+                    <div class="invoice-print">
+                        <a href="<?= base_url('admin/exportlogbook'); ?>" class="btn" data-ma-action="print"><i class="notika-icon notika-print"></i></a>
+                    </div>
                     <div class="normal-table-list">
                         <div class="col-lg-8 col-md-3 col-sm-3 col-xs-12">
                             <div class="basic-tb-hd">
@@ -112,6 +115,5 @@
             }
         });
     }
-    
 </script>
 <?= $this->endSection(); ?>
