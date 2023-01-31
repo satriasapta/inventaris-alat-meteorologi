@@ -78,9 +78,6 @@
               <input type="password" name="password" class="form-control" placeholder="Password">
             </div>
           </div>
-          <div class="fm-checkbox">
-            <label><input type="checkbox" class="i-checks"> <i></i> Keep me signed in</label>
-          </div>
           <button type="submit" class="btn btn-primary mt-3"><i class="notika-icon notika-right-arrow right-arrow-ant"></i></button>
         </div>
 

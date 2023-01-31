@@ -15,11 +15,14 @@
                         <table id="data-table-basic" class="table table-striped">
                             <thead>
                                 <tr>
-                                    <th>No</th>
+                                    <th>Nama Petugas</th>
                                     <th>Tanggal Pengecekan</th>
-                                    <th>Jumlah Alat Operasional</th>
-                                    <th>Jumlah Alat Tidak Operasional</th>
-                                    <th>Aksi</th>
+                                </tr>
+                                <tr>
+                                    <th>No</th>
+                                    <th>Nama Alat</th>
+                                    <th>Kondisi</th>
+                                    <th>Keterangan</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -41,15 +44,6 @@
                                     </tr>
                                 <?php endforeach ?>
                             </tbody>
-                            <tfoot>
-                                <tr>
-                                    <th>No</th>
-                                    <th>Tanggal Pengecekan</th>
-                                    <th>Jumlah Alat Operasional</th>
-                                    <th>Jumlah Alat Tidak Operasional</th>
-                                    <th>Aksi</th>
-                                </tr>
-                            </tfoot>
                         </table>
                     </div>
                 </div>
