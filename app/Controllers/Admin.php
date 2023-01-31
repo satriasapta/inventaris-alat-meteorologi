@@ -304,6 +304,7 @@ class Admin extends BaseController
     {
         // $logbook = $this->logBookModel->getLogBook();
         $keyword = $this->request->getGet('keyword');
+        $filename = "All Logbook.xlsx";
         $builder = $this->db->table('tb_logbook')
         ->join('tb_alat', 'tb_alat.id_alat = tb_logbook.id_alat');
         if($keyword != ''){
@@ -312,6 +313,7 @@ class Admin extends BaseController
             $builder->orLike('tanggal', $keyword);
             $builder->orLike('nama_petugas', $keyword);
             $builder->orLike('keterangan', $keyword);
+            $filename = "logbook-".$keyword.".xlsx";
         }
         $query = $builder->get();
         $logbook = $query->getResultArray();
@@ -354,7 +356,7 @@ class Admin extends BaseController
         $sheet->getColumnDimension('F')->setAutoSize(true);
         $writer = new Xlsx($spreadsheet);
         header("Content-type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet");
-        header("Content-Disposition: attachment; filename=Logbook.xls");
+        header("Content-Disposition: attachment; filename=".$filename);
         header("Cache-Control: max-age=0");
         $writer->save('php://output');
         exit();
