@@ -241,7 +241,7 @@ class Admin extends BaseController
     public function lbharian()
     {
         $data = [
-            'logbook' => $this->logBookModel->getLogbook(),
+            'logbook' => $this->logBookModel->getLast(),
             'alat' => $this->alatModel->getAlat()
         ];
     

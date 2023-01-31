@@ -16,11 +16,11 @@
                             <thead>
                                 <tr>
                                     <td>Nama Petugas </td>
-                                    <td>: <?= $alat->nama_alat; ?></td>
+                                    <td>: <?= $logbook['nama_petugas'] ?></td>
                                 </tr>
                                 <tr>
                                     <td>Tanggal Pengecekan </td>
-                                    <td>: berapa tanggalnya</td>
+                                    <td>: <?= $logbook['tanggal']; ?></td>
                                 </tr>
                                 <tr>
                                     <th>No</th>

@@ -22,4 +22,15 @@ class LogBookModel extends Model
 
         return $dataLogBook;
     }
+
+    public function getLast()
+    {
+        $dataLogBook = $this->db->table('tb_logbook')
+            ->join('tb_alat', 'tb_alat.id_alat = tb_logbook.id_alat')
+            ->orderBy('id_logbook', 'DESC')
+            ->limit(1)
+            ->get()->getRowArray();
+
+        return $dataLogBook;
+    }
 }
