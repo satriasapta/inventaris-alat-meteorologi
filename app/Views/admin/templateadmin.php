@@ -127,12 +127,6 @@
                   <ul class="collapse dropdown-header-top">
                     <li><a href="<?= base_url('admin/daftaralat'); ?>">Semua Alat</a>
                     </li>
-                    <li><a href="index-2.html">Konvensional</a>
-                    </li>
-                    <li><a href="index-3.html">Otomatis</a>
-                    </li>
-                    <li><a href="index-4.html">Modern</a>
-                    </li>
                   </ul>
                 </li>
                 <li><a data-toggle="collapse" data-target="#logbook" href="#">Log Book</a>
@@ -195,12 +189,6 @@
               <ul class="notika-main-menu-dropdown">
                 <li><a href="<?= base_url('admin/daftaralat'); ?>">Daftar Alat</a>
                 </li>
-                <li><a href="view-email.html">Konvensional</a>
-                </li>
-                <li><a href="compose-email.html">Otomatis</a>
-                </li>
-                <li><a href="compose-email.html">Elektronik</a>
-                </li>
                 <li><a href="<?= base_url('admin/tambahalat'); ?>">Tambah Alat</a>
                 </li>
               </ul>
@@ -208,12 +196,12 @@
 
             <div id="Logbook" class="tab-pane notika-tab-menu-bg animated flipInX">
               <ul class="notika-main-menu-dropdown">
-                <li><a href="<?= base_url('admin/lbharian'); ?>">Harian</a>
-                </li>
-                <li><a href="">Bulanan</a>
+                <li><a href="<?= base_url('admin/lbharian'); ?>">Data Log Book</a>
                 </li>
                 <li><a href="<?= base_url('admin/inputlogbook'); ?>">Isi Log Book</a>
-                </li>
+              </li>
+              <li><a href="<?= base_url('admin/unduhlb'); ?>">Unduh Log Book Harian</a>
+              </li>
               </ul>
             </div>
 
