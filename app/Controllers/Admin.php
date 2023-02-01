@@ -242,7 +242,7 @@ class Admin extends BaseController
     {
         $data = [
             'logbook' => $this->logBookModel->getLast(),
-            'alat' => $this->alatModel->getAlat()
+            'lb' => $this->logBookModel->getLogBook()
         ];
 
         return view('admin/lbharian', $data);

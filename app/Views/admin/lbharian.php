@@ -57,24 +57,18 @@
                                     <th>No</th>
                                     <th>Nama Alat</th>
                                     <th>Kondisi</th>
+                                    <th>Tanggal</th>
                                     <th>Keterangan</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <?php foreach ($alat as $a) : ?>
+                                <?php foreach ($lb as $l) : ?>
                                     <tr>
                                         <td><?= $index++; ?></td>
-                                        <td><?= $a['nama_alat']; ?></td>
-                                        <td><?= $a['kategori_alat']; ?></td>
-                                        <td><?= $a['kondisi_alat']; ?></td>
-
-                                        <td>
-                                            <div class="material-design-btn">
-                                                <form>
-                                                    <a href="<?= base_url('/admin/detailalat/' . $a['id_alat']); ?>" class="btn notika-btn-cyan waves-effect">Detail</a>
-                                                </form>
-                                            </div>
-                                        </td>
+                                        <td><?= $l['nama_alat']; ?></td>
+                                        <td><?= $l['kondisi']; ?></td>
+                                        <td><?= $l['tanggal']; ?></td>
+                                        <td><?= $l['keterangan']; ?></td>
                                     </tr>
                                 <?php endforeach ?>
                             </tbody>

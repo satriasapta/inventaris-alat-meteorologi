@@ -15,20 +15,6 @@
             <form method="POST" action="<?= base_url('admin/post'); ?>" enctype="multipart/form-data" id="SimpanData">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 
-                    <?php
-                    $request = \Config\Services::request();
-                    $keyword = $request->getGet('keyword');
-                    if ($keyword != '') {
-                        $param = "?keyword=" . $keyword;
-                    } else {
-                        $param = '';
-                    } ?>
-                    <a href="<?= base_url('admin/exportlogbook' . $param); ?>" class="btn btn-primary">
-                        <i class="fas fa-file-download"></i> Export data excel
-                    </a>
-                    <div class="invoice-print">
-                        <a href="<?= base_url('admin/exportlogbook'); ?>" class="btn" data-ma-action="print"><i class="notika-icon notika-print"></i></a>
-                    </div>
                     <div class="normal-table-list">
                         <div class="col-lg-8 col-md-3 col-sm-3 col-xs-12">
                             <div class="basic-tb-hd">
@@ -68,8 +54,8 @@
                                             <td><?= $a['nama_alat']; ?>
                                                 <input type="hidden" name="id_alat[]" class="form-control input-sm" value="<?= $a['id_alat']; ?>">
                                             </td>
-                                            <td><label><input type="radio" value="Layak" name="kondisi[<?= $index; ?>]" class="i-checks"> <i></i></label></td>
-                                            <td><label><input type="radio" value="Tidak Layak" name="kondisi[<?= $index; ?>]" class="i-checks"> <i></i></label></td>
+                                            <td><label><input type="radio" value="Operasional" name="kondisi[<?= $index; ?>]" class="i-checks"> <i></i></label></td>
+                                            <td><label><input type="radio" value="Tidak Operasional" name="kondisi[<?= $index; ?>]" class="i-checks"> <i></i></label></td>
                                             <td><input type="text" name="keterangan[]" class="form-control input-sm" placeholder="Keterangan"></td>
 
                                         </tr>
