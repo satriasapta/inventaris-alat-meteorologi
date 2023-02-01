@@ -140,7 +140,6 @@
                     <li><a href="<?= base_url('admin/dashboard'); ?>">Semua Log Book</a></li>
                     <li><a href="inbox.html">Harian</a></li>
                     <li><a href="view-email.html">Bulanan</a></li>
-                    <li><a href="compose-email.html">Tahunan</a></li>
                   </ul>
                 </li>
 
@@ -212,8 +211,6 @@
                 <li><a href="<?= base_url('admin/lbharian'); ?>">Harian</a>
                 </li>
                 <li><a href="">Bulanan</a>
-                </li>
-                <li><a href="">Tahunan</a>
                 </li>
                 <li><a href="<?= base_url('admin/inputlogbook'); ?>">Isi Log Book</a>
                 </li>
