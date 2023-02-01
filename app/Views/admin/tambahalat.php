@@ -33,6 +33,23 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="form-example-int form-horizental mg-t-15">
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-lg-2 col-md-3 col-sm-3 col-xs-12">
+                                        <label class="hrzn-fm nk-int-mk sl-dp-mn">Tahun Pembelian</label>
+                                    </div>
+                                    <div class="col-lg-8 col-md-7 col-sm-7 col-xs-12">
+                                        <div class="form-group nk-datapk-ctm form-elet-mg" id="data_3">
+                                            <div class="input-group date nk-int-st">
+                                                <span class="input-group-addon"></span>
+                                                <input type="text" name="tahun_pembelian" class="form-control" value="" placeholder="yyyy-mm-dd" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <div class="form-example-int form-horizental">
                             <div class="form-group">
                                 <div class="row">
@@ -78,23 +95,6 @@
                                                     <option value="<?= $k['id_kondisi']; ?>"><?= $k['kondisi_alat']; ?></option>
                                                 <?php endforeach; ?>
                                             </select>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-example-int form-horizental mg-t-15">
-                            <div class="form-group">
-                                <div class="row">
-                                    <div class="col-lg-2 col-md-3 col-sm-3 col-xs-12">
-                                        <label class="hrzn-fm nk-int-mk sl-dp-mn">Tahun Pembelian</label>
-                                    </div>
-                                    <div class="col-lg-8 col-md-7 col-sm-7 col-xs-12">
-                                        <div class="form-group nk-datapk-ctm form-elet-mg" id="data_3">
-                                            <div class="input-group date nk-int-st">
-                                                <span class="input-group-addon"></span>
-                                                <input type="text" name="tahun_pembelian" class="form-control" value="" placeholder="yyyy-mm-dd" required>
-                                            </div>
                                         </div>
                                     </div>
                                 </div>
