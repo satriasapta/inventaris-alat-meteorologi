@@ -10,6 +10,10 @@
   <!-- favicon
 		============================================ -->
   <link rel="shortcut icon" type="image" href="/templates2/img/bmkg.png">
+  <!-- Bootstrap icons-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+  <!-- Core theme CSS (includes Bootstrap)-->
+  <link href="/templates3/css/styles.css" rel="stylesheet" />
   <!-- Google Fonts
 		============================================ -->
   <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900" rel="stylesheet">
@@ -356,6 +360,10 @@
   <!-- main JS
 		============================================ -->
   <script src="/templates2/js/main.js"></script>
+  <!-- Bootstrap core JS-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Core theme JS-->
+  <script src="/templates3/js/scripts.js"></script>
 
 </body>
 
