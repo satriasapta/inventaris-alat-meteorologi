@@ -88,23 +88,15 @@
             <a href="daftaralat"><img src="/templates2/img/logo/logo.png" alt="" /></a>
           </div>
         </div>
-
-        <div class="navbar">
           <ul class="nav navbar-nav navbar-right">
-            <div class="topbar-divider d-none d-sm-block"></div>
-            
+            <li><?= anchor('auth/logout','logout'); ?></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right" style="margin:27px; position:relative;">
               <li>
-                <div>Selamat Datang ||<?= userLogin()['username']; ?> </div>
+                Selamat Datang ||<?= userLogin()['username']; ?>
               </li>
-              <div class="topbar-divider d-none d-sm-block"></div>
-              <li><?= anchor('auth/logout', 'Logout') ?></li>
-            
-              <li><?= anchor('auth/login', 'Login') ?></li>
-            
           </ul>
-          <ul class="na navbar-nav navbar-right">
-          </ul>
-        </div>
+        
 
       </div>
     </div>
