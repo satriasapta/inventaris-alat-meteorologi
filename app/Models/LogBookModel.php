@@ -18,6 +18,7 @@ class LogBookModel extends Model
     {
         $dataLogBook = $this->db->table('tb_logbook')
             ->join('tb_alat', 'tb_alat.id_alat = tb_logbook.id_alat')
+            ->orderBy('tanggal', 'DESC')
             ->get()->getResultArray();
 
         return $dataLogBook;
