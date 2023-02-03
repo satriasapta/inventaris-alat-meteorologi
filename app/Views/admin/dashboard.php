@@ -9,7 +9,7 @@
                 <div class="wb-traffic-inner">
                     <div class="website-traffic-ctn text-center">
                         <h2><span class="counter text-info"><?= $dataAlat; ?></span></h2>
-                        <p>Total Semua Alat</p>
+                        <p>Semua Alat</p>
                     </div>
                 </div>
             </div>
@@ -17,7 +17,7 @@
                 <div class="wb-traffic-inner notika-shadow sm-res-mg-t-30">
                     <div class="website-traffic-ctn text-center">
                         <h2><span class="counter text-success"><?= $dataKondisi; ?></span></h2>
-                        <p>Total Alat Baik</p>
+                        <p>Alat Baik</p>
                     </div>
                 </div>
             </div>
@@ -25,7 +25,7 @@
                 <div class="wb-traffic-inner notika-shadow sm-res-mg-t-30 tb-res-mg-t-30 dk-res-mg-t-30">
                     <div class="website-traffic-ctn text-center">
                         <h2><span class="counter text-danger"><?= $dataKondisi2; ?></span></h2>
-                        <p>Total Alat Rusak</p>
+                        <p>Alat Rusak</p>
                     </div>
                 </div>
             </div>
@@ -33,7 +33,7 @@
                 <div class="wb-traffic-inner notika-shadow sm-res-mg-t-30 tb-res-mg-t-30 dk-res-mg-t-30">
                     <div class="website-traffic-ctn text-center">
                         <h2><span class="counter text-dark"><?= $dataKondisi3; ?></span></h2>
-                        <p>Total Alat Rusak Berat</p>
+                        <p>Alat Rusak Berat</p>
                     </div>
                 </div>
             </div>
