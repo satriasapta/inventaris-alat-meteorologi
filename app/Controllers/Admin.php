@@ -156,7 +156,7 @@ class Admin extends BaseController
             if ($query->resultID->num_rows > 0) {
                 $data = [
                     'alat' => $query->getRow(),
-                    'kategori' => $this->alatModel->getAlat(),
+                    'kategori' => $this->kategoriModel->findAll(),
                     'kondisi' => $this->kondisiModel->findAll()
                 ];
                 return view('admin/editalat', $data);
