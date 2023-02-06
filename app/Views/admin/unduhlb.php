@@ -19,14 +19,16 @@
                         <div class="input-group date nk-int-st">
                             <?php $request = \Config\Services::request();; ?>
                             <input type="date" name="keyword" class="form-control" value="<?= $request->getGet('keyword'); ?>" placeholder="yyyy-mm-dd" required>
+                            <input type="date" name="keyword2" class="form-control" value="<?= $request->getGet('keyword2'); ?>" placeholder="yyyy-mm-dd" required>
                         </div>
                             <button type="submit" class="notika-icon notika-search"></button>
                         </div>
                         <?php
                         $request = \Config\Services::request();
                         $keyword = $request->getGet('keyword');
-                        if ($keyword != '') {
-                            $param = "?keyword=" . $keyword;
+                        $keyword2 = $request->getGet('keyword2');
+                        if ($keyword && $keyword2 != '') {
+                            $param = "?keyword=" . $keyword."&keyword2=" . $keyword2;
                         } else {
                             $param = '';
                         } ?>

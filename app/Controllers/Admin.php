@@ -308,16 +308,14 @@ class Admin extends BaseController
     {
         // $logbook = $this->logBookModel->getLogBook();
         $keyword = $this->request->getGet('keyword');
+        $keyword2 = $this->request->getGet('keyword2');
         $filename = "All Logbook.xlsx";
         $builder = $this->db->table('tb_logbook')
             ->join('tb_alat', 'tb_alat.id_alat = tb_logbook.id_alat');
-        if ($keyword != '') {
-            $builder->like('nama_alat', $keyword);
-            $builder->orLike('kondisi', $keyword);
-            $builder->orLike('tanggal', $keyword);
-            $builder->orLike('nama_petugas', $keyword);
-            $builder->orLike('keterangan', $keyword);
-            $filename = "logbook-" . $keyword . ".xlsx";
+        if ($keyword && $keyword2 != '') {
+            $builder->where('tb_logbook.tanggal >=', $keyword);
+            $builder->where('tb_logbook.tanggal <=', $keyword2);
+            $filename = "logbook-" . $keyword. "&&".$keyword2 . ".xlsx";
         }
         $query = $builder->get();
         $logbook = $query->getResultArray();

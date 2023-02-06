@@ -34,4 +34,15 @@ class LogBookModel extends Model
 
         return $dataLogBook;
     }
+
+    public function getdate()
+    {
+        $dataLogBook = $this->db->table('tb_logbook')
+        ->join('tb_alat', 'tb_alat.id_alat = tb_logbook.id_alat')
+        ->where(' tanggal >=', '2021-01-01')
+        ->where(' tanggal <=', '2021-01-31')
+        ->orderBy('tanggal', 'DESC')
+        ->get()->getResultArray();
+        return $dataLogBook;
+    }
 }
