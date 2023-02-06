@@ -21,7 +21,7 @@
             <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
                 <?php foreach ($alat as $a) : ?>
                 <div class="card h-100 bg-secondary text-white" style="max-width: 300px; margin: 10px;">
-                    <img class="card-img mt-3" src="<?= base_url('img/'.$a['gambar_alat']); ?>" alt="Card image">
+                    <img class="card-img mt-3" src="<?= base_url('uploads/'.$a['gambar_alat']); ?>" alt="Card image">
                     <div class="text-center mt-4">
                         <h5 class="card-title"><?= $a['nama_alat']; ?></h5>
                         <p class="card-text"><?= $a['kategori_alat']; ?></p>
