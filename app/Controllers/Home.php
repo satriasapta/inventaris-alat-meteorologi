@@ -26,4 +26,21 @@ class Home extends BaseController
     {
         return view('dashboard');
     }
+    public function detailalat($id = null)
+    {
+        if ($id != null) {
+            $query = $this->db->table('tb_alat')->join('tb_kategori', 'tb_kategori.id_kategori = tb_alat.id_kategori')->join('kondisi', 'kondisi.id_kondisi = tb_alat.id_kondisi')->getWhere(['id_alat' => $id]);
+            if ($query->resultID->num_rows > 0) {
+                $data = [
+                    'alat' => $query->getRow(),
+                    'kategori' => $this->alatModel->getAlat()
+                ];
+                return view('user/detailalat', $data);
+            } else {
+                throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound();
+            }
+        } else {
+            throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound();
+        }
+    }
 }

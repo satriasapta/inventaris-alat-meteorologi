@@ -27,7 +27,7 @@
                         <p class="card-text"><?= $a['kategori_alat']; ?></p>
                     </div>
                     <div class="card-footer p-4 pt-4 border-top-0 bg-transparent">
-                        <div class="text-center"><a class="btn btn-outline-dark text-white border-dark mt-auto" href="#">Detail</a></div>
+                        <div class="text-center"><a class="btn btn-outline-dark text-white border-dark mt-auto" href="<?= base_url('detailalat/'.$a['id_alat']); ?>">Detail</a></div>
                     </div>
                 </div>
                <?php endforeach ?>

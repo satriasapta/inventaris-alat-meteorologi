@@ -173,7 +173,7 @@
           <div class="tab-content custom-menu-content">
             <div id="Dashboard" class="tab-pane in notika-tab-menu-bg animated flipInX">
               <ul class="notika-main-menu-dropdown">
-                <li><a href="<?= base_url('admin/'); ?>">Dashboard</a>
+                <li><a href="<?= base_url('/'); ?>">Dashboard</a>
                 </li>
               </ul>
             </div>
