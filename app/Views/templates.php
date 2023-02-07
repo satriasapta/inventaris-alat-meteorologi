@@ -105,44 +105,17 @@
             <nav id="dropdown">
               <ul class="mobile-menu-nav">
                 <li><a data-toggle="collapse" data-target="#dashboard" href="<?= base_url('admin/dashboard'); ?>">Dashboard</a>
-                  <ul class="collapse dropdown-header-top">
-                    <li><a href="<?= base_url('admin/tambahalat'); ?>">Tambah Alat</a></li>
-                  </ul>
                 </li>
                 <li><a data-toggle="collapse" data-target="#alat" href="#">Alat</a>
                   <ul class="collapse dropdown-header-top">
-                    <li><a href="<?= base_url('admin/daftaralat'); ?>">Semua Alat</a>
+                    <li><a href="<?= base_url('user/daftaralat'); ?>">Daftar Alat</a>
                     </li>
-                    <li><a href="index-2.html">Konvensional</a>
-                    </li>
-                    <li><a href="index-3.html">Otomatis</a>
-                    </li>
-                    <li><a href="index-4.html">Modern</a>
-                    </li>
-                  </ul>
-                </li>
-                <li><a data-toggle="collapse" data-target="#logbook" href="#">Log Book</a>
-                  <ul id="logbook" class="collapse dropdown-header-top">
-                    <li><a href="<?= base_url('admin/dashboard'); ?>">Semua Log Book</a></li>
-                    <li><a href="inbox.html">Harian</a></li>
-                    <li><a href="view-email.html">Bulanan</a></li>
-                    <li><a href="compose-email.html">Tahunan</a></li>
                   </ul>
                 </li>
 
-                <li><a data-toggle="collapse" data-target="#Pagemob" href="#">Developer</a>
+                <li><a data-toggle="collapse" data-target="#Pagemob" href="#">Profil</a>
                   <ul id="Pagemob" class="collapse dropdown-header-top">
-                    <li><a href="contact.html">Contact</a>
-                    </li>
-                    <li><a href="invoice.html">Invoice</a>
-                    </li>
-                    <li><a href="typography.html">Typography</a>
-                    </li>
-                    <li><a href="color.html">Color</a>
-                    </li>
-                    <li><a href="login-register.html">Login Register</a>
-                    </li>
-                    <li><a href="404.html">404 Page</a>
+                    <li><a href="">Profil BMKG</a>
                     </li>
                   </ul>
                 </li>
@@ -164,9 +137,7 @@
             </li>
             <li><a data-toggle="tab" href="#Alat"><i class="notika-icon notika-menus"></i> Alat</a>
             </li>
-            <li><a data-toggle="tab" href="#Logbook"><i class="notika-icon notika-edit"></i> Log Book</a>
-            </li>
-            <li><a data-toggle="tab" href="#Developer"><i class="notika-icon notika-support"></i>Developer</a>
+            <li><a data-toggle="tab" href="#Profil"><i class="notika-icon notika-support"></i> Profil BMKG</a>
             </li>
           </ul>
 
@@ -180,45 +151,14 @@
 
             <div id="Alat" class="tab-pane notika-tab-menu-bg animated flipInX">
               <ul class="notika-main-menu-dropdown">
-                <li><a href="<?= base_url('admin/daftaralat'); ?>">Daftar Alat</a>
-                </li>
-                <li><a href="view-email.html">Konvensional</a>
-                </li>
-                <li><a href="compose-email.html">Otomatis</a>
-                </li>
-                <li><a href="compose-email.html">Elektronik</a>
-                </li>
-                <li><a href="<?= base_url('admin/tambahalat'); ?>">Tambah Alat</a>
+                <li><a href="<?= base_url('user/daftaralat'); ?>">Daftar Alat</a>
                 </li>
               </ul>
             </div>
 
-            <div id="Logbook" class="tab-pane notika-tab-menu-bg animated flipInX">
+            <div id="Profil" class="tab-pane notika-tab-menu-bg animated flipInX">
               <ul class="notika-main-menu-dropdown">
-                <li><a href="<?= base_url('admin/lbharian'); ?>">Harian</a>
-                </li>
-                <li><a href="">Bulanan</a>
-                </li>
-                <li><a href="">Tahunan</a>
-                </li>
-                <li><a href="<?= base_url('admin/inputlogbook'); ?>">Isi Log Book</a>
-                </li>
-              </ul>
-            </div>
-
-            <div id="Developer" class="tab-pane notika-tab-menu-bg animated flipInX">
-              <ul class="notika-main-menu-dropdown">
-                <li><a href="contact.html">Contact</a>
-                </li>
-                <li><a href="invoice.html">Invoice</a>
-                </li>
-                <li><a href="typography.html">Typography</a>
-                </li>
-                <li><a href="color.html">Color</a>
-                </li>
-                <li><a href="login-register.html">Login Register</a>
-                </li>
-                <li><a href="404.html">404 Page</a>
+                <li><a href="">Profil BMKG</a>
                 </li>
               </ul>
             </div>
