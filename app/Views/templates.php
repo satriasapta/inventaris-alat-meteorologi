@@ -137,7 +137,7 @@
             </li>
             <li><a data-toggle="tab" href="#Alat"><i class="notika-icon notika-menus"></i> Alat</a>
             </li>
-            <li><a data-toggle="tab" href="#Profil"><i class="notika-icon notika-support"></i> Profil BMKG</a>
+            <li><a href="<?= base_url('profil'); ?>"><i class="notika-icon notika-support"></i> Profil BMKG</a>
             </li>
           </ul>
 
@@ -156,12 +156,12 @@
               </ul>
             </div>
 
-            <div id="Profil" class="tab-pane notika-tab-menu-bg animated flipInX">
+            <!-- <div id="Profil" class="tab-pane notika-tab-menu-bg animated flipInX">
               <ul class="notika-main-menu-dropdown">
                 <li><a href="">Profil BMKG</a>
                 </li>
               </ul>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
