@@ -304,6 +304,10 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
   <!-- Core theme JS-->
   <script src="/templates3/js/scripts.js"></script>
+  <!--  wizard JS
+		============================================ -->
+  <script src="/templates2/js/wizard/jquery.bootstrap.wizard.min.js"></script>
+  <script src="/templates2/js/wizard/wizard-active.js"></script>
 
 </body>
 
