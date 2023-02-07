@@ -81,7 +81,7 @@
                                   </div>
                                   <div id="accordionGreen-one" class="collapse" role="tabpanel">
                                     <div class="panel-body">
-                                      <p><?= $alat->komponen_alat; ?></p>
+                                      <p style="white-space: pre-wrap;"><?= $alat->komponen_alat; ?></p>
                                     </div>
                                   </div>
                                 </div>
@@ -95,7 +95,7 @@
                                   </div>
                                   <div id="accordionGreen-two" class="collapse" role="tabpanel">
                                     <div class="panel-body">
-                                      <p><?= $alat->penggantian_komponen; ?></p>
+                                      <p style="white-space: pre-wrap;"><?= $alat->penggantian_komponen; ?></p>
                                     </div>
                                   </div>
                                 </div>
@@ -109,7 +109,7 @@
                                   </div>
                                   <div id="accordionGreen-three" class="collapse" role="tabpanel">
                                     <div class="panel-body">
-                                      <p><?= $alat->pemeliharaan_alat; ?></p>
+                                      <p style="white-space: pre-wrap;"><?= $alat->pemeliharaan_alat; ?></p>
                                     </div>
                                   </div>
                                 </div>
@@ -122,7 +122,7 @@
                                   </div>
                                   <div id="accordionGreen-4" class="collapse" role="tabpanel">
                                     <div class="panel-body">
-                                      <p><?= $alat->perbaikan_alat; ?></p>
+                                      <p style="white-space: pre-wrap;"><?= $alat->perbaikan_alat; ?></p>
                                     </div>
                                   </div>
                                 </div>
@@ -135,7 +135,7 @@
                                   </div>
                                   <div id="accordionGreen-5" class="collapse" role="tabpanel">
                                     <div class="panel-body">
-                                      <p><?= $alat->persiapan_pemeliharaan; ?></p>
+                                      <p style="white-space: pre-wrap;"><?= $alat->persiapan_pemeliharaan; ?></p>
                                     </div>
                                   </div>
                                 </div>
@@ -148,7 +148,7 @@
                                   </div>
                                   <div id="accordionGreen-6" class="collapse" role="tabpanel">
                                     <div class="panel-body">
-                                      <p><?= $alat->cara_pemeliharaan; ?></p>
+                                      <p style="white-space: pre-wrap;"><?= $alat->cara_pemeliharaan; ?></p>
                                     </div>
                                   </div>
                                 </div>
@@ -161,7 +161,7 @@
                                   </div>
                                   <div id="accordionGreen-7" class="collapse" role="tabpanel">
                                     <div class="panel-body">
-                                      <p><?= $alat->modifikasi_alat; ?></p>
+                                      <p style="white-space: pre-wrap;"><?= $alat->modifikasi_alat; ?></p>
                                     </div>
                                   </div>
                                 </div>
@@ -174,7 +174,7 @@
                                   </div>
                                   <div id="accordionGreen-8" class="collapse" role="tabpanel">
                                     <div class="panel-body">
-                                      <p><?= $alat->penyediaan_alat; ?></p>
+                                      <p style="white-space: pre-wrap;"><?= $alat->penyediaan_alat; ?></p>
                                     </div>
                                   </div>
                                 </div>
@@ -187,7 +187,7 @@
                                   </div>
                                   <div id="accordionGreen-9" class="collapse" role="tabpanel">
                                     <div class="panel-body">
-                                      <p><?= $alat->penyediaan_sukucadang; ?></p>
+                                      <p style="white-space: pre-wrap;"><?= $alat->penyediaan_sukucadang; ?></p>
                                     </div>
                                   </div>
                                 </div>
@@ -200,7 +200,7 @@
                                   </div>
                                   <div id="accordionGreen-10" class="collapse" role="tabpanel">
                                     <div class="panel-body">
-                                      <p><?= $alat->keamanan_alat; ?></p>
+                                      <p style="white-space: pre-wrap;"><?= $alat->keamanan_alat; ?></p>
                                     </div>
                                   </div>
                                 </div>

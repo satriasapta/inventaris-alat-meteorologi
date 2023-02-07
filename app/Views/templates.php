@@ -151,7 +151,7 @@
 
             <div id="Alat" class="tab-pane notika-tab-menu-bg animated flipInX">
               <ul class="notika-main-menu-dropdown">
-                <li><a href="<?= base_url('user/daftaralat'); ?>">Daftar Alat</a>
+                <li><a href="<?= base_url('/daftaralat'); ?>">Daftar Alat</a>
                 </li>
               </ul>
             </div>

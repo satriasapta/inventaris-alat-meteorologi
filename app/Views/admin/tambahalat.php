@@ -159,7 +159,7 @@
                                                                         <div class="form-group">
                                                                             <label>1. Komponen alat</label>
                                                                             <div class="nk-int-st">
-                                                                                <textarea class="form-control" rows="5" placeholder="Ayo lengkapi data" name="komponen_alat"></textarea>
+                                                                                <textarea class="form-control" rows="5" placeholder="Ayo lengkapi data" name="komponen_alat" style="white-space: pre-wrap;"></textarea>
                                                                             </div>
                                                                         </div>
                                                                     </div>

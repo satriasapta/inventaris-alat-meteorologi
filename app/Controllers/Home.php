@@ -48,4 +48,11 @@ class Home extends BaseController
     {
         return view('user/profil');
     }
+    public function daftaralat()
+    {
+        $data = [
+            'alat' => $this->alatModel->getAlat()
+        ];
+        return view('user/daftaralat',$data);
+    }
 }
