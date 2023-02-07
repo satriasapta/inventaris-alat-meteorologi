@@ -43,4 +43,9 @@ class Home extends BaseController
             throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound();
         }
     }
+
+    public function profil()
+    {
+        return view('user/profil');
+    }
 }
