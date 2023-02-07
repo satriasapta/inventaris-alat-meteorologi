@@ -296,7 +296,7 @@ class Admin extends BaseController
                 'notif' => 'Data Gagal Disimpan'
             ];
         }
-        return redirect()->back()->with('success', ' Data Berhasil Disimpan');
+        return redirect()->to('admin/lbharian')->with('success', ' Data Berhasil Disimpan');
     }
 
     public function unduhlb()

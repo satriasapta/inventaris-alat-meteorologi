@@ -8,11 +8,15 @@
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div class="data-table-list">
                     <div class="basic-tb-hd">
-                        <?php if (session()->getFlashdata('success')) : ?>
-                            <div class="alert alert-success m-3" role="alert">
-                                <?= session()->getFlashdata('success'); ?>
-                            </div>
-                        <?php endif; ?>
+
+                        <div class="alert-list">
+                            <?php if (session()->getFlashdata('success')) : ?>
+                                <div class="alert alert-success alert-dismissible" role="alert">
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true"><i class="notika-icon notika-close"></i></span></button> <?= session()->getFlashdata('success'); ?>
+                                </div>
+                            <?php endif; ?>
+                        </div>
+
                         <h2>Daftar Alat</h2>
                         <p>Daftar alat yang ada di BMKG Klas I Bandara Radin Inten II Bandar Lampung</p>
                     </div>

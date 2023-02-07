@@ -4,17 +4,20 @@
 <?php $index = 1 ?>
 
 <div class="data-table-area">
-    <?php if (session()->getFlashdata('success')) : ?>
-        <div class="alert alert-success m-3" role="alert">
-            <?= session()->getFlashdata('success'); ?>
-        </div>
-    <?php endif; ?>
+
     <div class="container">
 
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div class="data-table-list">
                     <div class="basic-tb-hd">
+                        <div class="alert-list">
+                            <?php if (session()->getFlashdata('success')) : ?>
+                                <div class="alert alert-success alert-dismissible" role="alert">
+                                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true"><i class="notika-icon notika-close"></i></span></button> <?= session()->getFlashdata('success'); ?>
+                                </div>
+                            <?php endif; ?>
+                        </div>
                         <h2>Data Log Book Harian</h2>
                         <p>Log Book Harian BMKG Klas I Bandara Radin Inten II Bandar Lampung</p>
                     </div>
