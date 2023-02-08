@@ -88,8 +88,8 @@
             <a href="daftaralat"><img src="/templates2/img/logo/logo.png" alt="" /></a>
           </div>
         </div>
-          <ul class="nav navbar-nav navbar-right">
-            <li><?= anchor('auth/logout','logout'); ?></li>
+          <ul class="nav navbar-nav navbar-right" style="margin-top:10px; position:relative;">
+            <li style="text-align: center;"><a href="<?= base_url('auth/logout'); ?>">Logout</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right" style="margin:27px; position:relative;">
               <li>
@@ -128,23 +128,6 @@
                     <li><a href="view-email.html">Bulanan</a></li>
                   </ul>
                 </li>
-
-                <li><a data-toggle="collapse" data-target="#Pagemob" href="#">Developer</a>
-                  <ul id="Pagemob" class="collapse dropdown-header-top">
-                    <li><a href="contact.html">Contact</a>
-                    </li>
-                    <li><a href="invoice.html">Invoice</a>
-                    </li>
-                    <li><a href="typography.html">Typography</a>
-                    </li>
-                    <li><a href="color.html">Color</a>
-                    </li>
-                    <li><a href="login-register.html">Login Register</a>
-                    </li>
-                    <li><a href="404.html">404 Page</a>
-                    </li>
-                  </ul>
-                </li>
               </ul>
             </nav>
           </div>
@@ -164,8 +147,6 @@
             <li><a data-toggle="tab" href="#Alat"><i class="notika-icon notika-menus"></i> Alat</a>
             </li>
             <li><a data-toggle="tab" href="#Logbook"><i class="notika-icon notika-edit"></i> Log Book</a>
-            </li>
-            <li><a data-toggle="tab" href="#Developer"><i class="notika-icon notika-support"></i>Developer</a>
             </li>
           </ul>
 
@@ -194,23 +175,6 @@
               </li>
               <li><a href="<?= base_url('admin/unduhlb'); ?>">Unduh Log Book Harian</a>
               </li>
-              </ul>
-            </div>
-
-            <div id="Developer" class="tab-pane notika-tab-menu-bg animated flipInX">
-              <ul class="notika-main-menu-dropdown">
-                <li><a href="contact.html">Contact</a>
-                </li>
-                <li><a href="invoice.html">Invoice</a>
-                </li>
-                <li><a href="typography.html">Typography</a>
-                </li>
-                <li><a href="color.html">Color</a>
-                </li>
-                <li><a href="login-register.html">Login Register</a>
-                </li>
-                <li><a href="404.html">404 Page</a>
-                </li>
               </ul>
             </div>
           </div>
