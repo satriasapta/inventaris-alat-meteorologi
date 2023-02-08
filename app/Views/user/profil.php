@@ -57,37 +57,39 @@
 
                                 <h3>Visi</h3>
                                 <p>Mewujudkan BMKG yang handal, tanggap dan mampu dalam rangka mendukung keselamatan masyarakat serta keberhasilan pembangunan nasional, dan berperan aktif di tingkat Internasional.</p>
-                                Terminologi di dalam visi tersebut dapat dijelaskan sebagai berikut :
+                                <p><h5>Terminologi di dalam visi tersebut dapat dijelaskan sebagai berikut :</h5></p>
                                 <ul class="arrows_list list_style">
-                                    <li>Pelayanan informasi meteorologi, klimatologi, kualitas udara, dan geofisika yang handal ialah pelayanan BMKG terhadap penyajian data, informasi pelayanan jasa meteorologi, klimatologi, kualitas udara, dan geofisika yang akurat, tepat sasaran, tepat guna, cepat, lengkap, dan dapat dipertanggungjawabkan</li>
-                                    <li>Tanggap dan mampu dimaksudkan BMKG dapat menangkap dan merumuskan kebutuhan stakeholder akan data, informasi, dan jasa meteorologi, klimatologi, kualitas udara, dan geofisika serta mampu memberikan pelayanan sesuai dengan kebutuhan pengguna jasa;</li>
+                                    <p>
+                                        <li>Pelayanan informasi meteorologi, klimatologi, kualitas udara, dan geofisika yang handal ialah pelayanan BMKG terhadap penyajian data, informasi pelayanan jasa meteorologi, klimatologi, kualitas udara, dan geofisika yang akurat, tepat sasaran, tepat guna, cepat, lengkap, dan dapat dipertanggungjawabkan</li>
+                                    </p>
+                                    <p>
+                                        <li>Tanggap dan mampu dimaksudkan BMKG dapat menangkap dan merumuskan kebutuhan stakeholder akan data, informasi, dan jasa meteorologi, klimatologi, kualitas udara, dan geofisika serta mampu memberikan pelayanan sesuai dengan kebutuhan pengguna jasa;</li>
+                                    </p>
                                 </ul>
                                 <h3>Misi</h3>
                                 <p>Dalam rangka mewujudkan Visi BMKG, maka diperlukan visi yang jelas yaitu berupa langkah-langkah BMKG untuk mewujudkan Misi yang telah ditetapkan yaitu :</p>
                                 <ul class="arrows_list list_style">
-                                    <li>Mengamati dan memahami fenomena meteorologi, klimatologi, kualitas udara dan geofisika.</li>
-                                    <li>Menyediakan data, informasi dan jasa meteorologi, klimatologi, kualitas udara dan geofisika yang handal dan terpercaya.</li>
-                                    <li>Mengkoordinasikan dan memfasilitasi kegiatan di bidang meteorologi, klimatologi , kualitas udara dan geofisika.</li>
-                                    <li>Berpartisipasi aktif dalam kegiatan internasional di Bidang meteorologi, klimatologi , kualitas udara dan geofisika.</li>
+                                    <p>Mengamati dan memahami fenomena meteorologi, klimatologi, kualitas udara dan geofisika.</p>
+                                    <p>Menyediakan data, informasi dan jasa meteorologi, klimatologi, kualitas udara dan geofisika yang handal dan terpercaya.</p>
+                                    <p>Mengkoordinasikan dan memfasilitasi kegiatan di bidang meteorologi, klimatologi , kualitas udara dan geofisika.</p>
+                                    <p>Berpartisipasi aktif dalam kegiatan internasional di Bidang meteorologi, klimatologi , kualitas udara dan geofisika.</p>
                                 </ul>
                                 <br>
-                                <p>Secara lebih rinci, maksud dari pernyataan misi di atas adalah sebagai berikut :</p>
+                                <p><h5>Secara lebih rinci, maksud dari pernyataan misi di atas adalah sebagai berikut :</h5></p>
 
                                 <ul class="arrows_list list_style">
-                                    <li>Mengamati dan memahami fenomena meteorologi, klimatologi, kualitas udara, dan geofisika artinya BMKG melaksanakan operasional pengamatan dan pengumpulan data secara teratur, lengkap dan akurat guna dipakai untuk mengenali dan memahami karakteristik unsur-unsur meteorologi, klimatologi, kualitas udara, dan geofisika guna membuat prakiraan dan informasi yang akurat;</li>
-                                    <li>Menyediakan data, informasi dan jasa meteorologi, klimatologi, kualitas udara, dan geofisika kepada para pengguna sesuai dengan kebutuhan dan keinginan mereka dengan tingkat akurasi tinggi dan tepat waktu;</li>
-                                    <li>Mengkoordinasi dan Memfasilitasi kegiatan sesuai dengan kewenangan BMKG, maka BMKG wajib mengawasi pelaksanaan operasional, memberi pedoman teknis, serta berwenang untuk mengkalibrasi peralatan meteorologi, klimatologi, kualitas udara, dan geofisika sesuai dengan peraturan yang berlaku</li>
-                                    <li>Berpartisipasi aktif dalam kegiatan internasional artinya BMKG dalam melaksanakan kegiatan secara operasional selalu mengacu pada ketentuan internasional mengingat bahwa fenomena meteorologi, klimatologi, kualitas udara, dan geofisika tidak terbatas dan tidak terkait pada batas batas wilayah suatu negara manapun.</li>
+                                    <p>Mengamati dan memahami fenomena meteorologi, klimatologi, kualitas udara, dan geofisika artinya BMKG melaksanakan operasional pengamatan dan pengumpulan data secara teratur, lengkap dan akurat guna dipakai untuk mengenali dan memahami karakteristik unsur-unsur meteorologi, klimatologi, kualitas udara, dan geofisika guna membuat prakiraan dan informasi yang akurat;</p>
+                                    <p>Menyediakan data, informasi dan jasa meteorologi, klimatologi, kualitas udara, dan geofisika kepada para pengguna sesuai dengan kebutuhan dan keinginan mereka dengan tingkat akurasi tinggi dan tepat waktu;</p>
+                                    <p>Mengkoordinasi dan Memfasilitasi kegiatan sesuai dengan kewenangan BMKG, maka BMKG wajib mengawasi pelaksanaan operasional, memberi pedoman teknis, serta berwenang untuk mengkalibrasi peralatan meteorologi, klimatologi, kualitas udara, dan geofisika sesuai dengan peraturan yang berlaku</p>
+                                    <p>Berpartisipasi aktif dalam kegiatan internasional artinya BMKG dalam melaksanakan kegiatan secara operasional selalu mengacu pada ketentuan internasional mengingat bahwa fenomena meteorologi, klimatologi, kualitas udara, dan geofisika tidak terbatas dan tidak terkait pada batas batas wilayah suatu negara manapun.</p>
                                 </ul>
-                                <p class="wizard-mg-ctn">Duis eu eros vitae risus sollicitudin blandit in non nisi. Phasellus rhoncus ullamcorper pretium. Etiam et viverra neque, aliquam imperdiet velit. Nam a scelerisque justo, id tristique diam. Aenean ut vestibulum velit,
-                                    vel ornare augue. Nullam eu est malesuada.</p>
                             </div>
                             <div class="tab-pane wizard-ctn" id="tab3">
                                 <p>BMKG mempunyai status sebuah Lembaga Pemerintah Non Departemen (LPND), dipimpin oleh seorang Kepala Badan.
-                                <h4>Tugas</h4>
+                                <p><h4>Tugas</h4></p>
                                 BMKG mempunyai tugas : melaksanakan tugas pemerintahan di bidang Meteorologi, Klimatologi, Kualitas Udara dan Geofisika sesuai dengan ketentuan perundang-undangan yang berlaku.
-                                <h4>Fungsi</h4>
-                                Dalam melaksanakan tugas sebagaimana dimaksud di atas, Badan Meteorologi Klimatologi dan Geofisika menyelenggarakan fungsi : <ul class="arrows_list list_style">
+                                <p><h4>Fungsi</h4></p>
+                                <p>melaksanakan tugas sebagaimana dimaksud di atas, Badan Meteorologi Klimatologi dan Geofisika menyelenggarakan fungsi : <ul class="arrows_list list_style"></p>
                                     <li>Perumusan kebijakan nasional dan kebijakan umum di bidang meteorologi, klimatologi, dan geofisika;</li>
                                     <li>Perumusan kebijakan teknis di bidang meteorologi, klimatologi, dan geofisika;</li>
                                     <li>Koordinasi kebijakan, perencanaan dan program di bidang meteorologi, klimatologi, dan geofisika;</li>
@@ -109,7 +111,7 @@
                                 </ul>
                                 <p class="wizard-mg-ctn">Dalam melaksanakan tugas dan fungsinya BMKG dikoordinasikan oleh Menteri yang bertanggung jawab di bidang perhubungan.</p>
                             </div>
-                            
+
                             <div class="wizard-action-pro">
                                 <ul class="wizard-nav-ac">
                                     <li><a class="button-first a-prevent" href="#"><i class="notika-icon notika-more-button"></i></a></li>
