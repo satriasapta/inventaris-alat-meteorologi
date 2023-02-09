@@ -92,6 +92,17 @@
             <a href="daftaralat"><img src="/templates2/img/logo/logo.png" alt="" /></a>
           </div>
         </div>
+        <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+          <div class="header-top-menu">
+            <ul class="nav navbar-nav notika-top-nav">
+              <!-- <div class="btn-demo-notika mg-t-30"> -->
+                <div class="material-design-btn mt-4">
+                  <button href="#" class="btn notika-btn-lightgreen btn-reco-mg btn-button-mg waves-effect">Login</button>
+                </div>
+              </div>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   </div>

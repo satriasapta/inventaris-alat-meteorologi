@@ -88,14 +88,32 @@
             <a href="daftaralat"><img src="/templates2/img/logo/logo.png" alt="" /></a>
           </div>
         </div>
-        <ul class="nav navbar-nav navbar-right" style="margin-top:10px; position:relative;">
-          <li style="text-align: center;"><a href="<?= base_url('auth/logout'); ?>">Logout</a></li>
+        <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+          <div class="header-top-menu">
+            <ul class="nav navbar-nav navbar-right" style="margin-top:20px; position:relative;">
+              <div class="material-design-btn">
+                <li> 
+                  <a role="button" href="<?= base_url('auth/logout'); ?>" class="btn notika-btn-deeporange btn-reco-mg btn-button-mg waves-effect">Logout</a>
+                </li>
+              </div>
+            </ul>
+            
+            <ul class="nav navbar-nav navbar-right" style="margin-top:30px; right: 10px; position:relative;">
+              <li>
+                Selamat Datang |
+              </li>
+              <li style="text-transform: uppercase;">| <?= userLogin()['username']; ?> ||</li>
+            </ul>
+          </div>
+        </div>
+        <!-- <ul class="nav navbar-nav navbar-right" style="margin-top:10px; position:relative;">
+          <li style="text-align: center;"><a href="">Logout</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right" style="margin-top:29px; position:relative;">
           <li>
-            Selamat Datang || <?= userLogin()['username']; ?>
+            Selamat Datang || 
           </li>
-        </ul>
+        </ul> -->
 
 
       </div>

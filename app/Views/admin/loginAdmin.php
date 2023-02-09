@@ -78,11 +78,13 @@
               <input type="password" name="password" class="form-control" placeholder="Password">
             </div>
           </div>
-          <button type="submit" class="btn btn-primary mt-3"><i class="notika-icon notika-right-arrow right-arrow-ant"></i></button>
+          <!-- <button type="submit" class="btn btn-primary mt-3"><i class="notika-icon notika-right-arrow right-arrow-ant"></i></button>  -->
+          <a type="submit" class="btn btn-login btn-success btn-float"><i class="notika-icon notika-right-arrow right-arrow-ant"></i></a>
+
         </div>
 
         <div class="nk-navigation nk-lg-ic">
-          <a href="#" data-ma-action="nk-login-switch" data-ma-block="#l-register"><i class="notika-icon notika-plus-symbol"></i> <span>Register</span></a>
+          <a href="#" data-ma-action="nk-login-switch" data-ma-block="#l-register"><i class="notika-icon notika-left-arrow left-arrow-ant"></i> <span>Dashboard</span></a>
           <a href="#" data-ma-action="nk-login-switch" data-ma-block="#l-forget-password"><i>?</i> <span>Forgot Password</span></a>
         </div>
       </form>
