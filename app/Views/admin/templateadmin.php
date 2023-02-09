@@ -88,15 +88,15 @@
             <a href="daftaralat"><img src="/templates2/img/logo/logo.png" alt="" /></a>
           </div>
         </div>
-          <ul class="nav navbar-nav navbar-right" style="margin-top:10px; position:relative;">
-            <li style="text-align: center;"><a href="<?= base_url('auth/logout'); ?>">Logout</a></li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right" style="margin:27px; position:relative;">
-              <li>
-                Selamat Datang ||<?= userLogin()['username']; ?>
-              </li>
-          </ul>
-        
+        <ul class="nav navbar-nav navbar-right" style="margin-top:10px; position:relative;">
+          <li style="text-align: center;"><a href="<?= base_url('auth/logout'); ?>">Logout</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right" style="margin-top:29px; position:relative;">
+          <li>
+            Selamat Datang || <?= userLogin()['username']; ?>
+          </li>
+        </ul>
+
 
       </div>
     </div>
@@ -172,9 +172,9 @@
                 <li><a href="<?= base_url('admin/lbharian'); ?>">Data Log Book</a>
                 </li>
                 <li><a href="<?= base_url('admin/inputlogbook'); ?>">Isi Log Book</a>
-              </li>
-              <li><a href="<?= base_url('admin/unduhlb'); ?>">Unduh Log Book Harian</a>
-              </li>
+                </li>
+                <li><a href="<?= base_url('admin/unduhlb'); ?>">Unduh Log Book Harian</a>
+                </li>
               </ul>
             </div>
           </div>

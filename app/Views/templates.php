@@ -104,7 +104,7 @@
           <div class="mobile-menu">
             <nav id="dropdown">
               <ul class="mobile-menu-nav">
-                <li><a data-toggle="collapse" data-target="#dashboard" href="<?= base_url('admin/dashboard'); ?>">Dashboard</a>
+                <li><a data-toggle="collapse" data-target="#dashboard" href="<?= base_url('/'); ?>">Dashboard</a>
                 </li>
                 <li><a data-toggle="collapse" data-target="#alat" href="#">Alat</a>
                   <ul class="collapse dropdown-header-top">
@@ -133,35 +133,16 @@
       <div class="row">
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
           <ul class="nav nav-tabs notika-menu-wrap menu-it-icon-pro">
-            <li><a data-toggle="tab" href="#Dashboard"><i class="notika-icon notika-house"></i> Dashboard</a>
+            <li><a href="<?= base_url('/'); ?>"><i class="notika-icon notika-house"></i> Dashboard</a>
             </li>
-            <li><a data-toggle="tab" href="#Alat"><i class="notika-icon notika-menus"></i> Alat</a>
+            <li><a href="<?= base_url('/daftaralat'); ?>"><i class="notika-icon notika-menus"></i> Alat</a>
             </li>
             <li><a href="<?= base_url('profil'); ?>"><i class="notika-icon notika-support"></i> Profil BMKG</a>
             </li>
           </ul>
 
           <div class="tab-content custom-menu-content">
-            <div id="Dashboard" class="tab-pane in notika-tab-menu-bg animated flipInX">
-              <ul class="notika-main-menu-dropdown">
-                <li><a href="<?= base_url('/'); ?>">Dashboard</a>
-                </li>
-              </ul>
-            </div>
 
-            <div id="Alat" class="tab-pane notika-tab-menu-bg animated flipInX">
-              <ul class="notika-main-menu-dropdown">
-                <li><a href="<?= base_url('/daftaralat'); ?>">Daftar Alat</a>
-                </li>
-              </ul>
-            </div>
-
-            <!-- <div id="Profil" class="tab-pane notika-tab-menu-bg animated flipInX">
-              <ul class="notika-main-menu-dropdown">
-                <li><a href="">Profil BMKG</a>
-                </li>
-              </ul>
-            </div> -->
           </div>
         </div>
       </div>
