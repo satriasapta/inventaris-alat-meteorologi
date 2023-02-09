@@ -78,8 +78,8 @@
               <input type="password" name="password" class="form-control" placeholder="Password">
             </div>
           </div>
-          <!-- <button type="submit" class="btn btn-primary mt-3"><i class="notika-icon notika-right-arrow right-arrow-ant"></i></button>  -->
-          <a type="submit" class="btn btn-login btn-success btn-float"><i class="notika-icon notika-right-arrow right-arrow-ant"></i></a>
+          <button type="submit" class="btn btn-primary mt-3"><i class="notika-icon notika-right-arrow right-arrow-ant"></i></button> 
+          <!-- <a role="button" type="submit" class="btn btn-login btn-success btn-float"><i class="notika-icon notika-right-arrow right-arrow-ant"></i></a> -->
 
         </div>
 
