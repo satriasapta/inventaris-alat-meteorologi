@@ -55,4 +55,8 @@ class Home extends BaseController
         ];
         return view('user/daftaralat',$data);
     }
+    public function syz()
+    {
+        return view('user/syz');
+    }
 }

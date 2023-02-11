@@ -97,7 +97,7 @@
             <ul class="nav navbar-nav notika-top-nav">
               <!-- <div class="btn-demo-notika mg-t-30"> -->
                 <div class="material-design-btn mt-4">
-                  <button href="#" class="btn notika-btn-lightgreen btn-reco-mg btn-button-mg waves-effect">Login</button>
+                  <a href="<?= base_url('auth/login'); ?>"><button class="btn notika-btn-lightgreen btn-reco-mg btn-button-mg waves-effect">Login</button></a>
                 </div>
               </div>
             </ul>
@@ -173,7 +173,7 @@
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
           <div class="footer-copy-right">
             <p>Copyright © 2023
-              . All rights reserved. Developed by <a href="https://colorlib.com">SYZ</a>.</p>
+              . All rights reserved. Developed by <a href="<?= base_url('/syz'); ?>">SYZ</a>.</p>
           </div>
         </div>
       </div>

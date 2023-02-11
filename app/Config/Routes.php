@@ -33,6 +33,7 @@ $routes->setAutoRoute(true);
 $routes->get('/', 'Home::index');
 $routes->get('/profil', 'Home::profil');
 $routes->get('/daftaralat', 'Home::daftaralat');
+$routes->get('/syz', 'Home::syz');
 $routes->get('/detailalat/(:any)', 'Home::detailalat/$1');
 
 /*
