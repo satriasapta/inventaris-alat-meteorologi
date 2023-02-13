@@ -315,7 +315,7 @@ class Admin extends BaseController
         if ($keyword && $keyword2 != '') {
             $builder->where('tb_logbook.tanggal >=', $keyword);
             $builder->where('tb_logbook.tanggal <=', $keyword2);
-            $filename = "logbook-" . $keyword. "&&".$keyword2 . ".xlsx";
+            $filename = "logbook-" . $keyword. " s.d ".$keyword2 . ".xlsx";
         }
         $query = $builder->get();
         $logbook = $query->getResultArray();
