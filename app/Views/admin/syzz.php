@@ -1,4 +1,4 @@
-<?= $this->extend('templates'); ?>
+<?= $this->extend('admin/templateadmin'); ?>
 <?= $this->section('content'); ?>
 
 <div class="contact-area">
