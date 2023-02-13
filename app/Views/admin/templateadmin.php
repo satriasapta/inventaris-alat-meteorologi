@@ -214,7 +214,7 @@
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
           <div class="footer-copy-right">
             <p>Copyright © 2023
-              . All rights reserved. Developed by <a href="https://colorlib.com">SYZ</a>.</p>
+              . All rights reserved. Developed by <a href="<?= base_url('admin/syz'); ?>">SYZ</a>.</p>
           </div>
         </div>
       </div>

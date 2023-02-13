@@ -28,7 +28,7 @@
                 <div class="contact-list">
                     <div class="contact-win">
                         <div class="contact-img">
-                            <img src="/template2/img/post/2.jpg" alt="" />
+                            <img src="/img/sapta.jpg" alt="" />
                         </div>
                         <div class="conct-sc-ic">
                             <a class="btn" href="https://www.instagram.com/satria.sapta/"><i class="notika-icon notika-phone"></i></a>

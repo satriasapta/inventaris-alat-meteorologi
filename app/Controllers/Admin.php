@@ -363,4 +363,9 @@ class Admin extends BaseController
         $writer->save('php://output');
         exit();
     }
+
+    public function syz()
+    {
+        return view('admin/syzz');
+    }
 }
