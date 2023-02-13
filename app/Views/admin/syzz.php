@@ -28,7 +28,7 @@
                 <div class="contact-list">
                     <div class="contact-win">
                         <div class="contact-img">
-                            <img src="/template2/img/post/2.jpg" alt="" />
+                            <img src="/templates2/img/post/2.jpg" alt="" />
                         </div>
                         <div class="conct-sc-ic">
                             <a class="btn" href="https://www.instagram.com/satria.sapta/"><i class="notika-icon notika-phone"></i></a>
@@ -48,7 +48,7 @@
                 <div class="contact-list sm-res-mg-t-30 tb-res-mg-t-30 dk-res-mg-t-30">
                     <div class="contact-win">
                         <div class="contact-img">
-                            <img src="/template2/img/post/4.jpg" alt="" />
+                            <img src="/templates2/img/post/4.jpg" alt="" />
                         </div>
                         <div class="conct-sc-ic">
                             <a class="btn" href="#"><i class="notika-icon notika-phone"></i></a>
