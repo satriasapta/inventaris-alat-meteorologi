@@ -166,6 +166,8 @@
             </li>
             <li><a data-toggle="tab" href="#Logbook"><i class="notika-icon notika-edit"></i> Log Book</a>
             </li>
+            <li><a href="<?= base_url('admin/profila'); ?>"><i class="notika-icon notika-eye"></i> Profil BMKG</a>
+            </li>
           </ul>
 
           <div class="tab-content custom-menu-content">
@@ -195,6 +197,14 @@
                 </li>
               </ul>
             </div>
+
+            <div id="Logbook" class="tab-pane notika-tab-menu-bg animated flipInX">
+              <ul class="notika-main-menu-dropdown">
+                <li><a href="<?= base_url('admin/profila'); ?>">Data Log </a>
+                </li>
+              </ul>
+            </div>
+
           </div>
         </div>
       </div>

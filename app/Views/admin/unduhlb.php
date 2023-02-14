@@ -12,7 +12,7 @@
     <div class="container">
 
         <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="margin-bottom: 175px;">
                 <div class="data-table-list ">
                     <form action="" method="get" autocomplete="off">
                         <div id="data-table-basic_filter" class="dataTables_filter">
@@ -27,7 +27,7 @@
                                     <input type="date" name="keyword2" class="form-control" value="<?= $request->getGet('keyword2'); ?>" placeholder="yyyy-mm-dd" required>
                                 </div>
                             </div>
-                            <div style="margin-top: 30px; text-align: center;" >
+                            <div style="margin-top: 30px; text-align: center;">
                                 <?php
                                 $request = \Config\Services::request();
                                 $keyword = $request->getGet('keyword');
@@ -37,8 +37,10 @@
                                 } else {
                                     $param = '';
                                 } ?>
-                                <button type="submit" class="notika-icon notika-search"></button>
-                                <a href="<?= base_url('admin/exportlogbook' . $param); ?>"><i class="notika-icon notika-sent" style=""></i></a>
+                                <button type="submit" class="btn btn-info info-icon-notika btn-reco-mg btn-button-mg waves-effect"><i class="notika-icon notika-search"></i> Cari</button>
+                                <div style="margin-top: 30px; text-align: right;">
+                                    <a role="button" href="<?= base_url('admin/exportlogbook' . $param); ?>" class="btn btn-amber amber-icon-notika btn-reco-mg btn-button-mg waves-effect"><i class="notika-icon notika-sent"></i> Download</a>
+                                </div>
                             </div>
                         </div>
 
