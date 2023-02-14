@@ -166,7 +166,7 @@
             </li>
             <li><a data-toggle="tab" href="#Logbook"><i class="notika-icon notika-edit"></i> Log Book</a>
             </li>
-            <li><a href="<?= base_url('admin/profila'); ?>"><i class="notika-icon notika-eye"></i> Profil BMKG</a>
+            <li><a href="<?= base_url('admin/profil'); ?>"><i class="notika-icon notika-eye"></i> Profil BMKG</a>
             </li>
           </ul>
 
@@ -200,7 +200,7 @@
 
             <div id="Logbook" class="tab-pane notika-tab-menu-bg animated flipInX">
               <ul class="notika-main-menu-dropdown">
-                <li><a href="<?= base_url('admin/profila'); ?>">Data Log </a>
+                <li><a href="<?= base_url('admin/profil'); ?>">Data Log </a>
                 </li>
               </ul>
             </div>
@@ -343,6 +343,10 @@
   <!-- main JS
 		============================================ -->
   <script src="/templates2/js/main.js"></script>
+  <!--  wizard JS
+		============================================ -->
+    <script src="/templates2/js/wizard/jquery.bootstrap.wizard.min.js"></script>
+  <script src="/templates2/js/wizard/wizard-active.js"></script>
 
 </body>
 

@@ -91,8 +91,8 @@
         </div>
 
         <div class="nk-navigation nk-lg-ic">
-          <a href="#" data-ma-action="nk-login-switch" data-ma-block="#l-register"><i class="notika-icon notika-left-arrow left-arrow-ant"></i> <span>Dashboard</span></a>
-          <a href="#" data-ma-action="nk-login-switch" data-ma-block="#l-forget-password"><i>?</i> <span>Forgot Password</span></a>
+          <a href="<?= base_url('/'); ?>"  data-ma-block="#l-register"><i class="notika-icon notika-left-arrow left-arrow-ant"></i> <span>Dashboard</span></a>
+         
         </div>
       </form>
     </div>
