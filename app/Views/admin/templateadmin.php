@@ -85,12 +85,12 @@
       <div class="row">
         <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
           <div class="logo-area">
-            <a href="daftaralat"><img src="/templates2/img/logo/logo.png" alt="" /></a>
+            <a href="<?= base_url('admin'); ?>"><img src="/templates2/img/logo/logo.png" alt="" /></a>
           </div>
         </div>
         <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
           <div class="header-top-menu">
-            <ul class="nav navbar-nav navbar-right" style="margin-top:20px; position:relative;">
+            <ul class="nav navbar-nav navbar-right" style="margin-top:23px; position:relative;">
               <div class="material-design-btn">
                 <li> 
                   <a role="button" href="<?= base_url('auth/logout'); ?>" class="btn notika-btn-deeporange btn-reco-mg btn-button-mg waves-effect">Logout</a>
