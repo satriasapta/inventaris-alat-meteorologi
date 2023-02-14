@@ -15,7 +15,7 @@
             <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="<?php echo base_url('img/slider1.jpg') ?>" class="d-block w-100" alt="...">
+                        <img src="<?php echo base_url('img/slider1.jpg') ?>" class="d-block w-100" alt="..." style="height: 267px; ">
                     </div>
                     <div class="carousel-item">
                         <img src="<?php echo base_url('img/slider2.jpg') ?>" class="d-block w-100" alt="...">

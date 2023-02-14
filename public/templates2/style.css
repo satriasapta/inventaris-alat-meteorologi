@@ -799,6 +799,9 @@ ul.notika-menu-wrap li a{
 /*  11.  Footer CSS
 /*----------------------------------------*/
 .footer-copyright-area {
+    
+    bottom: 0;
+    width: 100%;
     margin-top:40px;
 }
 .footer-copyright-area p {

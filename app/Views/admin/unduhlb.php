@@ -12,7 +12,7 @@
     <div class="container">
 
         <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="margin-bottom: 175px;">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div class="data-table-list ">
                     <form action="" method="get" autocomplete="off">
                         <div id="data-table-basic_filter" class="dataTables_filter">

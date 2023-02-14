@@ -368,4 +368,9 @@ class Admin extends BaseController
     {
         return view('admin/syzz');
     }
+
+    public function profil()
+    {
+        return view('admin/profila');
+    }
 }
