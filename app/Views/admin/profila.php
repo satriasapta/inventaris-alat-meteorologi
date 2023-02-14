@@ -49,8 +49,6 @@
                                 <p>Pada tahun 1965, namanya diubah menjadi Direktorat Meteorologi dan Geofisika, kedudukannya tetap di bawah Departemen Perhubungan Udara.Pada tahun 1972, Direktorat Meteorologi dan Geofisika diganti namanya menjadi Pusat Meteorologi dan Geofisika, suatu instansi setingkat eselon II di bawah Departemen Perhubungan, dan pada tahun 1980 statusnya dinaikkan menjadi suatu instansi setingkat eselon I dengan nama Badan Meteorologi dan Geofisika, dengan kedudukan tetap berada di bawah Departemen Perhubungan.Pada tahun 2002, dengan keputusan Presiden RI Nomor 46 dan 48 tahun 2002, struktur organisasinya diubah menjadi Lembaga Pemerintah Non Departemen (LPND) dengan nama tetap Badan Meteorologi dan Geofisika.</p>
 
                                 <p>Terakhir, melalui Peraturan Presiden Nomor 61 Tahun 2008, Badan Meteorologi dan Geofisika berganti nama menjadi Badan Meteorologi, Klimatologi, dan Geofisika (BMKG) dengan status tetap sebagai Lembaga Pemerintah Non Departemen.Pada tanggal 1 Oktober 2009 Undang-Undang Republik Indonesia Nomor 31 Tahun 2009 tentang Meteorologi, Klimatologi dan Geofisika disahkan oleh Presiden Republik Indonesia, Susilo Bambang Yudhoyono. (unduh Penjelasan UU RI Nomor 31 Tahun 2009)</p>
-
-                                <p class="wizard-mg-ctn">Duis eu eros vitae risus sollicitudin blandit in non nisi. Phasellus rhoncus ullamcorper pretium. Etiam et viverra neque, aliquam imperdiet velit. Nam a scelerisque justo, id tristique diam. Aenean ut vestibulum velit, vel ornare augue. Nullam eu est malesuada, vehicula ex in, maximus massa. Sed sit amet massa venenatis, tristique orci sed, eleifend arcu.</p>
                             </div>
                             <div class="tab-pane wizard-ctn" id="tab2">
                                 <p>Dalam rangka mendukung dan mengemban tugas pokok dan fungsi serta memperhatikan kewenangan BMKG agar lebih efektif dan efisien, maka diperlukan aparatur yang profesional, bertanggung jawab dan berwibawa serta bebas dari Korupsi, Kolusi, dan Nepotisme (KKN), disamping itu harus dapat menjunjung tinggi kedisiplinan, kejujuran dan kebenaran guna ikut serta memberikan pelayanan informasi yang cepat, tepat dan akurat. Oleh karena itu kebijakan yang akan dilakukan BMKG Tahun 2010-2014 adalah mengacu pada Visi, Misi, dan Tujuan BMKG yang telah ditetapkan.</p>
@@ -89,25 +87,25 @@
                                 <p><h4>Tugas</h4></p>
                                 BMKG mempunyai tugas : melaksanakan tugas pemerintahan di bidang Meteorologi, Klimatologi, Kualitas Udara dan Geofisika sesuai dengan ketentuan perundang-undangan yang berlaku.
                                 <p><h4>Fungsi</h4></p>
-                                <p>melaksanakan tugas sebagaimana dimaksud di atas, Badan Meteorologi Klimatologi dan Geofisika menyelenggarakan fungsi : <ul class="arrows_list list_style"></p>
-                                    <li>Perumusan kebijakan nasional dan kebijakan umum di bidang meteorologi, klimatologi, dan geofisika;</li>
-                                    <li>Perumusan kebijakan teknis di bidang meteorologi, klimatologi, dan geofisika;</li>
-                                    <li>Koordinasi kebijakan, perencanaan dan program di bidang meteorologi, klimatologi, dan geofisika;</li>
-                                    <li>Pelaksanaan, pembinaan dan pengendalian observasi, dan pengolahan data dan informasi di bidang meteorologi, klimatologi, dan geofisika;</li>
-                                    <li>Pelayanan data dan informasi di bidang meteorologi, klimatologi, dan geofisika;</li>
-                                    <li>Penyampaian informasi kepada instansi dan pihak terkait serta masyarakat berkenaan dengan perubahan iklim;</li>
-                                    <li>Penyampaian informasi dan peringatan dini kepada instansi dan pihak terkait serta masyarakat berkenaan dengan bencana karena faktor meteorologi, klimatologi, dan geofisika;</li>
-                                    <li>Pelaksanaan kerja sama internasional di bidang meteorologi, klimatologi, dan geofisika;</li>
-                                    <li>Pelaksanaan penelitian, pengkajian, dan pengembangan di bidang meteorologi, klimatologi, dan geofisika;</li>
-                                    <li>Pelaksanaan, pembinaan, dan pengendalian instrumentasi, kalibrasi, dan jaringan komunikasi di bidang meteorologi, klimatologi, dan geofisika;</li>
-                                    <li>Koordinasi dan kerja sama instrumentasi, kalibrasi, dan jaringan komunikasi di bidang meteorologi, klimatologi, dan geofisika;</li>
-                                    <li>Pelaksanaan pendidikan dan pelatihan keahlian dan manajemen pemerintahan di bidang meteorologi, klimatologi, dan geofisika;</li>
-                                    <li>Pelaksanaan pendidikan profesional di bidang meteorologi, klimatologi, dan geofisika;</li>
-                                    <li>Pelaksanaan manajemen data di bidang meteorologi, klimatologi, dan geofisika;</li>
-                                    <li>Pembinaan dan koordinasi pelaksanaan tugas administrasi di lingkungan BMKG;</li>
-                                    <li>Pengelolaan barang milik/kekayaan negara yang menjadi tanggung jawab BMKG;</li>
-                                    <li>Pengawasan atas pelaksanaan tugas di lingkungan BMKG;</li>
-                                    <li>Penyampaian laporan, saran, dan pertimbangan di bidang meteorologi, klimatologi, dan geofisika.</li>
+                                <h5>Melaksanakan tugas sebagaimana dimaksud di atas, Badan Meteorologi Klimatologi dan Geofisika menyelenggarakan fungsi : </h5><ul class="arrows_list list_style"></p>
+                                    <p>Perumusan kebijakan nasional dan kebijakan umum di bidang meteorologi, klimatologi, dan geofisika;</p>
+                                    <p>Perumusan kebijakan teknis di bidang meteorologi, klimatologi, dan geofisika;</p>
+                                    <p>Koordinasi kebijakan, perencanaan dan program di bidang meteorologi, klimatologi, dan geofisika;</p>
+                                    <p>Pelaksanaan, pembinaan dan pengendalian observasi, dan pengolahan data dan informasi di bidang meteorologi, klimatologi, dan geofisika;</p>
+                                    <p>Pelayanan data dan informasi di bidang meteorologi, klimatologi, dan geofisika;</p>
+                                    <p>Penyampaian informasi kepada instansi dan pihak terkait serta masyarakat berkenaan dengan perubahan iklim;</p>
+                                    <p>Penyampaian informasi dan peringatan dini kepada instansi dan pihak terkait serta masyarakat berkenaan dengan bencana karena faktor meteorologi, klimatologi, dan geofisika;</p>
+                                    <p>Pelaksanaan kerja sama internasional di bidang meteorologi, klimatologi, dan geofisika;</p>
+                                    <p>Pelaksanaan penelitian, pengkajian, dan pengembangan di bidang meteorologi, klimatologi, dan geofisika;</p>
+                                    <p>Pelaksanaan, pembinaan, dan pengendalian instrumentasi, kalibrasi, dan jaringan komunikasi di bidang meteorologi, klimatologi, dan geofisika;</p>
+                                    <p>Koordinasi dan kerja sama instrumentasi, kalibrasi, dan jaringan komunikasi di bidang meteorologi, klimatologi, dan geofisika;</p>
+                                    <p>Pelaksanaan pendidikan dan pelatihan keahlian dan manajemen pemerintahan di bidang meteorologi, klimatologi, dan geofisika;</p>
+                                    <p>Pelaksanaan pendidikan profesional di bidang meteorologi, klimatologi, dan geofisika;</p>
+                                    <p>Pelaksanaan manajemen data di bidang meteorologi, klimatologi, dan geofisika;</p>
+                                    <p>Pembinaan dan koordinasi pelaksanaan tugas administrasi di lingkungan BMKG;</p>
+                                    <p>Pengelolaan barang milik/kekayaan negara yang menjadi tanggung jawab BMKG;</p>
+                                    <p>Pengawasan atas pelaksanaan tugas di lingkungan BMKG;</p>
+                                    <p>Penyampaian laporan, saran, dan pertimbangan di bidang meteorologi, klimatologi, dan geofisika.</p>
                                 </ul>
                                 <p class="wizard-mg-ctn">Dalam melaksanakan tugas dan fungsinya BMKG dikoordinasikan oleh Menteri yang bertanggung jawab di bidang perhubungan.</p>
                             </div>

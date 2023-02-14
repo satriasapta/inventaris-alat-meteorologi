@@ -166,7 +166,7 @@
             </li>
             <li><a data-toggle="tab" href="#Logbook"><i class="notika-icon notika-edit"></i> Log Book</a>
             </li>
-            <li><a href="<?= base_url('admin/profil'); ?>"><i class="notika-icon notika-eye"></i> Profil BMKG</a>
+            <li><a href="<?= base_url('admin/profil'); ?>"><i class="notika-icon notika-support"></i> Profil BMKG</a>
             </li>
           </ul>
 
