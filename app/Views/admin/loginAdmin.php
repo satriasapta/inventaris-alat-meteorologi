@@ -71,6 +71,7 @@
         <div class="nk-form">
           <div class="text-center">
             <h2>SILAHKAN LOGIN</h2>
+            <a href="<?= base_url('admin'); ?>"><img src="/templates2/img/logo/logo.png" alt="" /></a>
             <h3>Sistem Informasi Inventaris Alat Meteorologi</h3>
           </div>
           <div class="input-group">
@@ -85,6 +86,7 @@
               <input type="password" name="password" class="form-control" placeholder="Password">
             </div>
           </div>
+          <p></p>
           <button type="submit" class="btn btn-primary mt-3"><i class="notika-icon notika-right-arrow right-arrow-ant"></i></button>
           <!-- <a role="button" type="submit" class="btn btn-login btn-success btn-float"><i class="notika-icon notika-right-arrow right-arrow-ant"></i></a> -->
 
