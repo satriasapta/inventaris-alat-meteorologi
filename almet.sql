@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Feb 03, 2023 at 02:42 AM
+-- Generation Time: Feb 15, 2023 at 04:55 AM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 7.4.29
 
@@ -74,9 +74,21 @@ CREATE TABLE `tb_alat` (
 --
 
 INSERT INTO `tb_alat` (`id_alat`, `nama_alat`, `gambar_alat`, `kondisi_alat`, `tahun_pembelian`, `kalibrasi`, `lokasi_alat`, `komponen_alat`, `penggantian_komponen`, `pemeliharaan_alat`, `perbaikan_alat`, `persiapan_pemeliharaan`, `cara_pemeliharaan`, `modifikasi_alat`, `penyediaan_alat`, `penyediaan_sukucadang`, `keamanan_alat`, `id_kategori`, `id_kondisi`) VALUES
-(1, 'Thermometer Max-Min', 'termometer.jpeg', '', '2020-02-05', '2023-01-04', 'tamanalat.jpeg', '', '', '', '', '', '', '', '', '', '', 1, 1),
-(2, 'Penangkar Hujan', '1674653164UseCaseBMKG.drawio.png', '', '2020-02-05', '2023-01-20', '1674653164UseCaseBMKG.drawio.png', '', '', '', '', '', '', '', '', '', '', 1, 1),
-(3, 'Anemometer', '1674666578tamanalat.jpeg', '', '2020-02-05', '2023-01-20', '1674666578tamanalat.jpeg', '', '', '', '', '', '', '', '', '', '', 3, 2);
+(23, 'Thermometer Maximum-Minimum', '1676353152Thermometer Maximum-Minimum.jpeg', '', '2010-06-17', '2022-10-05', '1676353152tamannalat.jpeg', '', '', '', '', '', '', '', '', '', '', 1, 1),
+(24, 'Open Pan Evaporimeter', '1676353280Open Pan Evaporimeter.jpeg', '', '2008-08-13', '2022-12-14', '1676353280tamannalat.jpeg', '', '', '', '', '', '', '', '', '', '', 1, 1),
+(25, 'Penangkar Hujan Hillman', '1676353415Penangkar Hujan Hillman.jpeg', '', '1984-06-12', '2022-12-14', '1676353415tamannalat.jpeg', '', '', '', '', '', '', '', '', '', '', 1, 1),
+(26, 'Theodolite', '1676353465Theodolite.jpeg', '', '2013-07-18', '2022-12-14', '1676353466tamannalat.jpeg', '', '', '', '', '', '', '', '', '', '', 1, 1),
+(27, 'Penangkar Hujan OBS', '1676353550Penangkar Hujan OBS.jpeg', '', '1984-07-12', '2022-12-15', '1676353550tamannalat.jpeg', '', '', '', '', '', '', '', '', '', '', 1, 1),
+(28, 'PH. TB. Mekanik', '1676353678PH. TB. Mekanik.jpeg', '', '2001-06-06', '2022-12-15', '1676353678tamannalat.jpeg', '', '', '', '', '', '', '', '', '', '', 3, 1),
+(29, 'HV. Sampler', '1676353745HV. Sampler.jpeg', '', '1992-01-01', '2022-01-01', '1676353745tamannalat.jpeg', '', '', '', '', '', '', '', '', '', '', 1, 1),
+(30, 'Automatic Rain Water Sampler', '1676353814ARWS.jpeg', '', '2015-01-01', '2022-01-01', '1676353814tamannalat.jpeg', '', '', '', '', '', '', '', '', '', '', 2, 1),
+(31, 'Anemometer', '1676353862Anemometer.jpeg', '', '2008-01-01', '2022-01-01', '1676353862tamannalat.jpeg', '', '', '', '', '', '', '', '', '', '', 2, 1),
+(32, 'Campble Stockes', '1676353943Cambel Stockes.jpeg', '', '2005-01-01', '2022-01-01', '1676353943tamannalat.jpeg', '', '', '', '', '', '', '', '', '', '', 1, 1),
+(33, 'Barometer Digital', '1676354011Barometer Digital.jpeg', '', '2004-01-01', '2022-01-01', '1676354011tamannalat.jpeg', '', '', '', '', '', '', '', '', '', '', 2, 1),
+(34, 'Thermohygrograph', '1676354067Thermohygrograph.jpeg', '', '2004-01-01', '2022-01-01', '1676354067Thermohygrograph.jpeg', '', '', '', '', '', '', '', '', '', '', 1, 1),
+(35, 'Thermometer Digital', '1676354131Thermometer Digital.jpeg', '', '2004-01-01', '2022-01-01', '1676354131tamannalat.jpeg', '', '', '', '', '', '', '', '', '', '', 2, 1),
+(36, 'Thermometer Bola Basah - Bola Kering', '1676354176Thermometer Bola Basah- Bola Kering.jpeg', '', '1994-01-01', '2022-01-01', '1676354176tamannalat.jpeg', '', '', '', '', '', '', '', '', '', '', 1, 1),
+(37, 'Alert Gempa', '1676354322alatgempa.jpeg', '', '2010-01-01', '2022-01-01', '1676354322ruangpibal.jpeg', '', '', '', '', '', '', '', '', '', '', 1, 1);
 
 -- --------------------------------------------------------
 
@@ -118,21 +130,21 @@ CREATE TABLE `tb_logbook` (
 --
 
 INSERT INTO `tb_logbook` (`id_logbook`, `id_alat`, `kondisi`, `tanggal`, `nama_petugas`, `keterangan`) VALUES
-(30, 1, 'Operasional', '2023-02-02', 'Satria', ''),
-(31, 2, 'Tidak Operasional', '2023-02-02', 'Satria', 'Rusak'),
-(32, 3, 'Tidak Operasional', '2023-02-02', 'Satria', 'Rusak'),
-(33, 1, 'Operasional', '2023-01-24', 'Muzakki', ''),
-(34, 2, 'Operasional', '2023-01-24', 'Muzakki', ''),
-(35, 3, 'Operasional', '2023-01-24', 'Muzakki', ''),
-(36, 1, 'Operasional', '2023-01-25', 'Satria', ''),
-(37, 2, 'Operasional', '2023-01-25', 'Satria', ''),
-(38, 3, 'Operasional', '2023-01-25', 'Satria', ''),
-(39, 1, 'Operasional', '2023-01-26', 'Satria', ''),
-(40, 2, 'Operasional', '2023-01-26', 'Satria', ''),
-(41, 3, 'Operasional', '2023-01-26', 'Satria', ''),
-(42, 1, 'Operasional', '2023-01-27', 'Satria', ''),
-(43, 2, 'Operasional', '2023-01-27', 'Satria', ''),
-(44, 3, 'Operasional', '2023-01-27', 'Satria', '');
+(58, 23, 'Operasional', '2023-02-15', 'zakki', ''),
+(59, 24, 'Operasional', '2023-02-15', 'zakki', ''),
+(60, 25, 'Tidak Operasional', '2023-02-15', 'zakki', ''),
+(61, 26, 'Operasional', '2023-02-15', 'zakki', ''),
+(62, 27, 'Operasional', '2023-02-15', 'zakki', ''),
+(63, 28, 'Operasional', '2023-02-15', 'zakki', ''),
+(64, 29, 'Tidak Operasional', '2023-02-15', 'zakki', 'Rusak'),
+(65, 30, 'Operasional', '2023-02-15', 'zakki', ''),
+(66, 31, 'Operasional', '2023-02-15', 'zakki', ''),
+(67, 32, 'Operasional', '2023-02-15', 'zakki', ''),
+(68, 33, 'Operasional', '2023-02-15', 'zakki', ''),
+(69, 34, 'Operasional', '2023-02-15', 'zakki', ''),
+(70, 35, 'Operasional', '2023-02-15', 'zakki', ''),
+(71, 36, 'Operasional', '2023-02-15', 'zakki', ''),
+(72, 37, 'Operasional', '2023-02-15', 'zakki', '');
 
 -- --------------------------------------------------------
 
@@ -203,7 +215,7 @@ ALTER TABLE `kondisi`
 -- AUTO_INCREMENT for table `tb_alat`
 --
 ALTER TABLE `tb_alat`
-  MODIFY `id_alat` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+  MODIFY `id_alat` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=38;
 
 --
 -- AUTO_INCREMENT for table `tb_kategori`
@@ -215,7 +227,7 @@ ALTER TABLE `tb_kategori`
 -- AUTO_INCREMENT for table `tb_logbook`
 --
 ALTER TABLE `tb_logbook`
-  MODIFY `id_logbook` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=45;
+  MODIFY `id_logbook` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=73;
 
 --
 -- AUTO_INCREMENT for table `tb_user`

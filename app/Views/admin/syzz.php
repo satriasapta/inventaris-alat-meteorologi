@@ -56,7 +56,7 @@
                     </div>
                     <div class="contact-ctn">
                         <div class="contact-ad-hd">
-                            <h2>Malika</h2>
+                            <h2>ARIANA</h2>
                             <p class="ctn-ads">Thi, LA, aus</p>
                         </div>
                         <p>Lorem ipsum dolor sit amete of the, consectetur adipiscing elitable. Vestibulum tincidunt.</p>
