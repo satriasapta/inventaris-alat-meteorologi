@@ -58,7 +58,7 @@
                     </div>
                     <div class="contact-ctn">
                         <div class="contact-ad-hd">
-                            <h2>Yadzka</h2>
+                            <h2>M.Yadzka Affan</h2>
                             <p class="ctn-ads"></p>
                         </div>
                         <p>As a System Analyst</p>

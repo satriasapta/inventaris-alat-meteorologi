@@ -312,26 +312,33 @@ class Admin extends BaseController
         $filename = "All Logbook.xlsx";
         $builder = $this->db->table('tb_logbook')
             ->join('tb_alat', 'tb_alat.id_alat = tb_logbook.id_alat');
+        $query = $builder->get();
+        $logbook = $query->getResultArray();
+        $spreadsheet = new Spreadsheet();
+        $sheet = $spreadsheet->getActiveSheet();
+        $sheet->setCellValue('A1', "Laporan Semua Logbook");
+
+        $sheet->MergeCells('A1:F1');
         if ($keyword && $keyword2 != '') {
             $builder->where('tb_logbook.tanggal >=', $keyword);
             $builder->where('tb_logbook.tanggal <=', $keyword2);
-            $filename = "logbook-" . $keyword. " s.d ".$keyword2 . ".xlsx";
+            $filename = "logbook-" . $keyword . " s.d " . $keyword2 . ".xlsx";
+            $sheet->MergeCells('A1:F1');
+            $sheet->setCellValue('A1', "Laporan Logbook\n Pada Tanggal " . $keyword . ' s.d ' . $keyword2);
+            
         }
-        $query = $builder->get();
-        $logbook = $query->getResultArray();
 
-        $spreadsheet = new Spreadsheet();
-        $sheet = $spreadsheet->getActiveSheet();
-        $sheet->setCellValue('A1', 'No');
-        $sheet->setCellValue('B1', 'Nama Petugas');
-        $sheet->setCellValue('C1', 'Tanggal');
-        $sheet->setCellValue('D1', 'Nama Alat');
-        $sheet->setCellValue('E1', 'Kondisi');
-        $sheet->setCellValue('F1', 'Keterangan');
+        
+        $sheet->setCellValue('A2', 'No');
+        $sheet->setCellValue('B2', 'Nama Petugas');
+        $sheet->setCellValue('C2', 'Tanggal');
+        $sheet->setCellValue('D2', 'Nama Alat');
+        $sheet->setCellValue('E2', 'Kondisi');
+        $sheet->setCellValue('F2', 'Keterangan');
 
-        $column = 2;
+        $column = 3;
         foreach ($logbook as $key => $value) {
-            $sheet->setCellValue('A' . $column, ($column - 1));
+            $sheet->setCellValue('A' . $column, ($column - 2));
             $sheet->setCellValue('B' . $column, $value['nama_petugas']);
             $sheet->setCellValue('C' . $column, $value['tanggal']);
             $sheet->setCellValue('D' . $column, $value['nama_alat']);
@@ -339,8 +346,8 @@ class Admin extends BaseController
             $sheet->setCellValue('F' . $column, $value['keterangan']);
             $column++;
         }
-        $sheet->getStyle('A1:F1')->getFont()->setBold(true);
-        $sheet->getStyle('A1:F1')->getFill()->setFillType(\PhpOffice\PhpSpreadsheet\Style\Fill::FILL_SOLID)->getStartColor()->setARGB('FFA0A0A0');
+        $sheet->getStyle('A2:F2')->getFont()->setBold(true);
+        $sheet->getStyle('A2:F2')->getFill()->setFillType(\PhpOffice\PhpSpreadsheet\Style\Fill::FILL_SOLID)->getStartColor()->setARGB('FFA0A0A0');
         $styleArray = [
             'borders' => [
                 'allBorders' => [
@@ -349,6 +356,17 @@ class Admin extends BaseController
                 ],
             ],
         ];
+        $styleTitle = [
+            'font' => [
+                'bold' => true,
+                'size' => 16,
+            ],
+            'alignment' => [
+                'horizontal' => \PhpOffice\PhpSpreadsheet\Style\Alignment::HORIZONTAL_CENTER,
+                'vertical' => \PhpOffice\PhpSpreadsheet\Style\Alignment::VERTICAL_CENTER,
+            ],
+        ];
+        $sheet->getStyle('A1:F1')->applyFromArray($styleTitle);
         $sheet->getStyle('A1:F' . ($column - 1))->applyFromArray($styleArray);
         $sheet->getColumnDimension('A')->setAutoSize(true);
         $sheet->getColumnDimension('B')->setAutoSize(true);
