@@ -8,7 +8,7 @@
                 <div class="contact-list">
                     <div class="contact-win">
                         <div class="contact-img">
-                            <img src="/templates2/img/post/1.jpg" alt="" />
+                            <img src="/img/1.jpg" style="width: 60px; height: 60px;" alt="" />
                         </div>
                         <div class="conct-sc-ic">
                             <a class="btn" href="https://www.instagram.com/zakki.31/"><i class="notika-icon notika-phone"></i></a>
@@ -20,7 +20,8 @@
                             <p class="ctn-ads">Natar, 2002 March'31</p>
                             <p>2017051037</p>
                         </div>
-                        <p>In this projects as a <h5>Front-End</h5> Developer</p>
+                        <p>In this projects as a
+                        <h5>Front-End</h5> Developer</p>
                     </div>
                 </div>
             </div>
@@ -28,7 +29,7 @@
                 <div class="contact-list">
                     <div class="contact-win">
                         <div class="contact-img">
-                            <img src="/img/sapta.jpg" alt="" style="width: 60px; height: 60px;"/>
+                            <img src="/img/sapta.jpg" alt="" style="width: 60px; height: 60px;" />
                         </div>
                         <div class="conct-sc-ic">
                             <a class="btn" href="https://www.instagram.com/satria.sapta/"><i class="notika-icon notika-phone"></i></a>
@@ -40,7 +41,8 @@
                             <p class="ctn-ads">Metro, 2002 July'07</p>
                             <p>2017051022</p>
                         </div>
-                        <p>In this projects as a <h5>Back-End</h5> Developer</p>
+                        <p>In this projects as a
+                        <h5>Back-End</h5> Developer</p>
                     </div>
                 </div>
             </div>
@@ -56,10 +58,10 @@
                     </div>
                     <div class="contact-ctn">
                         <div class="contact-ad-hd">
-                            <h2>ARIANA</h2>
-                            <p class="ctn-ads">Thi, LA, aus</p>
+                            <h2>Yadzka</h2>
+                            <p class="ctn-ads"></p>
                         </div>
-                        <p>Lorem ipsum dolor sit amete of the, consectetur adipiscing elitable. Vestibulum tincidunt.</p>
+                        <p>As a System Analyst</p>
                     </div>
                 </div>
             </div>

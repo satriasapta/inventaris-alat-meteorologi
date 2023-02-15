@@ -70,8 +70,9 @@
       <form action="<?= base_url('auth/loginprocess'); ?>" method="post">
         <div class="nk-form">
           <div class="text-center">
-            <h2>SILAHKAN LOGIN</h2>
-            <a href="<?= base_url('admin'); ?>"><img src="/templates2/img/logo/logo.png" alt="" /></a>
+            <h2><u>SILAHKAN LOGIN</u></h2>
+            <a href="<?= base_url('admin'); ?>"><img src="/templates2/img/logo/logo.png" style="margin-right: 35px;" alt="" /></a>
+            <P></P>
             <h3>Sistem Informasi Inventaris Alat Meteorologi</h3>
           </div>
           <div class="input-group">
@@ -93,8 +94,8 @@
         </div>
 
         <div class="nk-navigation nk-lg-ic">
-          <a href="<?= base_url('/'); ?>"  data-ma-block="#l-register"><i class="notika-icon notika-left-arrow left-arrow-ant"></i> <span>Dashboard</span></a>
-         
+          <a href="<?= base_url('/'); ?>" data-ma-block="#l-register"><i class="notika-icon notika-left-arrow left-arrow-ant"></i> <span>Dashboard</span></a>
+
         </div>
       </form>
     </div>

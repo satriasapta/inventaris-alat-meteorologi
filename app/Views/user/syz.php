@@ -8,7 +8,7 @@
                 <div class="contact-list">
                     <div class="contact-win">
                         <div class="contact-img">
-                            <img src="/templates2/img/post/1.jpg" alt="" />
+                            <img src="/img/1.jpg" style="width: 60px; height: 60px;" alt="" />
                         </div>
                         <div class="conct-sc-ic">
                             <a class="btn" href="https://www.instagram.com/zakki.31/"><i class="notika-icon notika-phone"></i></a>
@@ -58,10 +58,10 @@
                     </div>
                     <div class="contact-ctn">
                         <div class="contact-ad-hd">
-                            <h2>Malika</h2>
-                            <p class="ctn-ads">Thi, LA, aus</p>
+                            <h2>Yadzka</h2>
+                            <p class="ctn-ads"></p>
                         </div>
-                        <p>Lorem ipsum dolor sit amete of the, consectetur adipiscing elitable. Vestibulum tincidunt.</p>
+                        <p>As a System Analyst</p>
                     </div>
                 </div>
             </div>

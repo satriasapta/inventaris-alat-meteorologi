@@ -2,14 +2,11 @@
 
 <?= $this->section('content'); ?>
 
-<!DOCTYPE html>
-<html lang="en">
-
 <body>
     <!-- Header-->
     <header class="bg-light py-1">
         <!-- <div class="container px-4 px-lg-5 my-5"> -->
-        <div class="col-lg-12 col-md-6 col-sm-6 col-xs-12">
+        <div class="col-lg-12 col-md-6 col-sm-6 col-xs-12" style="margin-bottom: 30px;">
 
 
             <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
@@ -40,25 +37,22 @@
             <!-- </div> -->
         </div>
     </header>
-    <!-- Section-->
-    <section class="py-5">
-        <div class="container px-4 px-lg-5 mt-5">
-            <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
-                <?php foreach ($alat as $a) : ?>
-                    <div class="card h-100 bg-secondary text-white" style="max-width: 300px; margin: 10px;">
-                        <img class="card-img mt-3" src="<?= base_url('uploads/' . $a['gambar_alat']); ?>" alt="Card image">
-                        <div class="text-center mt-4">
-                            <h5 class="card-title"><?= $a['nama_alat']; ?></h5>
-                            <p class="card-text"><?= $a['kategori_alat']; ?></p>
-                        </div>
-                        <div class="card-footer p-4 pt-4 border-top-0 bg-transparent">
-                            <div class="text-center"><a class="btn btn-outline-dark text-white border-dark mt-auto" href="<?= base_url('detailalat/' . $a['id_alat']); ?>">Detail</a></div>
-                        </div>
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+            <?php foreach ($alat as $a) : ?>
+                <div class="card h-100 bg-secondary text-white" style="max-width: 300px; margin: 10px;">
+                    <img class="card-img mt-3" src="<?= base_url('uploads/' . $a['gambar_alat']); ?>" alt="Card image">
+                    <div class="text-center mt-4">
+                        <h5 class="card-title"><?= $a['nama_alat']; ?></h5>
+                        <p class="card-text"><?= $a['kategori_alat']; ?></p>
                     </div>
-                <?php endforeach ?>
-            </div>
+                    <div class="card-footer p-4 pt-4 border-top-0 bg-transparent">
+                        <div class="text-center"><a class="btn btn-outline-dark text-white border-dark mt-auto" href="<?= base_url('detailalat/' . $a['id_alat']); ?>">Detail</a></div>
+                    </div>
+                </div>
+            <?php endforeach ?>
         </div>
-    </section>
+    </div>
 
 </body>
 
