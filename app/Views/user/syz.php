@@ -1,4 +1,4 @@
-<?= $this->extend('templates'); ?>
+<?= $this->extend('/templates'); ?>
 <?= $this->section('content'); ?>
 
 <div class="contact-area">
@@ -58,10 +58,12 @@
                     </div>
                     <div class="contact-ctn">
                         <div class="contact-ad-hd">
-                            <h2>Yadzka</h2>
-                            <p class="ctn-ads"></p>
+                            <h2>M.Yadzka Affan</h2>
+                            <p class="ctn-ads">-</p>
+                            <p>2017051066</p>
                         </div>
-                        <p>As a System Analyst</p>
+                        <p>In this projects as a
+                        <h5>System Analyst</h5> Developer</p>
                     </div>
                 </div>
             </div>

@@ -41,8 +41,8 @@
                                     <tr>
                                         <th>NO</th>
                                         <th>Nama Alat</th>
-                                        <th>OPERASIONAL</th>
-                                        <th>TIDAK OPERASIONAL</th>
+                                        <th>OPERASI</th>
+                                        <th>TIDAK OPERASI</th>
                                         <th>Keterangan</th>
                                     </tr>
                                 </thead>
@@ -54,8 +54,8 @@
                                             <td><?= $a['nama_alat']; ?>
                                                 <input type="hidden" name="id_alat[]" class="form-control input-sm" value="<?= $a['id_alat']; ?>">
                                             </td>
-                                            <td><label><input type="radio" value="Operasional" name="kondisi[<?= $index; ?>]" class="i-checks"> <i></i></label></td>
-                                            <td><label><input type="radio" value="Tidak Operasional" name="kondisi[<?= $index; ?>]" class="i-checks"> <i></i></label></td>
+                                            <td><label><input type="radio" value="Operasi" name="kondisi[<?= $index; ?>]" class="i-checks"> <i></i></label></td>
+                                            <td><label><input type="radio" value="Tidak Operasi" name="kondisi[<?= $index; ?>]" class="i-checks"> <i></i></label></td>
                                             <td><input type="text" name="keterangan[]" class="form-control input-sm" placeholder="Keterangan"></td>
 
                                         </tr>

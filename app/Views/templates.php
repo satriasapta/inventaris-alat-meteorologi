@@ -119,14 +119,14 @@
                 </li>
                 <li><a data-toggle="collapse" data-target="#alat" href="#">Alat</a>
                   <ul class="collapse dropdown-header-top">
-                    <li><a href="<?= base_url('user/daftaralat'); ?>">Daftar Alat</a>
+                    <li><a href="<?= base_url('daftaralat'); ?>">Daftar Alat</a>
                     </li>
                   </ul>
                 </li>
 
                 <li><a data-toggle="collapse" data-target="#Pagemob" href="#">Profil</a>
                   <ul id="Pagemob" class="collapse dropdown-header-top">
-                    <li><a href="">Profil BMKG</a>
+                    <li><a href="<?= base_url('profil'); ?>">Profil BMKG</a>
                     </li>
                   </ul>
                 </li>
