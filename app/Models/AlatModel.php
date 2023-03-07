@@ -1,7 +1,5 @@
 <?php
-
 namespace App\Models;
-
 use CodeIgniter\Model;
 
 class AlatModel extends Model
@@ -20,8 +18,6 @@ class AlatModel extends Model
             ->join('tb_kategori', 'tb_kategori.id_kategori = tb_alat.id_kategori')
             ->join('kondisi', 'kondisi.id_kondisi = tb_alat.id_kondisi')
             ->get()->getResultArray();
-
         return $dataAlat;
     }
-
 }

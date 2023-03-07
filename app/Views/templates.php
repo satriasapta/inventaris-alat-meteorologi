@@ -117,18 +117,11 @@
               <ul class="mobile-menu-nav">
                 <li><a data-toggle="collapse" data-target="#dashboard" href="<?= base_url('/'); ?>">Dashboard</a>
                 </li>
-                <li><a data-toggle="collapse" data-target="#alat" href="#">Alat</a>
-                  <ul class="collapse dropdown-header-top">
-                    <li><a href="<?= base_url('user/daftaralat'); ?>">Daftar Alat</a>
-                    </li>
-                  </ul>
+                <li><a data-toggle="collapse" data-target="#alat" href="<?= base_url('/daftaralat'); ?>">Alat</a>
+                  
                 </li>
-
-                <li><a data-toggle="collapse" data-target="#Pagemob" href="#">Profil</a>
-                  <ul id="Pagemob" class="collapse dropdown-header-top">
-                    <li><a href="">Profil BMKG</a>
-                    </li>
-                  </ul>
+                <li><a data-toggle="collapse" data-target="#Pagemob" href="<?= base_url('profil'); ?>">Profil BMKG</a>
+              
                 </li>
               </ul>
             </nav>
