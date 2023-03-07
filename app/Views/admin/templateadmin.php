@@ -128,23 +128,19 @@
           <div class="mobile-menu">
             <nav id="dropdown">
               <ul class="mobile-menu-nav">
-                <li><a data-toggle="collapse" data-target="#dashboard" href="<?= base_url('admin/dashboard'); ?>">Dashboard</a>
-                  <ul class="collapse dropdown-header-top">
-                    <li><a href="<?= base_url('admin/tambahalat'); ?>">Tambah Alat</a></li>
-                  </ul>
+                <li><a  href="<?= base_url('admin/'); ?>">Dashboard</a>
                 </li>
-                <li><a data-toggle="collapse" data-target="#alat" href="#">Alat</a>
-                  <ul class="collapse dropdown-header-top">
-                    <li><a href="<?= base_url('admin/daftaralat'); ?>">Semua Alat</a>
-                    </li>
-                  </ul>
+                <li><a  href="<?= base_url('admin/daftaralat'); ?>">Alat</a>
                 </li>
                 <li><a data-toggle="collapse" data-target="#logbook" href="#">Log Book</a>
                   <ul id="logbook" class="collapse dropdown-header-top">
-                    <li><a href="<?= base_url('admin/dashboard'); ?>">Semua Log Book</a></li>
-                    <li><a href="inbox.html">Harian</a></li>
-                    <li><a href="view-email.html">Bulanan</a></li>
+                    <li><a href="<?= base_url('admin/lbharian'); ?>">Daftar Log Book</a></li>
+                    <li><a href="<?= base_url('admin/inputlogbook'); ?>">Isi Log Book</a></li>
+                    <li><a href="<?= base_url('admin/unduhlb'); ?>">Unduh Log Book</a></li>
+                    
                   </ul>
+                </li>
+                <li><a  href="<?= base_url('admin/profil'); ?>">Profil</a>
                 </li>
               </ul>
             </nav>
@@ -193,7 +189,7 @@
                 </li>
                 <li><a href="<?= base_url('admin/inputlogbook'); ?>">Isi Log Book</a>
                 </li>
-                <li><a href="<?= base_url('admin/unduhlb'); ?>">Unduh Log Book Harian</a>
+                <li><a href="<?= base_url('admin/unduhlb'); ?>">Unduh Log Book</a>
                 </li>
               </ul>
             </div>

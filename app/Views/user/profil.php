@@ -8,8 +8,8 @@
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div class="wizard-wrap-int">
                     <div class="wizard-hd">
-                        <h2>Stasiun Meteorologi Kelas I Raden Inten II Lampung</h2>
-                        <p>UPT : Stasiun Meteorologi Kelas I Raden Inten II Lampung</p>
+                        <h2>Stasiun Meteorologi Kelas I Radin Inten II Lampung</h2>
+                        <p>UPT : Stasiun Meteorologi Kelas I Radin Inten II Lampung</p>
                         <p>Tupoksi : Koordinator BMKG Lampung, Informasi Cuaca, Cuaca Bandara</p>
                         <p>Alamat : Jl. Alamsyah Ratu Prawira Negara Km. 28 Branti, Natar, Lampung Selatan</p>
                         <p>Phone/Fax : (0721) 7697093 / 0816 404 333 / (0721) 7697242</p>
