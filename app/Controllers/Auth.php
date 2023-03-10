@@ -11,18 +11,8 @@ class Auth extends BaseController
     {
         $this->userModel = new UserModel();
     }
-    public function index()
-    {
-        if(session('id')){
-            return redirect()->to(base_url('admin'));
-        }
-        return view('admin/loginAdmin');
-    }
     public function login()
     {
-        if(session('id')){
-            return redirect()->to(base_url('admin'));
-        }
         return view('admin/loginAdmin');
     }
 

@@ -106,16 +106,6 @@
             </ul>
           </div>
         </div>
-        <!-- <ul class="nav navbar-nav navbar-right" style="margin-top:10px; position:relative;">
-          <li style="text-align: center;"><a href="">Logout</a></li>
-        </ul>
-        <ul class="nav navbar-nav navbar-right" style="margin-top:29px; position:relative;">
-          <li>
-            Selamat Datang || 
-          </li>
-        </ul> -->
-
-
       </div>
     </div>
   </div>
@@ -190,13 +180,6 @@
                 <li><a href="<?= base_url('admin/inputlogbook'); ?>">Isi Log Book</a>
                 </li>
                 <li><a href="<?= base_url('admin/unduhlb'); ?>">Unduh Log Book</a>
-                </li>
-              </ul>
-            </div>
-
-            <div id="Logbook" class="tab-pane notika-tab-menu-bg animated flipInX">
-              <ul class="notika-main-menu-dropdown">
-                <li><a href="<?= base_url('admin/profil'); ?>">Data Log </a>
                 </li>
               </ul>
             </div>

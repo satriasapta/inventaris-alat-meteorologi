@@ -22,10 +22,6 @@ class Home extends BaseController
         ];
         return view('user/home',$data);
     }
-    public function dashboard()
-    {
-        return view('dashboard');
-    }
     public function detailalat($id = null)
     {
         if ($id != null) {
