@@ -9,7 +9,7 @@
         <div class="col-lg-12 col-md-6 col-sm-6 col-xs-12" style="margin-bottom: 30px;">
 
 
-            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <!-- <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <img src="<?php echo base_url('img/slider1.jpg') ?>" class="d-block w-100" alt="...">
@@ -29,7 +29,7 @@
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
-            </div>
+            </div> -->
 
             <!-- <div class="text-center text-white">
                 <h1 class="display-4 fw-bolder">BMKG x SIALMET</h1>
