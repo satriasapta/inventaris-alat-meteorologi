@@ -1,9 +1,6 @@
 <?php
-
 namespace App\Models;
-
 use CodeIgniter\Model;
-
 class KategoriModel extends Model
 {
     protected $DBGroup          = 'default';

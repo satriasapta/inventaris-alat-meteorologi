@@ -44,11 +44,6 @@ class Admin extends BaseController
         return view('admin/dashboard', $data);
     }
 
-    public function dashboard()
-    {
-        return view('admin/dashboard');
-    }
-
 
     public function daftaralat()
     {
@@ -113,7 +108,6 @@ class Admin extends BaseController
                 $data = [
                     'nama_alat' => $this->request->getPost('nama_alat'),
                     'gambar_alat' => $filename,
-
                     'tahun_pembelian' => $this->request->getPost('tahun_pembelian'),
                     'kalibrasi' => $this->request->getPost('kalibrasi'),
                     'lokasi_alat' => $filename2,
@@ -312,23 +306,18 @@ class Admin extends BaseController
         $filename = "All Logbook.xlsx";
         $builder = $this->db->table('tb_logbook')
             ->join('tb_alat', 'tb_alat.id_alat = tb_logbook.id_alat');
-        $query = $builder->get();
-        $logbook = $query->getResultArray();
         $spreadsheet = new Spreadsheet();
         $sheet = $spreadsheet->getActiveSheet();
-        $sheet->setCellValue('A1', "Laporan Semua Logbook");
-
         $sheet->MergeCells('A1:F1');
+        $sheet->setCellValue('A1', "Laporan Semua Logbook");
         if ($keyword && $keyword2 != '') {
             $builder->where('tb_logbook.tanggal >=', $keyword);
             $builder->where('tb_logbook.tanggal <=', $keyword2);
             $filename = "logbook-" . $keyword . " s.d " . $keyword2 . ".xlsx";
-            $sheet->MergeCells('A1:F1');
             $sheet->setCellValue('A1', "Laporan Logbook\n Pada Tanggal " . $keyword . ' s.d ' . $keyword2);
-            
         }
-
-        
+        $query = $builder->get();
+        $logbook = $query->getResultArray();   
         $sheet->setCellValue('A2', 'No');
         $sheet->setCellValue('B2', 'Nama Petugas');
         $sheet->setCellValue('C2', 'Tanggal');

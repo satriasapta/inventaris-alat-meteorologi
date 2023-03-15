@@ -1,9 +1,6 @@
 <?php
-
 namespace App\Models;
-
 use CodeIgniter\Model;
-
 class KondisiModel extends Model
 {
     protected $DBGroup          = 'default';

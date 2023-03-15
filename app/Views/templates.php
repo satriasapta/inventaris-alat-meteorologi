@@ -144,10 +144,6 @@
             <li><a href="<?= base_url('profil'); ?>"><i class="notika-icon notika-support"></i> Profil BMKG</a>
             </li>
           </ul>
-
-          <div class="tab-content custom-menu-content">
-
-          </div>
         </div>
       </div>
     </div>
