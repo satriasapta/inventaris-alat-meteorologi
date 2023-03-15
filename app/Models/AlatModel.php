@@ -23,4 +23,31 @@ class AlatModel extends Model
             ->get()->getResultArray();
         return $dataAlat;
     }
+    public function getBaik()
+    {
+        $dataBaik = $this->db->table('tb_alat')
+            ->join('tb_kategori', 'tb_kategori.id_kategori = tb_alat.id_kategori')
+            ->join('kondisi', 'kondisi.id_kondisi = tb_alat.id_kondisi')
+            ->where('kondisi.id_kondisi','1')
+            ->get()->getResultArray();
+        return $dataBaik;
+    }
+    public function getRusak()
+    {
+        $dataRusak = $this->db->table('tb_alat')
+            ->join('tb_kategori', 'tb_kategori.id_kategori = tb_alat.id_kategori')
+            ->join('kondisi', 'kondisi.id_kondisi = tb_alat.id_kondisi')
+            ->where('kondisi.id_kondisi','2')
+            ->get()->getResultArray();
+        return $dataRusak;
+    }
+    public function getRusakBerat()
+    {
+        $dataRusakBerat = $this->db->table('tb_alat')
+            ->join('tb_kategori', 'tb_kategori.id_kategori = tb_alat.id_kategori')
+            ->join('kondisi', 'kondisi.id_kondisi = tb_alat.id_kondisi')
+            ->where('id_kondisi' == 3)
+            ->get()->getResultArray();
+        return $dataRusakBerat;
+    }
 }

@@ -18,7 +18,10 @@ class Home extends BaseController
     public function index()
     {
         $data = [
-            'alat' => $this->alatModel->getAlat()
+            'alat' => $this->alatModel->getAlat(),
+            'baik' => $this->alatModel->getBaik(),
+            'rusak' => $this->alatModel->getRusak(),
+            'rusakberat' => $this->alatModel->getRusakBerat()
         ];
         return view('user/home',$data);
     }
