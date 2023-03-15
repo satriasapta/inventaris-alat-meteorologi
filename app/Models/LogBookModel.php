@@ -9,13 +9,15 @@ class LogBookModel extends Model
     protected $useAutoIncrement = true;
     protected $insertID         = 0;
     protected $returnType       = 'array';
-    protected $allowedFields    = ['id_alat','kondisi','tanggal','nama_petugas','keterangan'];
+    protected $allowedFields    = ['id_alat','id_operasi','tanggal','nama_petugas','keterangan'];
 
     public function getLogBook()
     {
         $dataLogBook = $this->db->table('tb_logbook')
             ->join('tb_alat', 'tb_alat.id_alat = tb_logbook.id_alat')
+            ->join('tb_operasi', 'tb_operasi.id_operasi = tb_logbook.id_operasi')
             ->orderBy('tanggal', 'DESC')
+            ->orderBy('tb_operasi.id_operasi', 'DESC')
             ->get()->getResultArray();
 
         return $dataLogBook;

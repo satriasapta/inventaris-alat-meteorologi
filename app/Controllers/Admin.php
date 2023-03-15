@@ -246,8 +246,8 @@ class Admin extends BaseController
 
         $logbook = model(LogBookModel::class);
         $rules = [
-            'kondisi' => [
-                'label' => 'Kondisi',
+            'id_operasi' => [
+                'label' => 'id_operasi',
                 'rules' => 'required'
             ],
             'tanggal' => [
@@ -261,17 +261,17 @@ class Admin extends BaseController
         ];
         if ($this->request->getMethod() === 'post' && $this->validate($rules)) {
 
-            $kondisi = $this->request->getPost('kondisi');
+            $id_operasi = $this->request->getPost('id_operasi');
             $id_alat = $this->request->getPost('id_alat');
             $tanggal = $this->request->getPost('tanggal');
             $keterangan = $this->request->getPost('keterangan');
             $nama_petugas = $this->request->getPost('nama_petugas');
             $i = 0;
-            if (!empty($kondisi)) {
-                foreach ($kondisi as $k) {
+            if (!empty($id_operasi)) {
+                foreach ($id_operasi as $k) {
                     $data = [
                         'id_alat' => $id_alat[$i],
-                        'kondisi' => $k,
+                        'id_operasi' => $k,
                         'tanggal' => $tanggal,
                         'keterangan' => $keterangan[$i],
                         'nama_petugas' => $nama_petugas

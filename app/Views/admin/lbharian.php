@@ -30,7 +30,7 @@
                                     <th>Petugas</th>
                                     <th>Tanggal</th>
                                     <th>Nama Alat</th>
-                                    <th>Kondisi</th>
+                                    <th>Operasi</th>
                                     <th>Keterangan</th>
                                 </tr>
                             </thead>
@@ -41,7 +41,7 @@
                                         <td><?= $l['nama_petugas']; ?></td>
                                         <td><?= $l['tanggal']; ?></td>
                                         <td><?= $l['nama_alat']; ?></td>
-                                        <td><?= $l['kondisi']; ?></td>
+                                        <td><?= $l['operasi']; ?></td>
                                         <td><?= $l['keterangan']; ?></td>
                                     </tr>
                                 <?php endforeach ?>

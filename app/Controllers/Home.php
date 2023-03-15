@@ -17,11 +17,19 @@ class Home extends BaseController
     }
     public function index()
     {
+        $dataAlat = $this->alatModel->get()->resultID->num_rows;
+        $dataKondisi = $this->alatModel->getWhere(['id_kondisi' => 1])->resultID->num_rows;
+        $dataKondisi2 = $this->alatModel->getWhere(['id_kondisi' => 2])->resultID->num_rows;
+        $dataKondisi3 = $this->alatModel->getWhere(['id_kondisi' => 3])->resultID->num_rows;
         $data = [
             'alat' => $this->alatModel->getAlat(),
             'baik' => $this->alatModel->getBaik(),
             'rusak' => $this->alatModel->getRusak(),
-            'rusakberat' => $this->alatModel->getRusakBerat()
+            'rusakberat' => $this->alatModel->getRusakBerat(),
+            'dataAlat' => $dataAlat,
+            'dataKondisi' => $dataKondisi,
+            'dataKondisi2' => $dataKondisi2,
+            'dataKondisi3' => $dataKondisi3,
         ];
         return view('user/home',$data);
     }
