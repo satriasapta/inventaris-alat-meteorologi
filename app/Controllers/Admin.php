@@ -308,7 +308,10 @@ class Admin extends BaseController
         $keyword2 = $this->request->getGet('keyword2');
         $filename = "All Logbook.xlsx";
         $builder = $this->db->table('tb_logbook')
-            ->join('tb_alat', 'tb_alat.id_alat = tb_logbook.id_alat');
+            ->join('tb_alat', 'tb_alat.id_alat = tb_logbook.id_alat')
+            ->join('tb_operasi', 'tb_operasi.id_operasi = tb_logbook.id_operasi')
+            ->join('tb_petugas', 'tb_petugas.id_petugas = tb_logbook.id_petugas')
+            ->orderBy('tb_logbook.tanggal', 'ASC');
         $spreadsheet = new Spreadsheet();
         $sheet = $spreadsheet->getActiveSheet();
         $sheet->MergeCells('A1:F1');
@@ -325,7 +328,7 @@ class Admin extends BaseController
         $sheet->setCellValue('B2', 'Nama Petugas');
         $sheet->setCellValue('C2', 'Tanggal');
         $sheet->setCellValue('D2', 'Nama Alat');
-        $sheet->setCellValue('E2', 'Kondisi');
+        $sheet->setCellValue('E2', 'Operasi');
         $sheet->setCellValue('F2', 'Keterangan');
 
         $column = 3;
@@ -334,7 +337,7 @@ class Admin extends BaseController
             $sheet->setCellValue('B' . $column, $value['nama_petugas']);
             $sheet->setCellValue('C' . $column, $value['tanggal']);
             $sheet->setCellValue('D' . $column, $value['nama_alat']);
-            $sheet->setCellValue('E' . $column, $value['kondisi']);
+            $sheet->setCellValue('E' . $column, $value['operasi']);
             $sheet->setCellValue('F' . $column, $value['keterangan']);
             $column++;
         }
