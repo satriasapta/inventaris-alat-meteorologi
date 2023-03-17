@@ -311,7 +311,8 @@ class Admin extends BaseController
             ->join('tb_alat', 'tb_alat.id_alat = tb_logbook.id_alat')
             ->join('tb_operasi', 'tb_operasi.id_operasi = tb_logbook.id_operasi')
             ->join('tb_petugas', 'tb_petugas.id_petugas = tb_logbook.id_petugas')
-            ->orderBy('tb_logbook.tanggal', 'ASC');
+            ->orderBy('tb_logbook.tanggal', 'ASC')
+            ->orderBy('tb_operasi.operasi', 'DESC');
         $spreadsheet = new Spreadsheet();
         $sheet = $spreadsheet->getActiveSheet();
         $sheet->MergeCells('A1:F1');
