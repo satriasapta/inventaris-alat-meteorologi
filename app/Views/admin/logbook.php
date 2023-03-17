@@ -20,7 +20,11 @@
                             <div class="basic-tb-hd">
                                 <label class="hrzn-fm">Nama Petugas</label>
                                 <div class="nk-int-st">
-                                    <input type="text" name="nama_petugas" class="form-control input-sm" placeholder="Masukan Nama Petugas" required>
+                                    <select name="id_petugas" class="hrzn-fm selectpicker">
+                                        <?php foreach ($petugas as $p) : ?>
+                                            <option value="<?= $p['id_petugas']; ?>"><?= $p['nama_petugas']; ?></option>
+                                        <?php endforeach; ?>
+                                    </select>
                                 </div>
                             </div>
                         </div>

@@ -8,6 +8,7 @@ use App\Models\KategoriModel;
 use App\Models\LogBookModel;
 use App\Models\KondisiModel;
 use App\Models\UserModel;
+use App\Models\PetugasModel;
 use PhpOffice\PhpSpreadsheet\Spreadsheet;
 use PhpOffice\PhpSpreadsheet\Writer\Xlsx;
 
@@ -20,6 +21,7 @@ class Admin extends BaseController
         $this->logBookModel = new LogBookModel();
         $this->kondisiModel = new KondisiModel();
         $this->userModel = new UserModel();
+        $this->petugasModel = new PetugasModel();
     }
 
     public function index()
@@ -226,7 +228,8 @@ class Admin extends BaseController
 
         $data = [
             'logbook' => $this->logBookModel->getLogbook(),
-            'alat' => $this->alatModel->getAlat()
+            'alat' => $this->alatModel->getAlat(),
+            'petugas' => $this->petugasModel->findAll(),
         ];
 
         return view('admin/logbook', $data);
@@ -247,15 +250,15 @@ class Admin extends BaseController
         $logbook = model(LogBookModel::class);
         $rules = [
             'id_operasi' => [
-                'label' => 'id_operasi',
+                'label' => 'id operasi',
                 'rules' => 'required'
             ],
             'tanggal' => [
                 'label' => 'Tanggal',
                 'rules' => 'required'
             ],
-            'nama_petugas' => [
-                'label' => 'Nama Petugas',
+            'id_petugas' => [
+                'label' => 'Id Petugas',
                 'rules' => 'required'
             ]
         ];
@@ -265,7 +268,7 @@ class Admin extends BaseController
             $id_alat = $this->request->getPost('id_alat');
             $tanggal = $this->request->getPost('tanggal');
             $keterangan = $this->request->getPost('keterangan');
-            $nama_petugas = $this->request->getPost('nama_petugas');
+            $id_petugas = $this->request->getPost('id_petugas');
             $i = 0;
             if (!empty($id_operasi)) {
                 foreach ($id_operasi as $k) {
@@ -274,7 +277,7 @@ class Admin extends BaseController
                         'id_operasi' => $k,
                         'tanggal' => $tanggal,
                         'keterangan' => $keterangan[$i],
-                        'nama_petugas' => $nama_petugas
+                        'id_petugas' => $id_petugas
                     ];
                     $logbook->save($data);
                     $i++;
