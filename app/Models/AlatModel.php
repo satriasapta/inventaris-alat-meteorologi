@@ -20,6 +20,8 @@ class AlatModel extends Model
         $dataAlat = $this->db->table('tb_alat')
             ->join('tb_kategori', 'tb_kategori.id_kategori = tb_alat.id_kategori')
             ->join('kondisi', 'kondisi.id_kondisi = tb_alat.id_kondisi')
+            ->orderBy('kondisi.id_kondisi', 'DESC')
+            ->orderBy('tb_kategori.id_kategori', 'ASC')
             ->get()->getResultArray();
         return $dataAlat;
     }
