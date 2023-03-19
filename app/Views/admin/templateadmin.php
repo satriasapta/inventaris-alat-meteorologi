@@ -146,7 +146,7 @@
       <div class="row">
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
           <ul class="nav nav-tabs notika-menu-wrap menu-it-icon-pro">
-            <li><a data-toggle="tab" href="#Dashboard"><i class="notika-icon notika-house"></i> Dashboard</a>
+            <li><a href="<?= base_url('admin/'); ?>"><i class="notika-icon notika-house"></i> Dashboard</a>
             </li>
             <li><a data-toggle="tab" href="#Alat"><i class="notika-icon notika-menus"></i> Alat</a>
             </li>
@@ -200,7 +200,7 @@
   <div class="footer-copyright-area">
     <div class="container">
       <div class="row">
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" >
           <div class="footer-copy-right">
             <p>Copyright © 2023
               . All rights reserved. Developed by <a href="<?= base_url('admin/syz'); ?>">SYZ</a>.</p>
