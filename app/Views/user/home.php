@@ -28,7 +28,7 @@
                 <div class="wb-traffic-inner notika-shadow sm-res-mg-t-30 tb-res-mg-t-30 dk-res-mg-t-30">
                     <div class="website-traffic-ctn text-center">
                         <h2><span class="counter text-danger"><?= $dataKondisi2; ?></span></h2>
-                        <p>Alat Rusak</p>
+                        <p>Alat Rusak Ringan</p>
                     </div>
                 </div>
             </div>

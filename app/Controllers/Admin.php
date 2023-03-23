@@ -182,6 +182,7 @@ class Admin extends BaseController
             if ($this->validate($rules)) {
                 $prod_item = $this->alatModel->find($id);
                 $gambar_alat = $this->request->getFile('gambar_alat');
+                $old_img_name = $prod_item['gambar_alat'];
                 if ($gambar_alat->isValid() && !$gambar_alat->hasMoved()) {
                     $old_img_name = $prod_item['gambar_alat'];
                     if (file_exists("uploads/$old_img_name")) {
@@ -189,8 +190,11 @@ class Admin extends BaseController
                     }
                     $filename = time() . $gambar_alat->getClientName();
                     $gambar_alat->move('uploads', $filename);
+                } else {
+                    $filename = $old_img_name;
                 }
                 $lokasi_alat = $this->request->getFile('lokasi_alat');
+                $old_img_name2 = $prod_item['lokasi_alat'];
                 if ($lokasi_alat->isValid() && !$lokasi_alat->hasMoved()) {
                     $old_img_name = $prod_item['lokasi_alat'];
                     if (file_exists("uploads/$old_img_name")) {
@@ -198,11 +202,15 @@ class Admin extends BaseController
                     }
                     $filename2 = time() . $lokasi_alat->getClientName();
                     $lokasi_alat->move('uploads', $filename2);
+                } else {
+                    $filename2 = $old_img_name2;
                 }
                 $data = [
                     'nama_alat' => $this->request->getPost('nama_alat'),
                     'tahun_pembelian' => $this->request->getPost('tahun_pembelian'),
                     'kalibrasi' => $this->request->getPost('kalibrasi'),
+                    'gambar_alat' => $filename,
+                    'lokasi_alat' => $filename2,
                     'komponen_alat' => $this->request->getPost('komponen_alat'),
                     'penggantian_komponen' => $this->request->getPost('penggantian_komponen'),
                     'pemeliharaan_alat' => $this->request->getPost('pemeliharaan_alat'),
