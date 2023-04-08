@@ -92,12 +92,12 @@
           <div class="header-top-menu">
             <ul class="nav navbar-nav navbar-right" style="margin-top:23px; position:relative;">
               <div class="material-design-btn">
-                <li> 
+                <li>
                   <a role="button" href="<?= base_url('auth/logout'); ?>" class="btn notika-btn-deeporange btn-reco-mg btn-button-mg waves-effect">Logout</a>
                 </li>
               </div>
             </ul>
-            
+
             <ul class="nav navbar-nav navbar-right" style="margin-top:30px; right: 10px; position:relative;">
               <li>
                 Selamat Datang |
@@ -118,19 +118,19 @@
           <div class="mobile-menu">
             <nav id="dropdown">
               <ul class="mobile-menu-nav">
-                <li><a  href="<?= base_url('admin/'); ?>">Dashboard</a>
+                <li><a href="<?= base_url('admin/'); ?>">Dashboard</a>
                 </li>
-                <li><a  href="<?= base_url('admin/daftaralat'); ?>">Alat</a>
+                <li><a href="<?= base_url('admin/daftaralat'); ?>">Alat</a>
                 </li>
                 <li><a data-toggle="collapse" data-target="#logbook" href="#">Log Book</a>
                   <ul id="logbook" class="collapse dropdown-header-top">
                     <li><a href="<?= base_url('admin/lbharian'); ?>">Daftar Log Book</a></li>
                     <li><a href="<?= base_url('admin/inputlogbook'); ?>">Isi Log Book</a></li>
                     <li><a href="<?= base_url('admin/unduhlb'); ?>">Unduh Log Book</a></li>
-                    
+
                   </ul>
                 </li>
-                <li><a  href="<?= base_url('admin/profil'); ?>">Profil</a>
+                <li><a href="<?= base_url('admin/profil'); ?>">Profil</a>
                 </li>
               </ul>
             </nav>
@@ -200,7 +200,7 @@
   <div class="footer-copyright-area">
     <div class="container">
       <div class="row">
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" >
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
           <div class="footer-copy-right">
             <p>Copyright © 2023
               . All rights reserved. Developed by <a href="<?= base_url('admin/syz'); ?>">SYZ</a>.</p>
@@ -324,8 +324,15 @@
   <script src="/templates2/js/main.js"></script>
   <!--  wizard JS
 		============================================ -->
-    <script src="/templates2/js/wizard/jquery.bootstrap.wizard.min.js"></script>
+  <script src="/templates2/js/wizard/jquery.bootstrap.wizard.min.js"></script>
   <script src="/templates2/js/wizard/wizard-active.js"></script>
+  <script>
+    const inputTanggal = document.getElementById("tanggal");
+
+    // Atur nilai maksimal tanggal yang dapat dipilih menjadi hari ini
+    const hariIni = new Date().toISOString().split("T")[0];
+    inputTanggal.setAttribute("max", hariIni);
+  </script>
 
 </body>
 

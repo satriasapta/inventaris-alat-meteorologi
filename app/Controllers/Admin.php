@@ -263,7 +263,7 @@ class Admin extends BaseController
             ],
             'tanggal' => [
                 'label' => 'Tanggal',
-                'rules' => 'required'
+                'rules' => 'required',
             ],
             'id_petugas' => [
                 'label' => 'Id Petugas',
@@ -271,7 +271,6 @@ class Admin extends BaseController
             ]
         ];
         if ($this->request->getMethod() === 'post' && $this->validate($rules)) {
-
             $id_operasi = $this->request->getPost('id_operasi');
             $id_alat = $this->request->getPost('id_alat');
             $tanggal = $this->request->getPost('tanggal');
@@ -279,27 +278,28 @@ class Admin extends BaseController
             $id_petugas = $this->request->getPost('id_petugas');
             $i = 0;
             if (!empty($id_operasi)) {
-                foreach ($id_operasi as $k) {
-                    $data = [
-                        'id_alat' => $id_alat[$i],
-                        'id_operasi' => $k,
-                        'tanggal' => $tanggal,
-                        'keterangan' => $keterangan[$i],
-                        'id_petugas' => $id_petugas
-                    ];
-                    $logbook->save($data);
-                    $i++;
+                $data = [
+                    'tanggal' => $tanggal
+                ];
+                $dataSudahAda = $logbook->where($data)->first();
+                if ($dataSudahAda) {
+                    return redirect()->to('admin/inputlogbook')->with('error', ' Data Sudah Ada');
+                } else {
+                    foreach ($id_operasi as $k) {
+                        $data = [
+                            'id_alat' => $id_alat[$i],
+                            'id_operasi' => $k,
+                            'tanggal' => $tanggal,
+                            'keterangan' => $keterangan[$i],
+                            'id_petugas' => $id_petugas
+                        ];
+                        $logbook->insert($data);
+                        $i++;
+                    }
                 }
             }
-            $message = [
-                'success' => true,
-                'notif' => 'Data Berhasil Disimpan'
-            ];
         } else {
-            $message = [
-                'success' => false,
-                'notif' => 'Data Gagal Disimpan'
-            ];
+            return redirect()->to('admin/inputlogbook')->with('error', ' Data Gagal Disimpan');
         }
         return redirect()->to('admin/lbharian')->with('success', ' Data Berhasil Disimpan');
     }
@@ -332,7 +332,7 @@ class Admin extends BaseController
             $sheet->setCellValue('A1', "Laporan Logbook\n Pada Tanggal " . $keyword . ' s.d ' . $keyword2);
         }
         $query = $builder->get();
-        $logbook = $query->getResultArray();   
+        $logbook = $query->getResultArray();
         $sheet->setCellValue('A2', 'No');
         $sheet->setCellValue('B2', 'Nama Petugas');
         $sheet->setCellValue('C2', 'Tanggal');

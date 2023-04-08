@@ -33,9 +33,9 @@
                         </div>
                         <div class="col-lg-3 col-md-7 col-sm-7 col-xs-12">
                             <div class="form-group nk-datapk-ctm form-elet-mg" id="data_3">
-                                <div class="input-group date nk-int-st">
+                                <div class=" nk-int-st">
                                     <span class="input-group-addon"></span>
-                                    <input type="text" name="tanggal" class="form-control" value="" placeholder="yyyy-mm-dd" required>
+                                    <input type="date" name="tanggal" id="tanggal" class="form-control" value="" placeholder="yyyy-mm-dd" required>
                                 </div>
                             </div>
                         </div>
